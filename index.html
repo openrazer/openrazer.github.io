@@ -542,17 +542,24 @@
                     <h4><span class="fa fa-cube"></span>&nbsp;From the RPM Repository</h4>
                     <p>Open the terminal and run these commands <b>as root</b> for your version:</p>
 
+                    <div class="danger">
+                      <h5><span class="fa fa-warning"></span>
+                      <a href="https://bugzilla.redhat.com/show_bug.cgi?id=1228897" target="_blank" style="color:red"><u>Due to this bug</u></a>,
+                      <code style="color:red">kernel-devel</code> needs to be installed explicitly.
+                      </h5>
+                    </div>
+
                     <h5>Fedora Rawhide</h5>
                     <pre><code><span class="fa fa-dollar"></span> dnf config-manager --add-repo http://download.opensuse.org/repositories/hardware:razer/Fedora_Rawhide/hardware:razer.repo</code>
-<code><span class="fa fa-dollar"></span> dnf install openrazer-meta</code></pre>
+<code><span class="fa fa-dollar"></span> dnf install openrazer-meta kernel-devel</code></pre>
 
                     <h5>Fedora 26</h5>
                     <pre><code><span class="fa fa-dollar"></span> dnf config-manager --add-repo http://download.opensuse.org/repositories/hardware:razer/Fedora_26/hardware:razer.repo</code>
-<code><span class="fa fa-dollar"></span> dnf install kernel-devel</code></pre>
+<code><span class="fa fa-dollar"></span> dnf install openrazer-meta kernel-devel</code></pre>
 
-                    <h5>Fedora Rawhide</h5>
+                    <h5>Fedora 25</h5>
                     <pre><code><span class="fa fa-dollar"></span> dnf config-manager --add-repo http://download.opensuse.org/repositories/hardware:razer/Fedora_25/hardware:razer.repo</code>
-<code><span class="fa fa-dollar"></span> dnf install openrazer-meta</code></pre>
+<code><span class="fa fa-dollar"></span> dnf install openrazer-meta kernel-devel</code></pre>
 
                     <p>After the drivers are installed, please restart the computer.</p>
                   </div>
