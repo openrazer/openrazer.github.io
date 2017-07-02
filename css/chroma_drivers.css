@@ -179,13 +179,19 @@ hr {
 .device-icon {
     height: 200px;
     margin-bottom: 8px;
+    border: 1px solid black;
 }
 
 .device-icon .inner {
     height: 150px;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-position: center !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    transition: 0.2s background-image linear;
+}
+
+.device-icon:hover {
+    border-color: green;
 }
 
 .device-icon:hover > a {
@@ -195,6 +201,10 @@ hr {
 .partial-support,
 .partial-support > a > h5 {
     color: yellow;
+}
+
+.partial-support:hover {
+    border-color: yellow;
 }
 
 /****************************

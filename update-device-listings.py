@@ -42,6 +42,7 @@ for device in razer_devices:
     # Get and validate URLs
     store_url = device.RAZER_URLS["store"]
     device_img_url = device.RAZER_URLS["perspective_img"]
+    device_img_alt_url = device.RAZER_URLS["side_img"]
 
     if store_url == None:
         print("Missing store URL for " + device_name)
@@ -50,6 +51,9 @@ for device in razer_devices:
     if device_img_url == None:
         print("Missing image URL for " + device_name)
         device_img_url = "img/logo.png"
+
+    if device_img_alt_url == None:
+        device_img_alt_url = device_img_url
 
     # Strip Razer name
     device_name = device_name.replace("Razer", "")
@@ -70,18 +74,18 @@ for device in razer_devices:
                         .replace("Deathadder", "DeathAdder") \
                         .replace("Kraken", "Kraken 7.1")
 
-    def get_device_html(store_url, img_url, name):
+    def get_device_html(store_url, img_url, name, img_hover_url):
         print("Adding " + name + "...")
         return \
-        '                <div class="col-md-3 col-sm-4 device-icon">\n' \
-        '                  <a href="{0}" target="_blank">\n' \
-        '                    <div class="inner" style="background-image:url({1})"></div>\n' \
+        '                <a href="{0}" target="_blank">\n' \
+        '                  <div class="col-md-3 col-sm-4 device-icon">\n' \
+        '                    <div class="inner" style="background-image:url({1})" onMouseOver="this.style.background=&quot;url({3})&quot;" onMouseOut="this.style.background=&quot;url({1})&quot;"></div>\n' \
         '                    <h5>{2}</h5>\n' \
-        '                  </a>\n' \
-        '                </div>\n'.format(
-            store_url, img_url, name)
+        '                  </div>\n' \
+        '                </a>\n'.format(
+            store_url, img_url, name, img_hover_url)
 
-    html_buffer = get_device_html(store_url, device_img_url, device_name_ui)
+    html_buffer = get_device_html(store_url, device_img_url, device_name_ui, device_img_alt_url)
 
     if device_type == "keyboards":
         html_keyboards += html_buffer
