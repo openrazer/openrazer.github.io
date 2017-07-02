@@ -46,3 +46,36 @@ if (window.location.hash) {
     $('#' + hash).collapse('show');
     $('body').animate({ scrollTop: $('#'+hash).position().top - 32 });
 }
+
+// Gracefully device images
+window.onload = function() {
+  // Show device image when fully downloaded
+  $(".inner").each(function() {
+      var image_url = $(this).attr("data-image");
+      var device = this;
+      $('<img src="'+ image_url +'">').load(function() {
+          $(device).css("background-image", "url('" + image_url + "')");
+      });
+  });
+
+  // Preload hover images
+  $(".inner").each(function() {
+    var image_url = $(this).attr("data-image-hover");
+    var inner_element = $(this);
+    $('<img src="'+ image_url +'">').load(function() {
+        $(inner_element).attr("data-image-loaded", true);
+    });
+  });
+};
+
+// Change image on hover
+$(".inner").mouseover(function() {
+  if ($(this).attr("data-image-hover") != undefined) {
+    $(this).css("background-image", "url('" + $(this).attr("data-image-hover") + "')");
+  }
+});
+
+$(".inner").mouseout(function() {
+  $(this).css("background-image", "url('" + $(this).attr("data-image") + "')");
+});
+

@@ -80,7 +80,7 @@ for device in razer_devices:
         return \
         '                <a href="{0}" target="_blank">\n' \
         '                  <div id="{4}" class="col-md-3 col-sm-4 device-icon">\n' \
-        '                    <div class="inner" style="background-image:url({1})" onMouseOver="this.style.background=&quot;url({3})&quot;" onMouseOut="this.style.background=&quot;url({1})&quot;"></div>\n' \
+        '                    <div class="inner" data-image="{1}" data-image-hover="{3}"></div>\n' \
         '                    <h5>{2}</h5>\n' \
         '                  </div>\n' \
         '                </a>\n'.format(

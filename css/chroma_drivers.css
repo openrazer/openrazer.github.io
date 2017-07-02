@@ -184,6 +184,7 @@ hr {
 
 .device-icon .inner {
     height: 150px;
+    background-image: url(../img/placeholder.png);
     background-position: center !important;
     background-size: contain !important;
     background-repeat: no-repeat !important;
