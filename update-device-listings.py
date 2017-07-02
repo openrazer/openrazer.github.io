@@ -75,7 +75,7 @@ for device in razer_devices:
         return \
         '                <div class="col-md-3 col-sm-4 device-icon">\n' \
         '                  <a href="{0}" target="_blank">\n' \
-        '                    <img src="{1}">\n' \
+        '                    <div class="inner" style="background-image:url({1})"></div>\n' \
         '                    <h5>{2}</h5>\n' \
         '                  </a>\n' \
         '                </div>\n'.format(

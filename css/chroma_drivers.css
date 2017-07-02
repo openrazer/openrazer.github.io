@@ -181,15 +181,15 @@ hr {
     margin-bottom: 8px;
 }
 
-.device-icon:hover > a {
-    text-decoration: none;
+.device-icon .inner {
+    height: 150px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
-.device-icon img {
-    height: auto;
-    width: 140px;
-    max-height: 200px;
-    max-width: 200px;
+.device-icon:hover > a {
+    text-decoration: none;
 }
 
 .partial-support,
