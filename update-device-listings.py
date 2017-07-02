@@ -76,14 +76,15 @@ for device in razer_devices:
 
     def get_device_html(store_url, img_url, name, img_hover_url):
         print("Adding " + name + "...")
+        element_id = name.lower().replace(" ", "-")
         return \
         '                <a href="{0}" target="_blank">\n' \
-        '                  <div class="col-md-3 col-sm-4 device-icon">\n' \
+        '                  <div id="{4}" class="col-md-3 col-sm-4 device-icon">\n' \
         '                    <div class="inner" style="background-image:url({1})" onMouseOver="this.style.background=&quot;url({3})&quot;" onMouseOut="this.style.background=&quot;url({1})&quot;"></div>\n' \
         '                    <h5>{2}</h5>\n' \
         '                  </div>\n' \
         '                </a>\n'.format(
-            store_url, img_url, name, img_hover_url)
+            store_url, img_url, name, img_hover_url, element_id)
 
     html_buffer = get_device_html(store_url, device_img_url, device_name_ui, device_img_alt_url)
 
