@@ -207,6 +207,11 @@ hr {
     border-color: yellow;
 }
 
+/* Custom Tweaks */
+#chroma-mug-holder > .inner {
+    background-size: 150% !important;
+}
+
 /****************************
  * Footer
 *****************************/
