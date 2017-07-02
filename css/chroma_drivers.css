@@ -199,6 +199,20 @@ hr {
     text-decoration: none;
 }
 
+.device-icon h5 {
+    margin: 0.4em 0;
+}
+
+.device-icon code {
+    color: gray;
+    opacity: 0;
+    transition: 0.2s linear opacity;
+}
+
+.device-icon:hover code {
+    opacity: 1;
+}
+
 .partial-support,
 .partial-support > a > h5 {
     color: yellow;

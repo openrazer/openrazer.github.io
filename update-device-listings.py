@@ -32,6 +32,8 @@ for module in [keyboards, mouse, mouse_mat, core, headsets, mug]:
 for device in razer_devices:
     device_type = inspect.getmodule(device).__name__
     device_name = device.__name__
+    lsusb = str(hex(device.USB_VID))[-4:] + ":" + str(hex(device.USB_PID))[-4:]
+    lsusb = lsusb.replace("x", "0").upper()
 
     # Prevent duplicates (wired/wireless sets)
     if device_name.endswith("Wired"):
@@ -82,9 +84,10 @@ for device in razer_devices:
         '                  <div id="{4}" class="col-md-3 col-sm-4 device-icon">\n' \
         '                    <div class="inner" data-image="{1}" data-image-hover="{3}"></div>\n' \
         '                    <h5>{2}</h5>\n' \
+        '                    <h5><code>{5}</code></h5>\n' \
         '                  </div>\n' \
         '                </a>\n'.format(
-            store_url, img_url, name, img_hover_url, element_id)
+            store_url, img_url, name, img_hover_url, element_id, lsusb)
 
     html_buffer = get_device_html(store_url, device_img_url, device_name_ui, device_img_alt_url)
 
