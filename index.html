@@ -564,9 +564,16 @@
                 <div id="ubuntu" class="panel-collapse collapse">
                   <div class="panel-body">
                     <h4><span class="fa fa-cube"></span>&nbsp; From the PPA</h4>
-                    <p>This also allows the drivers to stay up-to-date when new versions are released. From the terminal:</p>
-                    <pre><code><span class="fa fa-dollar"></span> sudo add-apt-repository ppa:terrz/razerutils</code>
-<code><span class="fa fa-dollar"></span> sudo apt update</code>
+                    <p>This also allows the drivers to stay up-to-date when new versions are released.</p>
+
+                    <p>Stable builds are recommended:</p>
+                    <pre><code><span class="fa fa-dollar"></span> sudo add-apt-repository ppa:openrazer/stable</code></pre>
+
+                    <p>Alternately, if you wish to use the latest development builds, use <code>daily</code> instead -- <strong>use at your own risk!</strong></p>
+                    <pre><code><span class="fa fa-dollar"></span> sudo add-apt-repository ppa:openrazer/daily</code></pre>
+
+                    <p>After adding the PPA, install the packages:</p>
+<pre><code><span class="fa fa-dollar"></span> sudo apt update</code>
 <code><span class="fa fa-dollar"></span> sudo apt install python3-razer razer-kernel-modules-dkms razer-daemon razer-doc</code></pre>
 		    <p><strong>NOTE:</strong> If you get dependency errors when trying to install the driver packages please make sure that you have enabled the "universe" repository in <strong>Software & Updates</strong></p>
 
