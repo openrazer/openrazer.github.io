@@ -80,7 +80,7 @@ for device in razer_devices:
         print("Adding " + name + "...")
         element_id = name.lower().replace(" ", "-")
         return \
-        '                <a href="{0}" target="_blank">\n' \
+        '                <a href="{0}" target="_blank" rel="noopener">\n' \
         '                  <div id="{4}" class="col-md-3 col-sm-4 device-icon">\n' \
         '                    <div class="inner" data-image="{1}" data-image-hover="{3}"></div>\n' \
         '                    <h5>{2}</h5>\n' \
