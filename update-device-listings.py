@@ -7,10 +7,10 @@ import os
 import sys
 import inspect
 import re
-lib_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "razer-drivers", "daemon", "razer_daemon", "hardware"))
+lib_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "openrazer", "daemon", "razer_daemon", "hardware"))
 sys.path.append(lib_path)
 
-# "razer-drivers" directory expected in parent folder.
+# "openrazer" directory expected in parent folder.
 import keyboards
 import mouse
 import mouse_mat
