@@ -1,6 +1,6 @@
-# razer-drivers website
+# OpenRazer Website
 
-This branch contains the pages and data used for the website for this project.
+Contains the static single page for showcasing the project.
 
 Website features:
 
@@ -9,3 +9,4 @@ Website features:
 * Package downloads for various distributions
 * Instructions on building/compiling.
 * Links to other project pages.
+
