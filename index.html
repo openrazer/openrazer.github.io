@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="OpenRazer: allowing full control of your keyboard, mice and mousemat.">
 
     <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css">
@@ -17,14 +17,13 @@
 
     <title>OpenRazer | Open Source Drivers for GNU/Linux</title>
   </head>
-
   <body data-spy="scroll" data-target="#navbar" data-offset="50">
 
     <!-- Sticky Navigation Bar -->
     <div id="nav-menu" class="col-fluid nav-top">
       <div class="col-lg-2"></div>
       <div class="col-lg-8">
-        <p hidden id="mini-logo-text"><img class="logo-mini" src="img/logo.png"/>OpenRazer</p>
+        <p hidden id="mini-logo-text"><img class="logo-mini" alt="OpenRazer Logo" src="img/logo.png"/>OpenRazer</p>
         <nav id="navbar">
           <ul class="nav nav-pills" role="tablist">
             <li><a href="#features"><span class="fa fa-star"></span>&nbsp; Features</a></li>
@@ -44,18 +43,14 @@
 
         <!-- Header -->
         <div id="header">
-          <img id="logo" src="img/logo.png"/>
+          <img id="logo" src="img/logo.png" alt="OpenRazer Logo"/>
           <h2>OpenRazer</h2>
           <h5>Where snakes meet penguin.</h5>
         </div>
 
         <!-- Main Content -->
         <div id="content">
-
-          <!---------------------------------------------------------->
           <div id="features" class="section-gap"></div>
-          <!---------------------------------------------------------->
-
           <div class="section">
             <h3>Features</h3>
             <p>An entirely open source driver and user-space daemon that allows you to manage your Razer peripherals on GNU/Linux.</p>
@@ -79,7 +74,6 @@
                 <div class="col-md-4 col-sm-6 feature">
                   <div class="features-icon"><span class="fa fa-laptop fa-5x fa-va"></span></div>
                   <h4>Applications</h4>
-                  <p>
                     Front-ends and utilities are available.
                     <ul class="apps">
                       <li>
@@ -92,10 +86,9 @@
                         <a href="https://github.com/GabMus/razerCommander">razerCommander</a>
                       </li>
                     </ul>
-                  </p>
                 </div>
                 <div class="col-md-4 col-sm-6 feature">
-                  <div class="features-icon"><img src="img/multi-distro.png"/></div>
+                  <div class="features-icon"><img src="img/multi-distro.png" alt="Multi-Distro Support"/></div>
                   <h4>Cross-Distro Compatible</h4>
                   <p>Works on distributions based on Debian, Ubuntu, Arch, openSUSE and Fedora.</p>
                 </div>
@@ -108,16 +101,13 @@
             </div>
           </div>
 
-          <!---------------------------------------------------------->
           <div id="devices" class="section-gap"></div>
-          <!---------------------------------------------------------->
-
           <div class="section">
             <h3>Devices List</h3>
             <p>Originally written for the BlackWidow Chroma, the driver is now compatible with a wide range of Razer's peripherals.</p>
 
             <hr>
-            <h4><span class="fa fa-check"></span>&nbsp; Supported Keyboards & Keypads</h4>
+            <h4><span class="fa fa-check"></span>&nbsp; Supported Keyboards &amp; Keypads</h4>
             <br>
             <div class="row-fluid">
               <div class="row devices">
@@ -324,7 +314,7 @@
             </div>
 
             <hr>
-            <h4><span class="fa fa-check"></span>&nbsp; Supported Mice & Mousemats</h4>
+            <h4><span class="fa fa-check"></span>&nbsp; Supported Mice &amp; Mousemats</h4>
             <br>
             <div class="row-fluid">
               <div class="row devices">
@@ -540,10 +530,7 @@
               <a href="https://github.com/openrazer/openrazer/issues">Raise an issue to find out.</a></p>
           </div>
 
-          <!---------------------------------------------------------->
           <div id="download" class="section-gap"></div>
-          <!---------------------------------------------------------->
-
           <div class="section">
             <h3>Download</h3>
             <hr>
@@ -553,8 +540,8 @@
                 <div class="panel-heading">
                   <h4 class="panel-title">
                     <a data-toggle="collapse" data-parent="#distros" href="#ubuntu">
-                      <img src="img/distros/ubuntu.png" width="24px" height="24px"/>
-                      &nbsp; Ubuntu / Linux Mint</a>
+                      <img src="img/distros/ubuntu.png" alt="Ubuntu Logo" style="width:24px; height:24px"/>
+                      &nbsp; Ubuntu / Linux Mint
                     </a>
                   </h4>
                 </div>
@@ -591,7 +578,7 @@
                 <div class="panel-heading">
                   <h4 class="panel-title">
                     <a data-toggle="collapse" data-parent="#distros" href="#debian">
-                      <img src="img/distros/debian.png" width="24px" height="24px"/>
+                      <img src="img/distros/debian.png" alt="Debian Logo" style="width:24px; height:24px"/>
                       &nbsp; Debian</a>
                   </h4>
                 </div>
@@ -609,8 +596,8 @@
                 <div class="panel-heading">
                   <h4 class="panel-title">
                     <a data-toggle="collapse" data-parent="#distros" href="#arch">
-                      <img src="img/distros/arch.png" width="24px" height="24px"/>
-                      &nbsp; Arch Linux</a>
+                      <img src="img/distros/arch.png" alt="Arch Logo" style="width:24px; height:24px"/>
+                      &nbsp; Arch Linux
                     </a>
                   </h4>
                 </div>
@@ -635,7 +622,7 @@
                 <div class="panel-heading">
                   <h4 class="panel-title">
                     <a data-toggle="collapse" data-parent="#distros" href="#fedora">
-                      <img src="img/distros/fedora.png" width="24px" height="24px"/>&nbsp; Fedora
+                      <img src="img/distros/fedora.png" alt="Fedora Logo" style="width:24px; height:24px"/>&nbsp; Fedora
                     </a>
                   </h4>
                 </div>
@@ -672,7 +659,7 @@
                 <div class="panel-heading">
                   <h4 class="panel-title">
                     <a data-toggle="collapse" data-parent="#distros" href="#opensuse">
-                      <img src="img/distros/opensuse.png" width="24px" height="24px"/>&nbsp; openSUSE
+                      <img src="img/distros/opensuse.png" alt="OpenSuse Logo" style="width:24px; height:24px"/>&nbsp; openSUSE
                     </a>
                   </h4>
                 </div>
@@ -689,7 +676,7 @@
                 <div class="panel-heading">
                   <h4 class="panel-title">
                     <a data-toggle="collapse" data-parent="#distros" href="#gentoo">
-                      <img src="img/distros/gentoo.png" width="24px" height="24px"/>&nbsp; Gentoo
+                      <img src="img/distros/gentoo.png" alt="Gentoo Logo" style="width:24px; height:24px"/>&nbsp; Gentoo
                     </a>
                   </h4>
                 </div>
@@ -715,10 +702,7 @@
             </div>
           </div>
 
-          <!---------------------------------------------------------->
           <div id="project" class="section-gap"></div>
-          <!---------------------------------------------------------->
-
           <div class="section">
             <h3>Project</h3>
             <div class="project-links">
@@ -740,10 +724,7 @@
             </div>
           </div>
 
-          <!---------------------------------------------------------->
           <div class="section-gap"></div>
-          <!---------------------------------------------------------->
-
         </div>
           <!-- Footer -->
           <br><hr>
