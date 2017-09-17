@@ -283,21 +283,51 @@ footer {
 }
 
 .panel-default > .panel-heading {
-    background-color: black !important;
+    background-color: black;
     color: white;
+}
+
+.panel-default img {
+    filter: grayscale(1);
+    transition: filter 0.25s;
+}
+
+.panel-body {
+    background-color: black;
 }
 
 .panel-default {
     border-color: black;
     color: white;
+    background-color: black;
+    transition: padding 0.25s, margin 0.25s, box-shadow 0.25s, border-radius 0.25s;
 }
+
+.panel-default.active {
+    padding: 0.5em;
+    margin: 1em 0;
+    box-shadow: 0px 0px 30px lime;
+    border-radius: 10px;
+}
+
+.panel-default.active img {
+    filter: grayscale(0);
+}
+
+.panel-default.active a {
+    color: white;
+    text-decoration: none;
+}
+
+/*
+.panel-default.active > .panel-heading,
+.panel-default.active .panel-body {
+    background-color: transparent;
+}
+*/
 
 .panel-group .panel-heading+.panel-collapse>.list-group, .panel-group .panel-heading+.panel-collapse>.panel-body {
     border-color: green;
-}
-
-.panel-body {
-    background-color: black;
 }
 
 

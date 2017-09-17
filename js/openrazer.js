@@ -5,9 +5,9 @@
  * Licensed under CC BY-SA 4.0
  */
 
-// Floating "Mini" Navigation Bar
-$(document).ready(function () {
-  $(document).scroll(function () {
+$(document).ready(function() {
+  // Floating "Mini" Navigation Bar
+  $(document).scroll(function() {
     if ( $(this).scrollTop() > 128 ) {
         $('#nav-menu').addClass('nav-sticky');
         $('#nav-menu').removeClass('nav-top');
@@ -17,6 +17,15 @@ $(document).ready(function () {
         $('#nav-menu').addClass('nav-top');
         $('#mini-logo-text').fadeOut();
     }
+  });
+
+  // Add an 'active' class when download panels are opened.
+  $('.panel-collapse').on('show.bs.collapse', function() {
+    $(this).parent().addClass('active');
+  });
+
+  $('.panel-collapse').on('hide.bs.collapse', function() {
+    $(this).parent().removeClass('active');
   });
 });
 
@@ -44,6 +53,7 @@ $("#navbar a").on('click', function(event){
 if (window.location.hash) {
     var hash = window.location.hash.substring(1);
     $('#' + hash).collapse('show');
+    $('#' + hash).parent().addClass("active");
     $('body').animate({ scrollTop: $('#'+hash).position().top - 32 });
 }
 
