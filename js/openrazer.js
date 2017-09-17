@@ -43,7 +43,6 @@ $("#navbar a").on('click', function(event){
   $('html, body').animate({
     scrollTop: $(hash).offset().top
   }, 800, function(){
-
     // Add hash (#) to URL when done scrolling (default click behavior)
     window.location.hash = hash;
   });
@@ -54,7 +53,9 @@ if (window.location.hash) {
     var hash = window.location.hash.substring(1);
     $('#' + hash).collapse('show');
     $('#' + hash).parent().addClass("active");
-    $('body').animate({ scrollTop: $('#'+hash).position().top - 32 });
+    $('html, body').animate({
+        scrollTop: $('#'+hash).position().top - 200
+    }, 500);
 }
 
 // Gracefully device images

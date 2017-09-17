@@ -319,22 +319,10 @@ footer {
     text-decoration: none;
 }
 
-/*
-.panel-default.active > .panel-heading,
-.panel-default.active .panel-body {
-    background-color: transparent;
-}
-*/
-
 .panel-group .panel-heading+.panel-collapse>.list-group, .panel-group .panel-heading+.panel-collapse>.panel-body {
     border-color: green;
 }
 
-/* For download hashes, prevent the navigation bar getting in the way */
-.panel-collapse {
-    margin-top: -120px;
-    padding-top: 120px;
-}
 
 /****************************
  * Misc.
