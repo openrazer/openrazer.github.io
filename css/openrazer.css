@@ -330,6 +330,11 @@ footer {
     border-color: green;
 }
 
+/* For download hashes, prevent the navigation bar getting in the way */
+.panel-collapse {
+    margin-top: -120px;
+    padding-top: 120px;
+}
 
 /****************************
  * Misc.
