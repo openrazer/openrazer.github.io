@@ -314,7 +314,7 @@ footer {
     filter: grayscale(0);
 }
 
-.panel-default.active a {
+.panel-default.active .panel-title a {
     color: white;
     text-decoration: none;
 }
