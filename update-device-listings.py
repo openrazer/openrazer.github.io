@@ -7,7 +7,7 @@ import os
 import sys
 import inspect
 import re
-lib_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "openrazer", "daemon", "razer_daemon", "hardware"))
+lib_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "openrazer", "daemon", "openrazer_daemon", "hardware"))
 sys.path.append(lib_path)
 
 # "openrazer" directory expected in parent folder.
@@ -42,13 +42,8 @@ for device in razer_devices:
         device_name = device_name.replace("Wireless", "")
 
     # Get and validate URLs
-    store_url = device.RAZER_URLS["store"]
     device_img_url = device.RAZER_URLS["perspective_img"]
     device_img_alt_url = device.RAZER_URLS["side_img"]
-
-    if store_url == None:
-        print("Missing store URL for " + device_name)
-        store_url = ""
 
     if device_img_url == None:
         print("Missing image URL for " + device_name)
@@ -76,20 +71,18 @@ for device in razer_devices:
                         .replace("Deathadder", "DeathAdder") \
                         .replace("Kraken", "Kraken 7.1")
 
-    def get_device_html(store_url, img_url, name, img_hover_url):
+    def get_device_html(img_url, name, img_hover_url):
         print("Adding " + name + "...")
         element_id = name.lower().replace(" ", "-")
-        return \
-        '                <a href="{0}" target="_blank" rel="noopener">\n' \
-        '                  <div id="{4}" class="col-md-3 col-sm-4 device-icon">\n' \
-        '                    <div class="inner" data-image="{1}" data-image-hover="{3}"></div>\n' \
-        '                    <h5>{2}</h5>\n' \
-        '                    <h5><code>{5}</code></h5>\n' \
-        '                  </div>\n' \
-        '                </a>\n'.format(
-            store_url, img_url, name, img_hover_url, element_id, lsusb)
+        return """
+            <div id="{3}" class="col-md-3 col-sm-4 device-icon">
+                <div class="inner" data-image="{0}" data-image-hover="{2}"></div>
+                <h5>{1}</h5>
+                <h5><code>{4}</code></h5>
+            </div>
+            """.format(img_url, name, img_hover_url, element_id, lsusb).strip()
 
-    html_buffer = get_device_html(store_url, device_img_url, device_name_ui, device_img_alt_url)
+    html_buffer = "            " + get_device_html(device_img_url, device_name_ui, device_img_alt_url) + "\n"
 
     if device_type == "keyboards":
         html_keyboards += html_buffer
