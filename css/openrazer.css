@@ -220,6 +220,29 @@ footer {
     padding: 8px;
     color: #7F7F7F;
     font-size: 12px;
+    overflow-y: auto;
+}
+
+footer .left {
+    float: left;
+}
+
+footer .right {
+    float: right;
+}
+
+footer .social img {
+    width: 32px;
+    height: 32px;
+}
+
+footer .social:hover,
+footer .social:focus {
+    filter: brightness(0.5);
+}
+
+footer .social + .social {
+    margin-left: 0.5em;
 }
 
 /****************************
