@@ -57,19 +57,14 @@ for device in razer_devices:
 
     # Clean up name from class
     device_name_ui = re.sub(r"(\w)([A-Z])", r"\1 \2", device_name)
-    device_name_ui = device_name_ui.replace("Black Widow", "BlackWidow") \
-                        .replace("T E", "Tournament Edition") \
+    device_name_ui = device_name_ui \
+                        .replace("Black Widow", "BlackWidow") \
                         .replace("Death Stalker", "DeathStalker") \
                         .replace("TE", "Tournament Edition") \
-                        .replace("Fire Fly", "Firefly") \
                         .replace("20", " 20") \
                         .replace("QH D", "QHD") \
                         .replace(" X", " X ") \
-                        .replace("BlackWidow 2012", "BlackWidow Ultimate 2012 (Classic)") \
-                        .replace("BlackWidow 2013", "BlackWidow Ultimate 2013") \
-                        .replace("BlackWidow 2016", "BlackWidow Ultimate 2016") \
-                        .replace("Deathadder", "DeathAdder") \
-                        .replace("Kraken", "Kraken 7.1")
+                        .replace("Kraken71", "Kraken 7.1")
 
     def get_device_html(img_url, name, img_hover_url):
         print("Adding " + name + "...")
