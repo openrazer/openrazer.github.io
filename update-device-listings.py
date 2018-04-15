@@ -64,6 +64,7 @@ for device in razer_devices:
                         .replace("20", " 20") \
                         .replace("QH D", "QHD") \
                         .replace(" X", " X ") \
+                        .replace("Abyssus1800", "Abyssus 1800") \
                         .replace("Kraken71", "Kraken 7.1")
 
     def get_device_html(img_url, name, img_hover_url):
