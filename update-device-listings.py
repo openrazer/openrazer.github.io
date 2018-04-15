@@ -47,7 +47,7 @@ for device in razer_devices:
 
     if device_img_url == None:
         print("Missing image URL for " + device_name)
-        device_img_url = "img/logo.png"
+        device_img_url = "img/placeholder.png"
 
     if device_img_alt_url == None:
         device_img_alt_url = device_img_url
