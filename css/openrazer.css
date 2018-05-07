@@ -1,7 +1,7 @@
 /*
  *  Designed by @lah7 for the Razer Chroma Linux drivers project.
  *
- * Copyright (C) 2016-2017 Luke Horwell (lah7)
+ * Copyright (C) 2016-2018 Luke Horwell (lah7)
  * Licensed under CC BY-SA 4.0
  */
 
@@ -344,6 +344,11 @@ footer .social + .social {
     padding-top: 8px;
     padding-bottom: 8px;
     color: red;
+}
+
+.distro-logo {
+    width: 24px;
+    height: 24px;
 }
 
 /****************************
