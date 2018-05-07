@@ -296,7 +296,7 @@ footer .social + .social {
     color: white;
 }
 
-.panel-default img {
+.distro-logo {
     filter: grayscale(1);
     transition: filter 0.25s;
 }
@@ -319,7 +319,7 @@ footer .social + .social {
     border-radius: 10px;
 }
 
-.panel-default.active img {
+.panel-default.active .distro-logo {
     filter: grayscale(0);
 }
 
@@ -346,9 +346,19 @@ footer .social + .social {
     color: red;
 }
 
+/* Distro list */
 .distro-logo {
     width: 24px;
     height: 24px;
+}
+
+.panel-title a {
+    text-decoration: none;
+}
+
+.panel-title a:hover img,
+.panel-title a:focus img {
+    filter: grayscale(0) brightness(0.5);
 }
 
 /****************************
