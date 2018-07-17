@@ -42,8 +42,8 @@ for device in razer_devices:
         device_name = device_name.replace("Wireless", "")
 
     # Get and validate URLs
-    device_img_url = device.RAZER_URLS["perspective_img"]
-    device_img_alt_url = device.RAZER_URLS["side_img"]
+    device_img_url = device.RAZER_URLS.get("perspective_img")
+    device_img_alt_url = device.RAZER_URLS.get("side_img")
 
     if device_img_url == None:
         print("Missing image URL for " + device_name)
