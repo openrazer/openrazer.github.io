@@ -44,6 +44,17 @@ for device in razer_devices:
     # Get and validate URLs
     device_img_url = device.RAZER_URLS.get("perspective_img")
     device_img_alt_url = device.RAZER_URLS.get("side_img")
+    device_img_alt2_url = device.RAZER_URLS.get("top_img")
+
+    if not device_img_url:
+        print("Missing image URL for " + device_name)
+        device_img_url = "img/placeholder.png"
+
+        if device_img_alt2_url:
+            device_img_url = device_img_alt2_url
+
+    if not device_img_alt_url:
+        device_img_alt_url = device_img_url
 
     if device_img_url == None:
         print("Missing image URL for " + device_name)
