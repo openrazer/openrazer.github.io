@@ -67,6 +67,10 @@ hr {
     background-size: 100%;
 }
 
+#header h2 {
+    margin: 1em 3.25em;
+}
+
 body:before {
     content: " ";
     position: absolute;
