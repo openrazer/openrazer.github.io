@@ -448,60 +448,9 @@
           <div class="section">
             <h3>Download</h3>
             <hr>
+            <h4>Officially Supported</h4>
             <div class="panel-group" id="distros">
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#distros" href="#ubuntu">
-                      <img class="distro-logo" src="img/distros/ubuntu.png" alt="Ubuntu Logo"/>
-                      &nbsp; Ubuntu / Linux Mint
-                    </a>
-                  </h4>
-                </div>
-                <div id="ubuntu" class="panel-collapse collapse">
-                  <div class="panel-body">
-                    <h4><span class="fa fa-cube"></span>&nbsp; From the PPA</h4>
-                    <p>This also allows the drivers to stay up-to-date when new versions are released.</p>
-
-                    <p>Stable builds are recommended:</p>
-                    <pre><code><span class="fa fa-dollar"></span> sudo add-apt-repository ppa:openrazer/stable</code></pre>
-
-                    <p>Alternately, if you wish to use the latest development builds, use <code>daily</code> instead -- <strong>use at your own risk!</strong></p>
-                    <pre><code><span class="fa fa-dollar"></span> sudo add-apt-repository ppa:openrazer/daily</code></pre>
-
-                    <p>After adding the PPA, install the packages:</p>
-<pre><code><span class="fa fa-dollar"></span> sudo apt update</code>
-<code><span class="fa fa-dollar"></span> sudo apt install openrazer-meta</code></pre>
-		    <p><strong>NOTE:</strong> If you get dependency errors when trying to install the driver packages please make sure that you have enabled the "universe" repository in <strong>Software & Updates</strong></p>
-
-                    <p>After the drivers are installed, please restart the computer.</p>
-
-                    <p>This PPA supports these versions:</p>
-                    <ul>
-                      <li>Ubuntu 16.04 (Xenial) and newer</li>
-                      <li>Linux Mint 18 and newer</li>
-                    </ul>
-                    <hr>
-                  </div>
-                </div>
-              </div>
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#distros" href="#debian">
-                      <img class="distro-logo" src="img/distros/debian.png" alt="Debian Logo"/>
-                      &nbsp; Debian</a>
-                  </h4>
-                </div>
-                <div id="debian" class="panel-collapse collapse">
-                  <div class="panel-body">
-                    <h4><span class="fa fa-cube"></span> openSUSE Build Service</h4>
-                    <p>Builds for Debian are built using the openSUSE Build Service. Instructions and packages are <a href="https://software.opensuse.org/download.html?project=hardware%3Arazer&package=openrazer-meta" target="_blank" rel="noopener">available here.</a></p>
-                    <p>After the drivers are installed, please restart the computer.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="panel panel-default">
+              <div class="panel panel-default"> <!-- Arch -->
                 <div class="panel-heading">
                   <h4 class="panel-title">
                     <a data-toggle="collapse" data-parent="#distros" href="#arch">
@@ -525,7 +474,25 @@
                   </div>
                 </div>
               </div>
-              <div class="panel panel-default">
+
+              <div class="panel panel-default"> <!-- Debian -->
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#distros" href="#debian">
+                      <img class="distro-logo" src="img/distros/debian.png" alt="Debian Logo"/>
+                      &nbsp; Debian</a>
+                  </h4>
+                </div>
+                <div id="debian" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <h4><span class="fa fa-cube"></span> openSUSE Build Service</h4>
+                    <p>Builds for Debian are built using the openSUSE Build Service. Instructions and packages are <a href="https://software.opensuse.org/download.html?project=hardware%3Arazer&package=openrazer-meta" target="_blank" rel="noopener">available here.</a></p>
+                    <p>After the drivers are installed, please restart the computer.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel panel-default"> <!-- Fedora -->
                 <div class="panel-heading">
                   <h4 class="panel-title">
                     <a data-toggle="collapse" data-parent="#distros" href="#fedora">
@@ -561,7 +528,25 @@
                   </div>
                 </div>
               </div>
-              <div class="panel panel-default">
+
+              <div class="panel panel-default"> <!-- Mageia -->
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#distros" href="#mageia">
+                      <img class="distro-logo" src="img/distros/mageia.png" alt="Mageia Logo"/>&nbsp; Mageia
+                    </a>
+                  </h4>
+                </div>
+                <div id="mageia" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <h4><span class="fa fa-cube"></span> openSUSE Build Service</h4>
+                    <p>Instructions and a one-click install are <a href="https://software.opensuse.org/download.html?project=hardware%3Arazer&package=openrazer-meta" target="_blank" rel="noopener">available here.</a></p>
+                    <p>After the drivers are installed, please restart the computer.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel panel-default"> <!-- openSUSE -->
                 <div class="panel-heading">
                   <h4 class="panel-title">
                     <a data-toggle="collapse" data-parent="#distros" href="#opensuse">
@@ -577,7 +562,47 @@
                   </div>
                 </div>
               </div>
-              <div class="panel panel-default">
+
+              <div class="panel panel-default"> <!-- Ubuntu -->
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#distros" href="#ubuntu">
+                      <img class="distro-logo" src="img/distros/ubuntu.png" alt="Ubuntu Logo"/>
+                      &nbsp; Ubuntu / Linux Mint
+                    </a>
+                  </h4>
+                </div>
+                <div id="ubuntu" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <h4><span class="fa fa-cube"></span>&nbsp; From the PPA</h4>
+                    <p>This also allows the drivers to stay up-to-date when new versions are released.</p>
+
+                    <p>Stable builds are recommended:</p>
+                    <pre><code><span class="fa fa-dollar"></span> sudo add-apt-repository ppa:openrazer/stable</code></pre>
+
+                    <p>Alternately, if you wish to use the latest development builds, use <code>daily</code> instead -- <strong>use at your own risk!</strong></p>
+                    <pre><code><span class="fa fa-dollar"></span> sudo add-apt-repository ppa:openrazer/daily</code></pre>
+
+                    <p>After adding the PPA, install the packages:</p>
+<pre><code><span class="fa fa-dollar"></span> sudo apt update</code>
+<code><span class="fa fa-dollar"></span> sudo apt install openrazer-meta</code></pre>
+		    <p><strong>NOTE:</strong> If you get dependency errors when trying to install the driver packages please make sure that you have enabled the "universe" repository in <strong>Software & Updates</strong></p>
+
+                    <p>After the drivers are installed, please restart the computer.</p>
+
+                    <p>This PPA supports these versions:</p>
+                    <ul>
+                      <li>Ubuntu 16.04 (Xenial) and newer</li>
+                      <li>Linux Mint 18 and newer</li>
+                    </ul>
+                    <hr>
+                  </div>
+                </div>
+              </div>
+
+            <h4>Community Supported</h4>
+
+              <div class="panel panel-default"> <!-- Gentoo -->
                 <div class="panel-heading">
                   <h4 class="panel-title">
                     <a data-toggle="collapse" data-parent="#distros" href="#gentoo">
@@ -597,7 +622,29 @@
                   </div>
                 </div>
               </div>
-              <div class="panel panel-default">
+
+              <div class="panel panel-default"> <!-- Red Hat / CentOS -->
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#distros" href="#redhat">
+                      <img class="distro-logo" src="img/distros/redhat.png" alt="Red Hat Logo"/>&nbsp; Red Hat / CentOS
+                    </a>
+                  </h4>
+                </div>
+                <div id="redhat" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <h4><span class="fa fa-cube"></span> Repository provided by <a href="https://github.com/moozhub">moozhub</a></h4>
+                    <p>
+                        Please follow the instructions from this repository:
+                        <ul>
+                            <li><a href="https://github.com/moozhub/yum-repo-mooz">https://github.com/moozhub/yum-repo-mooz</a></li>
+                        </ul>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel panel-default"> <!-- Solus -->
                 <div class="panel-heading">
                   <h4 class="panel-title">
                     <a data-toggle="collapse" data-parent="#distros" href="#solus">
@@ -615,7 +662,8 @@
                   </div>
                 </div>
               </div>
-              <div class="panel panel-default">
+
+              <div class="panel panel-default"> <!-- Void Linux -->
                 <div class="panel-heading">
                   <h4 class="panel-title">
                     <a data-toggle="collapse" data-parent="#distros" href="#voidlinux">
@@ -635,46 +683,6 @@
                     </p>
                     <p>To install:</p>
                     <pre><code><span class="fa fa-dollar"></span> xbps-install -S openrazer-meta</code></pre>
-                    <p>After the drivers are installed, please restart the computer.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#distros" href="#redhat">
-                      <img class="distro-logo" src="img/distros/redhat.png" alt="Red Hat Logo"/>&nbsp; Red Hat / CentOS
-                    </a>
-                  </h4>
-                </div>
-                <div id="redhat" class="panel-collapse collapse">
-                  <div class="panel-body">
-                    <h4><span class="fa fa-cube"></span> Repository provided by <a href="https://github.com/moozhub">moozhub</a></h4>
-                    <p>
-                        Please follow the instructions from this repository:
-                        <ul>
-                            <li><a href="https://github.com/moozhub/yum-repo-mooz">https://github.com/moozhub/yum-repo-mooz</a></li>
-                        </ul>
-                    </p>
-                    <div class="danger">
-                        <h5><span class="fa fa-warning"></span> OpenRazer <strong>does not officially support</strong> this distribution.
-                        If you need assistance, please raise an issue on the <a href="https://github.com/moozhub/yum-repo-mooz">yum-repo-mooz</a> repository.</h5>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#distros" href="#mageia">
-                      <img class="distro-logo" src="img/distros/mageia.png" alt="Mageia Logo"/>&nbsp; Mageia
-                    </a>
-                  </h4>
-                </div>
-                <div id="mageia" class="panel-collapse collapse">
-                  <div class="panel-body">
-                    <h4><span class="fa fa-cube"></span> openSUSE Build Service</h4>
-                    <p>Instructions and a one-click install are <a href="https://software.opensuse.org/download.html?project=hardware%3Arazer&package=openrazer-meta" target="_blank" rel="noopener">available here.</a></p>
                     <p>After the drivers are installed, please restart the computer.</p>
                   </div>
                 </div>
