@@ -507,8 +507,7 @@
 
                     <div class="danger">
                       <h5><span class="fa fa-warning"></span>
-                      <a href="https://bugzilla.redhat.com/show_bug.cgi?id=1228897" target="_blank" rel="noopener" style="color:red"><u>Due to this bug</u></a>,
-                      <code style="color:red">kernel-devel</code> needs to be installed explicitly.
+                      Due to a bug in Fedora, <code style="color:red">kernel-devel</code> needs to be installed explicitly, otherwise the wrong kernel headers (<code style="color:red">kernel-debug-devel</code>) will be installed.
                       </h5>
                     </div>
 
@@ -516,12 +515,12 @@
                     <pre><code><span class="fa fa-dollar"></span> dnf config-manager --add-repo http://download.opensuse.org/repositories/hardware:razer/Fedora_Rawhide/hardware:razer.repo</code>
 <code><span class="fa fa-dollar"></span> dnf install openrazer-meta kernel-devel</code></pre>
 
-                    <h5>Fedora 28</h5>
-                    <pre><code><span class="fa fa-dollar"></span> dnf config-manager --add-repo http://download.opensuse.org/repositories/hardware:razer/Fedora_28/hardware:razer.repo</code>
+                    <h5>Fedora 29</h5>
+                    <pre><code><span class="fa fa-dollar"></span> dnf config-manager --add-repo http://download.opensuse.org/repositories/hardware:razer/Fedora_29/hardware:razer.repo</code>
 <code><span class="fa fa-dollar"></span> dnf install openrazer-meta kernel-devel</code></pre>
 
-                    <h5>Fedora 27</h5>
-                    <pre><code><span class="fa fa-dollar"></span> dnf config-manager --add-repo http://download.opensuse.org/repositories/hardware:razer/Fedora_27/hardware:razer.repo</code>
+                    <h5>Fedora 28</h5>
+                    <pre><code><span class="fa fa-dollar"></span> dnf config-manager --add-repo http://download.opensuse.org/repositories/hardware:razer/Fedora_28/hardware:razer.repo</code>
 <code><span class="fa fa-dollar"></span> dnf install openrazer-meta kernel-devel</code></pre>
 
                     <p>After the drivers are installed, please restart the computer.</p>
