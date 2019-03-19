@@ -42,19 +42,11 @@ for device in razer_devices:
         device_name = device_name.replace("Wireless", "")
 
     # Get and validate URLs
-    device_img_url = device.RAZER_URLS.get("perspective_img")
-    device_img_alt_url = device.RAZER_URLS.get("side_img")
-    device_img_alt2_url = device.RAZER_URLS.get("top_img")
+    device_img_url = device.DEVICE_IMAGE
 
     if not device_img_url:
         print("Missing image URL for " + device_name)
         device_img_url = "img/placeholder.png"
-
-        if device_img_alt2_url:
-            device_img_url = device_img_alt2_url
-
-    if not device_img_alt_url:
-        device_img_alt_url = device_img_url
 
     # Strip Razer name
     device_name = device_name.replace("Razer", "")
@@ -69,20 +61,21 @@ for device in razer_devices:
                         .replace("QH D", "QHD") \
                         .replace(" X", " X ") \
                         .replace("Abyssus1800", "Abyssus 1800") \
-                        .replace("Kraken71", "Kraken 7.1")
+                        .replace("Kraken71", "Kraken 7.1") \
+                        .replace("Adv", "Advanced")
 
-    def get_device_html(img_url, name, img_hover_url):
+    def get_device_html(img_url, name):
         print("Adding " + name + "...")
         element_id = name.lower().replace(" ", "-")
         return """
-            <div id="{3}" class="col-md-3 col-sm-4 device-icon">
-                <div class="inner" data-image="{0}" data-image-hover="{2}"></div>
+            <div id="{2}" class="col-md-3 col-sm-4 device-icon">
+                <div class="inner" data-image="{0}"></div>
                 <h5>{1}</h5>
-                <h5><code>{4}</code></h5>
+                <h5><code>{3}</code></h5>
             </div>
-            """.format(img_url, name, img_hover_url, element_id, lsusb).strip()
+            """.format(img_url, name, element_id, lsusb).strip()
 
-    html_buffer = "            " + get_device_html(device_img_url, device_name_ui, device_img_alt_url) + "\n"
+    html_buffer = "            " + get_device_html(device_img_url, device_name_ui) + "\n"
 
     if device_type == "keyboards":
         html_keyboards += html_buffer
