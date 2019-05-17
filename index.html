@@ -566,11 +566,14 @@
 
                     <div class="danger">
                       <h5><span class="fa fa-warning"></span>
-                      Due to a bug in Fedora, <code style="color:red">kernel-devel</code> needs to be installed explicitly, otherwise the wrong kernel headers (<code style="color:red">kernel-debug-devel</code>) will be installed.
+                      Due to a bug in Fedora, the wrong kernel headers (<code style="color:red">kernel-debug-devel</code>) may be installed and cause OpenRazer to fail installation.
                       </h5>
                     </div>
 
-                    <p>Instructions and downloadable builds for Fedora are <a href="https://software.opensuse.org/download.html?project=hardware%3Arazer&package=openrazer-meta" target="_blank" rel="noopener">available here.</a></p>
+                    <p>To fix this, you must install <code>kernel-devel</code> explictly:</p>
+                    <pre><code><span class="fa fa-dollar"></span> dnf install kernel-devel</code></pre>
+
+                    <p>Then, proceed to follow instructions for your version of Fedora from the <a href="https://software.opensuse.org/download.html?project=hardware%3Arazer&package=openrazer-meta" target="_blank" rel="noopener">openSUSE Build Service.</a></p>
                     <p>After the drivers are installed, please restart the computer.</p>
 
                   </div>
