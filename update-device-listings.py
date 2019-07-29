@@ -55,13 +55,16 @@ for device in razer_devices:
     device_name_ui = re.sub(r"(\w)([A-Z])", r"\1 \2", device_name)
     device_name_ui = device_name_ui \
                         .replace("Black Widow", "BlackWidow") \
+                        .replace("Death Adder", "DeathAdder") \
                         .replace("Death Stalker", "DeathStalker") \
                         .replace("TE", "Tournament Edition") \
                         .replace("20", " 20") \
+                        .replace("3500", " 3500") \
                         .replace("QH D", "QHD") \
                         .replace(" X", " X ") \
                         .replace("Abyssus1800", "Abyssus 1800") \
                         .replace("Kraken71", "Kraken 7.1") \
+                        .replace("Adder3_5 G", "Adder 3.5G") \
                         .replace("Adv", "Advanced")
 
     def get_device_html(img_url, name):
