@@ -709,6 +709,40 @@
                 </div>
               </div>
 
+              <div class="panel panel-default"> <!-- NixOS -->
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#distros" href="#nixos">
+                      <img class="distro-logo" src="img/distros/nixos.png" alt="NixOS Logo"/>&nbsp; NixOS
+                    </a>
+                  </h4>
+                </div>
+                <div id="nixos" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <h4><span class="fa fa-cube"></span> NixOS Module</h4>
+                    <p>To enable the OpenRazer module in NixOS, add this snippet to your <code>configuration.nix</code>:
+                    </p>
+                    <pre><code>hardware.openrazer.enable &equals; true&semi;</code></pre>
+                    <div class="danger">
+                      <h5>
+                        <span class="fa fa-warning"></span>
+                        In order to run the openrazer-daemon service, your user needs to be part of the <code>plugdev</code>
+                        group.
+                      </h5>
+                    </div>
+                    <pre><code>users.users.&lt;name&quest;&gt;.extraGroups = [ &quot;plugdev&quot; ];</code></pre>
+                    <p>Rebuild your NixOS configuration:</p>
+                    <pre><code><span class="fa fa-dollar"></span> sudo nixos-rebuild switch</code></pre>
+                    <h4>nix-shell</h4>
+                    <p>Following the example provided by python section of the nixpkgs <a
+                        href="https://nixos.org/nixpkgs/manual/#temporary-python-environment-with-nix-shell">documentation</a>,
+                      here is one way to launch a <code>nix-shell</code> with the dependencies for OpenRazer, using
+                      <code>python3.7</code>:</p>
+                    <pre><code><span class="fa fa-dollar"></span> nix-shell -p 'python37.withPackages(ps: with ps; [ openrazer ])' -p openrazer-daemon</code></pre>
+                  </div>
+                </div>
+              </div>
+
               <div class="panel panel-default"> <!-- Red Hat / CentOS -->
                 <div class="panel-heading">
                   <h4 class="panel-title">
