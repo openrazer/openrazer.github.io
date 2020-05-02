@@ -16,7 +16,7 @@ import mouse
 import mouse_mat
 import core
 import headsets
-import mug
+import accessory
 
 razer_devices = []
 html_keyboards = ""
@@ -24,7 +24,7 @@ html_mice = ""
 html_other = ""
 
 # Gather list of devices by looking in Razer* classes
-for module in [keyboards, mouse, mouse_mat, core, headsets, mug]:
+for module in [keyboards, mouse, mouse_mat, core, headsets, accessory]:
     for inspection in inspect.getmembers(module):
         if inspection[0].startswith("Razer"):
             razer_devices.append(inspection[1])
