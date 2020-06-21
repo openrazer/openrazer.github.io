@@ -19,9 +19,7 @@ import headsets
 import accessory
 
 razer_devices = []
-html_keyboards = ""
-html_mice = ""
-html_other = ""
+parsed_devices = []
 
 # Gather list of devices by looking in Razer* classes
 for module in [keyboards, mouse, mouse_mat, core, headsets, accessory]:
@@ -29,8 +27,21 @@ for module in [keyboards, mouse, mouse_mat, core, headsets, accessory]:
         if inspection[0].startswith("Razer"):
             razer_devices.append(inspection[1])
 
+# Used to remove plurals for consistency
+device_types_from_daemon = {
+    "keyboards": "keyboard",
+    "headsets": "headset"
+}
+
 for device in razer_devices:
-    device_type = inspect.getmodule(device).__name__
+    daemon_type = inspect.getmodule(device).__name__
+    print(device)
+
+    try:
+        device_type = device_types_from_daemon[daemon_type]
+    except KeyError:
+        device_type = daemon_type
+
     device_name = device.__name__
     lsusb = str(hex(device.USB_VID))[-4:] + ":" + str(hex(device.USB_PID))[-4:]
     lsusb = lsusb.replace("x", "0").upper()
@@ -65,46 +76,24 @@ for device in razer_devices:
                         .replace("Abyssus1800", "Abyssus 1800") \
                         .replace("Kraken71", "Kraken 7.1") \
                         .replace("Adder3_5 G", "Adder 3.5G") \
-                        .replace("Adv", "Advanced")
+                        .replace("Adv", "Advanced") \
+                        .replace("HD K", "HDK")
 
-    def get_device_html(img_url, name):
-        print("Adding " + name + "...")
-        element_id = name.lower().replace(" ", "-")
-        return """
-            <div id="{2}" class="col-md-3 col-sm-4 device-icon">
-                <div class="inner" data-image="{0}"></div>
-                <h5>{1}</h5>
-                <h5><code>{3}</code></h5>
-            </div>
-            """.format(img_url, name, element_id, lsusb).strip()
-
-    html_buffer = "            " + get_device_html(device_img_url, device_name_ui) + "\n"
-
-    if device_type == "keyboards":
-        html_keyboards += html_buffer
-
-    elif device_type in ["mouse", "mouse_mat"]:
-        html_mice += html_buffer
-
-    else:
-        html_other += html_buffer
+    parsed_devices.append({
+        "name": device_name_ui,
+        "type": device_type,
+        "image_url": device_img_url,
+        "vid": lsusb.split(":")[0],
+        "pid": lsusb.split(":")[1]
+    })
 
 # Replace sections
-with open("index.html") as f:
-    raw_html = f.readlines()
-index_html = "".join(raw_html)
-
-def update_placeholders(html_data, placeholder_name):
-    global index_html
-    before_comment = "                <!-- START {0} -->".format(placeholder_name)
-    after_comment = "                <!-- END {0} -->".format(placeholder_name)
-    before = index_html.split(before_comment)
-    after = index_html.split(after_comment)
-    index_html = before[0] + before_comment + "\n" + html_data + "\n" + after_comment + after[1]
-
-update_placeholders(html_keyboards, "KEYBOARD")
-update_placeholders(html_mice, "MICE")
-update_placeholders(html_other, "OTHER")
-
-with open("index.html", "w") as f:
-    f.writelines(index_html)
+with open("_data/devices.yml", "w") as f:
+    f.write("#\n# This file was auto-generated using the update-device-listings.py in the root of this repository.\n#\n")
+    for device in parsed_devices:
+        f.write('\n- name: "{0}"'.format(device["name"]))
+        f.write('\n  type: "{0}"'.format(device["type"]))
+        f.write('\n  image_url: "{0}"'.format(device["image_url"]))
+        f.write('\n  vid: "{0}"'.format(device["vid"]))
+        f.write('\n  pid: "{0}"'.format(device["pid"]))
+        f.write('\n')

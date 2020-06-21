@@ -1,0 +1,14 @@
+---
+layout: null
+---
+[
+  {% for device in site.data.devices %}
+    {
+      "name": "{{ device.name }}",
+      "type": "{{ device.type }}",
+      "image_url": "{{ device.image_url }}",
+      "vid": "{{ device.vid }}",
+      "pid": "{{ device.pid }}"
+    }{% if forloop.last == false %},{% endif %}
+  {% endfor %}
+]
