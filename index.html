@@ -63,7 +63,7 @@ layout: null
                 <div class="col-md-4 col-sm-6 feature">
                   <div class="features-icon"><span class="fa fa-gears fa-5x fa-va"></span></div>
                   <h4>Daemon</h4>
-                  <p>A lightweight service that runs in the background to interact with your Razer devices.</p>
+                  <p>A background service that interacts with your Razer devices.</p>
                 </div>
                 <div class="col-md-4 col-sm-6 feature">
                   <div class="features-icon"><span class="fa fa-linux fa-5x fa-va"></span></div>
@@ -190,6 +190,24 @@ layout: null
           <div id="download" class="section-gap"></div>
           <div class="section">
             <h3>Download</h3>
+            <p>OpenRazer consists of a driver, a daemon and a Python library.</p>
+
+            <p>The "out-of-tree" driver is compiled using DKMS.
+            Kernel headers that match your running kernel version need to be installed.
+            In most distributions, this is usually a metapackage. Some packages (e.g.
+            Ubuntu/Debian) <code>Recommends</code> the default headers and would be installed automatically.</p>
+
+            <p>In order for the daemon to work, you'll need to add your user to the <code>plugdev</code> group.
+            In most distributions, this is:</p>
+            <pre>sudo gpasswd -a $USER plugdev</pre>
+
+            <p>After following the instructions for your distribution below, a system reboot is
+            recommended so the user group change takes effect, and to bind the OpenRazer driver.</p>
+
+            <p>On its own, OpenRazer doesn't provide a graphical interface, but
+            you can install one of the mentioned at the <a href="#">top of this page</a> or
+            <a href="https://github.com/openrazer/openrazer#applications">this list</a>.</p>
+
             <hr>
             <h4>Officially Supported</h4>
             <div class="panel-group" id="distros">
@@ -338,7 +356,7 @@ layout: null
                 </div>
               </div>
 
-            <h4>Community/Distro Supported</h4>
+            <h4>Community Supported</h4>
 
               <div class="panel panel-default"> <!-- Gentoo -->
                 <div class="panel-heading">
@@ -497,7 +515,7 @@ layout: null
         <br><hr>
         <footer>
             <div class="left">
-                <p>This project is licensed under the GPL and is not officially endorsed by
+                <p>This project is licensed under the GPLv2 and is <strong>not</strong> a project by
                 <a href="https://www.razerzone.com/">Razer Inc</a>.</p>
                 <p>Brought to you by <a href="https://github.com/terrycain">terrycain</a>,
                 <a href="https://github.com/z3ntu">z3ntu</a>,
