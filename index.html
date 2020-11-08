@@ -111,10 +111,10 @@ layout: null
           <div id="devices" class="section-gap"></div>
           <div class="section">
             <h3>Devices List</h3>
-            <p>Originally written for the BlackWidow Chroma, the driver is now compatible with a wide range of Razer's peripherals.</p>
+            <p>Originally written for the BlackWidow Chroma, the driver is now compatible with <strong>{{ site.data.devices | size }} Razer peripherals.</strong></p>
 
             <hr>
-            <h4><span class="fa fa-check"></span>&nbsp; Supported Keyboards &amp; Keypads</h4>
+            <h4><span class="fa fa-check"></span>&nbsp; Supported Keyboards</h4>
             <br>
             <div class="row-fluid">
               <div class="row devices">
@@ -133,12 +133,71 @@ layout: null
             </div>
 
             <hr>
-            <h4><span class="fa fa-check"></span>&nbsp; Supported Mice &amp; Mousemats</h4>
+            <h4><span class="fa fa-check"></span>&nbsp; Supported Mice</h4>
             <br>
             <div class="row-fluid">
               <div class="row devices">
                 {% for device in site.data.devices %}
-                    {% if device.type != "mouse" and device.type != "mouse_mat" %}
+                    {% if device.type != "mouse" %}
+                        {% continue %}
+                    {% endif %}
+
+                    <div id="{{ device.name | replace:' ', '-' }}" class="col-md-3 col-sm-4 device-icon">
+                        <div class="inner" data-image="{{ device.image_url }}"></div>
+                        <h5>{{ device.name }}</h5>
+                        <h5><code>{{ device.vid }}:{{ device.pid }}</code></h5>
+                    </div>
+                {% endfor %}
+              </div>
+            </div>
+
+            <hr>
+            <h4><span class="fa fa-check"></span>&nbsp; Supported Mousemats</h4>
+            <br>
+            <div class="row-fluid">
+              <div class="row devices">
+                {% for device in site.data.devices %}
+                    {% if device.type != "mousemat" %}
+                        {% continue %}
+                    {% endif %}
+
+                    <div id="{{ device.name | replace:' ', '-' }}" class="col-md-3 col-sm-4 device-icon">
+                        <div class="inner" data-image="{{ device.image_url }}"></div>
+                        <h5>{{ device.name }}</h5>
+                        <h5><code>{{ device.vid }}:{{ device.pid }}</code></h5>
+                    </div>
+                {% endfor %}
+              </div>
+            </div>
+
+            <hr>
+            <h4><span class="fa fa-check"></span>&nbsp; Supported Keypads</h4>
+            <p>Please note that a third party application is required for key rebinding as this is not supported.</p>
+            <br>
+            <div class="row-fluid">
+              <div class="row devices">
+                {% for device in site.data.devices %}
+                    {% if device.type != "keypad" %}
+                        {% continue %}
+                    {% endif %}
+
+                    <div id="{{ device.name | replace:' ', '-' }}" class="col-md-3 col-sm-4 device-icon">
+                        <div class="inner" data-image="{{ device.image_url }}"></div>
+                        <h5>{{ device.name }}</h5>
+                        <h5><code>{{ device.vid }}:{{ device.pid }}</code></h5>
+                    </div>
+                {% endfor %}
+              </div>
+            </div>
+
+            <hr>
+            <h4><span class="fa fa-check"></span>&nbsp; Supported Headphones</h4>
+            <p>Please note that OpenRazer only supports lighting features and doesn't provide additional audio features.</p>
+            <br>
+            <div class="row-fluid">
+              <div class="row devices">
+                {% for device in site.data.devices %}
+                    {% if device.type != "headset" %}
                         {% continue %}
                     {% endif %}
 
@@ -157,7 +216,7 @@ layout: null
             <div class="row-fluid">
               <div class="row devices">
                 {% for device in site.data.devices %}
-                    {% if device.type == "keyboard" or device.type == "mouse" or device.type == "mouse_mat" %}
+                    {% if device.type == "keyboard" or device.type == "mouse" or device.type == "mousemat" or device.type == "keypad" or device.type == "headset" %}
                         {% continue %}
                     {% endif %}
 
@@ -169,21 +228,6 @@ layout: null
                 {% endfor %}
               </div>
             </div>
-
-            <!--<hr>
-            <h4 class="partial-support"><span class="fa fa-clock-o"></span>&nbsp; Requested</h4>
-            <p class="partial-support">These are not yet supported and they are work in progress or need testing.</p>
-            <div class="row-fluid">
-              <div class="row devices">
-                <div class="col-md-3 col-sm-4 device-icon partial-support">
-                  <a href="https://www.razerzone.com/store/razer-blackwidow-tournament-edition-chroma" target="_blank" rel="noopener">
-                    <div class="inner" data-image="https://assets.razerzone.com/eeimages/products/21939/razer-blackwidow-tournament-edition-chroma-gallery-02__store_gallery.png"></div>
-                    <h5>BlackWidow Tournament Edition Stealth</h5>
-                  </a>
-                </div>
-              </div>
-              <br>
-            </div>-->
 
             <br>
             <p class="gray">
