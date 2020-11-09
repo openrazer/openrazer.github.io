@@ -1,7 +1,7 @@
 /*
- *  Designed by @lah7 for the Razer Chroma Linux drivers project.
+ * Designed by @lah7 for the OpenRazer project.
  *
- * Copyright (C) 2016-2018 Luke Horwell (lah7)
+ * Copyright (C) 2016-2020 Luke Horwell (lah7)
  * Licensed under CC BY-SA 4.0
  */
 
@@ -60,8 +60,6 @@ hr {
 /****************************
  * Header
 *****************************/
-
-/* Header */
 #header {
     height: 143px;
     margin-top: 8px;
@@ -202,11 +200,8 @@ body:before {
 
 .device-icon .inner {
     height: 150px;
-    background-image: url(../img/placeholder.png);
-    background-position: center !important;
-    background-size: contain !important;
-    background-repeat: no-repeat !important;
-    transition: 0.2s background-image linear;
+    max-width: 100%;
+    object-fit: cover;
 }
 
 .device-icon h5 {
@@ -224,11 +219,6 @@ body:before {
 
 .partial-support:hover {
     border-color: yellow;
-}
-
-/* Custom Tweaks */
-#chroma-mug-holder > .inner {
-    background-size: 150% !important;
 }
 
 /****************************

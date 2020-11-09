@@ -1,7 +1,7 @@
 /*
- *  Designed by @lah7 for the Razer Chroma Linux drivers project.
+ * Designed by @lah7 for the OpenRazer project.
  *
- * Copyright (C) 2016-2017 Luke Horwell (lah7)
+ * Copyright (C) 2016-2020 Luke Horwell (lah7)
  * Licensed under CC BY-SA 4.0
  */
 
@@ -57,36 +57,3 @@ if (window.location.hash) {
         scrollTop: $('#'+hash).position().top - 200
     }, 500);
 }
-
-// Gracefully device images
-window.onload = function() {
-  // Show device image when fully downloaded
-  $(".inner").each(function() {
-      var image_url = $(this).attr("data-image");
-      var device = this;
-      $('<img src="'+ image_url +'">').load(function() {
-          $(device).css("background-image", "url('" + image_url + "')");
-      });
-  });
-
-  // Preload hover images
-  $(".inner").each(function() {
-    var image_url = $(this).attr("data-image-hover");
-    var inner_element = $(this);
-    $('<img src="'+ image_url +'">').load(function() {
-        $(inner_element).attr("data-image-loaded", true);
-    });
-  });
-};
-
-// Change image on hover
-$(".inner").mouseover(function() {
-  if ($(this).attr("data-image-hover") != undefined) {
-    $(this).css("background-image", "url('" + $(this).attr("data-image-hover") + "')");
-  }
-});
-
-$(".inner").mouseout(function() {
-  $(this).css("background-image", "url('" + $(this).attr("data-image") + "')");
-});
-
