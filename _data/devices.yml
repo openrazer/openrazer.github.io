@@ -56,11 +56,29 @@
   vid: "1532"
   pid: "0F08"
 
+- name: "Base Station V2 Chroma"
+  type: "accessory"
+  image_url: "https://dl.razerzone.com/src/3897-1-EN-v2.png"
+  vid: "1532"
+  pid: "0F20"
+
 - name: "Basilisk"
   type: "mouse"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1241/1241_basilisk.png"
   vid: "1532"
   pid: "0064"
+
+- name: "Basilisk Ultimate (Receiver)"
+  type: "mouse"
+  image_url: "https://assets.razerzone.com/eeimages/support/products/1590/1590_basilisk_ultimate.png"
+  vid: "1532"
+  pid: "0088"
+
+- name: "Basilisk V2"
+  type: "mouse"
+  image_url: "https://assets.razerzone.com/eeimages/support/products/1617/1617_basilisk-v2.png"
+  vid: "1532"
+  pid: "0085"
 
 - name: "Basilisk X HyperSpeed"
   type: "mouse"
@@ -290,6 +308,12 @@
   vid: "1532"
   pid: "024A"
 
+- name: "Blade Stealth (Late 2020)"
+  type: "keyboard"
+  image_url: "https://assets2.razerzone.com/images/blade-stealth-13/shop/sl25p-fhd-4.jpg"
+  vid: "1532"
+  pid: "0259"
+
 - name: "Blade Stealth (Mid 2017)"
   type: "keyboard"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1213/1213_blade_stealth_2017_7500u.png"
@@ -301,6 +325,18 @@
   image_url: "https://assets.razerzone.com/eeimages/support/products/736/736_blade_pro_2016.png"
   vid: "1532"
   pid: "020F"
+
+- name: "Book 13 (2020)"
+  type: "keyboard"
+  image_url: "https://assets.razerzone.com/eeimages/support/products/1743/razerbook132020.png"
+  vid: "1532"
+  pid: "026A"
+
+- name: "Charging Pad Chroma"
+  type: "accessory"
+  image_url: "https://dl.razerzone.com/Images/ChargingPadChroma/CPC-ProductImage.png"
+  vid: "1532"
+  pid: "0F26"
 
 - name: "Chroma HDK"
   type: "accessory"
@@ -325,6 +361,12 @@
   image_url: "https://assets.razerzone.com/eeimages/support/products/1256/1256_cynosa_chroma.png"
   vid: "1532"
   pid: "022A"
+
+- name: "Cynosa Chroma Pro"
+  type: "keyboard"
+  image_url: "https://assets.razerzone.com/eeimages/support/products/1257/1257_cynosa_chroma_pro_alt.png"
+  vid: "1532"
+  pid: "022C"
 
 - name: "Cynosa Lite"
   type: "keyboard"
@@ -398,6 +440,18 @@
   vid: "1532"
   pid: "0084"
 
+- name: "DeathAdder V2 Mini"
+  type: "mouse"
+  image_url: "https://assets.razerzone.com/eeimages/support/products/1692/deathadder-v2-mini.png"
+  vid: "1532"
+  pid: "008C"
+
+- name: "DeathAdder V2 Pro ()"
+  type: "mouse"
+  image_url: "https://assets.razerzone.com/eeimages/support/products/1714/comp_1_00000.png"
+  vid: "1532"
+  pid: "007D"
+
 - name: "DeathStalker Chroma"
   type: "keyboard"
   image_url: "https://assets.razerzone.com/eeimages/support/products/665/665_deathstalker_chroma.png"
@@ -428,6 +482,12 @@
   vid: "1532"
   pid: "0068"
 
+- name: "Firefly V2"
+  type: "mousemat"
+  image_url: "https://assets.razerzone.com/eeimages/support/products/1594/1594_firefly_v2.png"
+  vid: "1532"
+  pid: "0C04"
+
 - name: "Goliathus"
   type: "mousemat"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1394/1394_goliathus_chroma.png"
@@ -451,6 +511,12 @@
   image_url: "https://assets.razerzone.com/eeimages/support/products/1361/1361_huntsman_elite.png"
   vid: "1532"
   pid: "0226"
+
+- name: "Huntsman Mini"
+  type: "keyboard"
+  image_url: "https://assets.razerzone.com/eeimages/support/products/1689/1689-huntsmanmini.png"
+  vid: "1532"
+  pid: "0257"
 
 - name: "Huntsman Tournament Edition"
   type: "keyboard"
@@ -548,6 +614,18 @@
   vid: "1532"
   pid: "0072"
 
+- name: "Mouse Bungee V3 Chroma"
+  type: "accessory"
+  image_url: "https://assets2.razerzone.com/images/pnx.assets/03970e1bd220f3d2985c5e0060fb3bbf/razer-mouse-bungee-v3-chroma.png"
+  vid: "1532"
+  pid: "0F1D"
+
+- name: "Mouse Dock"
+  type: "accessory"
+  image_url: "https://assets.razerzone.com/eeimages/support/products/1711/1711_-_mouse_dock_chroma.png"
+  vid: "1532"
+  pid: "007E"
+
 - name: "Naga 2012"
   type: "mouse"
   image_url: "https://assets.razerzone.com/eeimages/products/39/razer-naga-gallery-4.png"
@@ -584,6 +662,12 @@
   vid: "1532"
   pid: "0050"
 
+- name: "Naga Left-Handed Edition 2020"
+  type: "mouse"
+  image_url: "https://rzrwarranty.s3.amazonaws.com/cee694cd7526df413008167b7566af310985321b20c57f3dc42e5cbd773f2417.png"
+  vid: "1532"
+  pid: "008D"
+
 - name: "Naga Trinity"
   type: "mouse"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1251/1251_razer_naga_trinity.png"
@@ -592,13 +676,13 @@
 
 - name: "Nommo Chroma"
   type: "accessory"
-  image_url: "https://d4kkpd69xt9l7.cloudfront.net/sys-master/root/he6/h1a/8939927175198/nommo-gallery-1500x1000-11.jpg"
+  image_url: "https://assets.razerzone.com/eeimages/support/products/1275/1275_nommo_chroma.png"
   vid: "1532"
   pid: "0517"
 
 - name: "Nommo Pro"
   type: "accessory"
-  image_url: "https://d4kkpd69xt9l7.cloudfront.net/sys-master/root/h89/hc4/9003754717214/razer-nommo-pro-audio-04.jpg"
+  image_url: "https://assets.razerzone.com/eeimages/support/products/1419/1419_nommo_pro.png"
   vid: "1532"
   pid: "0518"
 
@@ -631,6 +715,12 @@
   image_url: "https://assets.razerzone.com/eeimages/support/products/727/727_ornata_chroma.png"
   vid: "1532"
   pid: "021E"
+
+- name: "Ornata Chroma V2"
+  type: "keyboard"
+  image_url: "https://assets.razerzone.com/eeimages/support/products/1672/ornata-v2.png"
+  vid: "1532"
+  pid: "025D"
 
 - name: "Orochi 2011"
   type: "mouse"
