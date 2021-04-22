@@ -30,3 +30,7 @@ sleep 2
 
 # Stop fake driver / daemon
 kill $(jobs -p)
+
+# Update "latest_version" in "api" directory - extract version from
+# "openrazer-daemon 3.0.1"
+../../openrazer/daemon/run_openrazer_daemon.py --version | awk '{print $2}' > ../api/latest_version.txt
