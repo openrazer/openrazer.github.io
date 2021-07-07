@@ -263,21 +263,18 @@ layout: null
                   <h4 class="panel-title">
                     <a data-toggle="collapse" data-parent="#distros" href="#arch">
                       <img class="distro-logo" src="img/distros/arch.png" alt="Arch Logo"/>
-                      &nbsp; Arch Linux
+                      &nbsp; Arch Linux / Manjaro
                     </a>
                   </h4>
                 </div>
                 <div id="arch" class="panel-collapse collapse">
                   <div class="panel-body">
                     <h4><span class="fa fa-cube"></span>&nbsp;From AUR</h4>
-                    <p>Install <a href="https://aur.archlinux.org/packages/openrazer-meta/" target="_blank" rel="noopener">openrazer-meta</a> from the AUR.</p>
-                    <div class="danger">
-                      <h5>
-                          <span class="fa fa-warning"></span>
-                          Due to a bug in <code style="color:red">yaourt</code>, you will get a dependency loop when trying to install it.
-                          <span style="color:lime"><code>pacaur</code> is confirmed to work.</span>
-                      </h5>
-                    </div>
+                    <p>
+                        Install <a href="https://aur.archlinux.org/packages/openrazer-meta/" target="_blank" rel="noopener">openrazer-meta</a> from the AUR
+                        using an <a href="https://wiki.archlinux.org/title/AUR_helpers#Pacman_wrappers">AUR helper</a> or by building the
+                        <a href="https://aur.archlinux.org/cgit/aur.git/plain/PKGBUILD?h=openrazer">PKGBUILD</a> directly.
+                    </p>
                     <p>After the drivers are installed, please restart the computer.</p>
                   </div>
                 </div>
