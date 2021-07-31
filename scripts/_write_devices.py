@@ -23,11 +23,11 @@ for device in devices:
     lsusb = str(hex(device._vid))[-4:] + ":" + str(hex(device._pid))[-4:]
     lsusb = lsusb.replace("x", "0").upper()
 
-    # Prevent duplicates (wired/wireless sets)
+    # Prevent duplicates (wired/wireless sets) although PID is technically different
     if device_name.find("Wired") != -1:
         continue
     elif device_name.find("Wireless") != -1:
-        device_name = device_name.replace("Wireless", "").strip()
+        device_name = device_name.replace("(Wireless)", "").strip()
 
     # Get and validate URLs
     device_img_url = device.device_image

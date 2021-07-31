@@ -446,7 +446,7 @@
   vid: "1532"
   pid: "008C"
 
-- name: "DeathAdder V2 Pro ()"
+- name: "DeathAdder V2 Pro"
   type: "mouse"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1714/comp_1_00000.png"
   vid: "1532"
@@ -566,7 +566,7 @@
   vid: "1532"
   pid: "0527"
 
-- name: "Lancehead ()"
+- name: "Lancehead"
   type: "mouse"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1205/1205_lancehead.png"
   vid: "1532"
@@ -578,19 +578,19 @@
   vid: "1532"
   pid: "0060"
 
-- name: "Lancehead  (Receiver)"
+- name: "Lancehead Wireless (Receiver)"
   type: "mouse"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1205/1205_lancehead.png"
   vid: "1532"
   pid: "006F"
 
-- name: "Mamba ()"
+- name: "Mamba"
   type: "mouse"
   image_url: "https://assets.razerzone.com/eeimages/support/products/609/609_mamba_500x500.png"
   vid: "1532"
   pid: "0045"
 
-- name: "Mamba 2012 ()"
+- name: "Mamba 2012"
   type: "mouse"
   image_url: "https://assets.razerzone.com/eeimages/support/products/192/192_mamba_2012.png"
   vid: "1532"
@@ -608,7 +608,7 @@
   vid: "1532"
   pid: "0046"
 
-- name: "Mamba  (Receiver)"
+- name: "Mamba Wireless (Receiver)"
   type: "mouse"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1404/1404_mamba_wireless.png"
   vid: "1532"
@@ -716,7 +716,7 @@
   vid: "1532"
   pid: "021E"
 
-- name: "Ornata Chroma V2"
+- name: "Ornata V2"
   type: "keyboard"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1672/ornata-v2.png"
   vid: "1532"
@@ -776,7 +776,7 @@
   vid: "1532"
   pid: "008A"
 
-- name: "Viper Ultimate ()"
+- name: "Viper Ultimate"
   type: "mouse"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1577/ee_photo.png"
   vid: "1532"
