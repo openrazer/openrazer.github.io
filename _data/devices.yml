@@ -68,6 +68,12 @@
   vid: "1532"
   pid: "0064"
 
+- name: "Basilisk Essential"
+  type: "mouse"
+  image_url: "https://hybrismediaprod.blob.core.windows.net/sys-master-phoenix-images-container/h19/h61/9080617500702/Basilisk-Essential-500x500.png"
+  vid: "1532"
+  pid: "0065"
+
 - name: "Basilisk Ultimate (Receiver)"
   type: "mouse"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1590/1590_basilisk_ultimate.png"
@@ -146,6 +152,12 @@
   vid: "1532"
   pid: "010E"
 
+- name: "BlackWidow Tournament Edition 2014"
+  type: "keyboard"
+  image_url: "https://assets.razerzone.com/eeimages/products/17564/razer-blackwidow-te-stealth-hero-01.png"
+  vid: "1532"
+  pid: "011C"
+
 - name: "BlackWidow Ultimate 2012"
   type: "keyboard"
   image_url: "https://assets.razerzone.com/eeimages/support/products/563/563_blackwidow_ultimate_classic.png"
@@ -163,6 +175,12 @@
   image_url: "https://assets.razerzone.com/eeimages/support/products/616/616_blackwidow_ultimate_2016.png"
   vid: "1532"
   pid: "0214"
+
+- name: "BlackWidow V3 Tenkeyless"
+  type: "keyboard"
+  image_url: "https://assets.razerzone.com/eeimages/support/products/1709/1709-blackwidow-v3-tkl.png"
+  vid: "1532"
+  pid: "0A24"
 
 - name: "BlackWidow X Chroma"
   type: "keyboard"
@@ -229,6 +247,18 @@
   image_url: "https://assets.razerzone.com/eeimages/support/products/1651/razer-blade-15-advanced-2020.png"
   vid: "1532"
   pid: "0253"
+
+- name: "Blade 15 Advanced (Early 2021)"
+  type: "keyboard"
+  image_url: "https://assets.razerzone.com/eeimages/support/products/1761/blade-15-advanced-2021-rz09-0367x.png"
+  vid: "1532"
+  pid: "026D"
+
+- name: "Blade 15 Advanced (Mid 2021)"
+  type: "keyboard"
+  image_url: "https://assets.razerzone.com/eeimages/support/products/1778/1778-razerblade15advanced2021rz09-0409x-2.png"
+  vid: "1532"
+  pid: "0276"
 
 - name: "Blade 15 Base (Early 2020)"
   type: "keyboard"
@@ -523,6 +553,12 @@
   image_url: "https://assets.razerzone.com/eeimages/support/products/1537/1537_huntsman_te.png"
   vid: "1532"
   pid: "0243"
+
+- name: "Huntsman V2 Analog"
+  type: "keyboard"
+  image_url: "https://dl.razerzone.com/src/4023-1-EN-v1.png"
+  vid: "1532"
+  pid: "0266"
 
 - name: "Imperator 2012"
   type: "mouse"
