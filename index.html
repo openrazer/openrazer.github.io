@@ -413,12 +413,16 @@ layout: null
                 <div id="gentoo" class="panel-collapse collapse">
                   <div class="panel-body">
                     <h4><span class="fa fa-cube"></span> Gentoo ebuild</h4>
-                    <p>Packages for Gentoo are provided by <a href="https://github.com/vifino/vifino-overlay">vifino</a>'s personal overlay.</p>
-                    <p>Add the overlay to your system:</p>
+                    <p>
+                        <code>vifino</code> and contributors maintain an overlay here:
+                        <ul>
+                            <li><a href="https://github.com/vifino/vifino-overlay/tree/master/app-misc/openrazer">vifino-overlay</a> (app-misc/openrazer)</li>
+                        </ul>
+
+                    <p>To add and install:</p>
 <pre><code><span class="fa fa-dollar"></span> eselect repository enable vifino-overlay</code>
-<code><span class="fa fa-dollar"></span> emaint sync -r vifino-overlay</code></pre>
-                    <p>Install the package, which includes all the components like the driver and daemon.</p>
-                    <pre><code><span class="fa fa-dollar"></span> emerge app-misc/openrazer</code></pre>
+<code><span class="fa fa-dollar"></span> emaint sync -r vifino-overlay</code>
+<code><span class="fa fa-dollar"></span> emerge sys-apps/openrazer</code></pre>
                     <p>After the drivers are installed, please restart the computer.</p>
                   </div>
                 </div>
