@@ -318,7 +318,21 @@ layout: null
                     <p>To fix this, you must install <code>kernel-devel</code> explictly:</p>
                     <pre><code><span class="fa fa-dollar"></span> dnf install kernel-devel</code></pre>
 
-                    <p>Then, proceed to follow instructions for your version of Fedora from the <a href="https://software.opensuse.org/download.html?project=hardware%3Arazer&package=openrazer-meta" target="_blank" rel="noopener">openSUSE Build Service.</a></p>
+                    <p>Then, proceed to follow instructions for your version of Fedora.</p>
+
+                    <b>For Fedora 35 run the following as root:</b>
+<pre><code><span class="fa fa-dollar"></span> dnf config-manager --add-repo https://download.opensuse.org/repositories/hardware:razer/Fedora_35/hardware:razer.repo</code>
+<code><span class="fa fa-dollar"></span> dnf install openrazer-meta</code></pre>
+                    <b>For Fedora 34 run the following as root:</b>
+<pre><code><span class="fa fa-dollar"></span> dnf config-manager --add-repo https://download.opensuse.org/repositories/hardware:razer/Fedora_34/hardware:razer.repo</code>
+<code><span class="fa fa-dollar"></span> dnf install openrazer-meta</code></pre>
+                    <b>For Fedora 33 run the following as root:</b>
+<pre><code><span class="fa fa-dollar"></span> dnf config-manager --add-repo https://download.opensuse.org/repositories/hardware:razer/Fedora_33/hardware:razer.repo</code>
+<code><span class="fa fa-dollar"></span> dnf install openrazer-meta</code></pre>
+                    <b>For Fedora Rawhide run the following as root:</b>
+<pre><code><span class="fa fa-dollar"></span> dnf config-manager --add-repo https://download.opensuse.org/repositories/hardware:razer/Fedora_Rawhide/hardware:razer.repo</code>
+<code><span class="fa fa-dollar"></span> dnf install openrazer-meta</code></pre>
+
                     <p>After the drivers are installed, please restart the computer.</p>
 
                   </div>
