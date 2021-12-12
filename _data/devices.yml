@@ -176,6 +176,24 @@
   vid: "1532"
   pid: "0214"
 
+- name: "BlackWidow V3"
+  type: "keyboard"
+  image_url: "https://dl.razerzone.com/src/3827-1-EN-v1.png"
+  vid: "1532"
+  pid: "024E"
+
+- name: "BlackWidow V3 Mini Hyperspeed"
+  type: "keyboard"
+  image_url: "https://assets.razerzone.com/eeimages/support/products/1777/500x500-blackwidowv3mini.png"
+  vid: "1532"
+  pid: "0258"
+
+- name: "BlackWidow V3 Mini Hyperspeed"
+  type: "keyboard"
+  image_url: "https://assets.razerzone.com/eeimages/support/products/1777/500x500-blackwidowv3mini.png"
+  vid: "1532"
+  pid: "0271"
+
 - name: "BlackWidow V3 Tenkeyless"
   type: "keyboard"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1709/1709-blackwidow-v3-tkl.png"
@@ -205,6 +223,12 @@
   image_url: "https://assets.razerzone.com/eeimages/support/products/736/736_blade_pro_2016.png"
   vid: "1532"
   pid: "0224"
+
+- name: "Blade 14 (2021)"
+  type: "keyboard"
+  image_url: "https://assets2.razerzone.com/images/og-image/razer-blade-14-og-image-1200x630.jpg"
+  vid: "1532"
+  pid: "0270"
 
 - name: "Blade 15 (2018)"
   type: "keyboard"
@@ -266,11 +290,23 @@
   vid: "1532"
   pid: "0255"
 
+- name: "Blade 15 Base (Early 2021)"
+  type: "keyboard"
+  image_url: "https://assets.razerzone.com/eeimages/support/products/1756/blade-15-base-2021-rz09-0369x.png"
+  vid: "1532"
+  pid: "026F"
+
 - name: "Blade 15 Studio Edition (2019)"
   type: "keyboard"
   image_url: "https://assets2.razerzone.com/images/blade-15/shop/studio-ch41-1.jpg"
   vid: "1532"
   pid: "024D"
+
+- name: "Blade 17 Pro (Mid 2021)"
+  type: "keyboard"
+  image_url: "https://dl.razerzone.com/src/5524/5524-1-en-v2.png"
+  vid: "1532"
+  pid: "0279"
 
 - name: "Blade Pro (2017)"
   type: "keyboard"
@@ -283,6 +319,12 @@
   image_url: "https://assets2.razerzone.com/images/razer-blade-pro-17/razer-blade-pro-17-2019-OGimage-1200x630.jpg"
   vid: "1532"
   pid: "0234"
+
+- name: "Blade Pro (Early 2020)"
+  type: "keyboard"
+  image_url: "https://assets.razerzone.com/eeimages/support/products/1654/blade-pro-17-2020-2.png"
+  vid: "1532"
+  pid: "0256"
 
 - name: "Blade Pro (Late 2016)"
   type: "keyboard"
@@ -457,6 +499,12 @@
   image_url: "https://assets.razerzone.com/eeimages/support/products/1385/1385_deathadderessential.png"
   vid: "1532"
   pid: "006E"
+
+- name: "DeathAdder Essential (2021)"
+  type: "mouse"
+  image_url: "https://assets.razerzone.com/eeimages/support/products/1385/1385_deathadderessential.png"
+  vid: "1532"
+  pid: "0098"
 
 - name: "DeathAdder Essential (White Edition)"
   type: "mouse"
@@ -800,11 +848,23 @@
   vid: "1532"
   pid: "022B"
 
+- name: "Thunderbolt 4 Dock Chroma"
+  type: "accessory"
+  image_url: "https://dl.razerzone.com/src/4030-1-EN-v1.png"
+  vid: "1532"
+  pid: "0F21"
+
 - name: "Viper"
   type: "mouse"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1539/1539_viper.png"
   vid: "1532"
   pid: "0078"
+
+- name: "Viper 8KHz"
+  type: "mouse"
+  image_url: "https://dl.razerzone.com/Images/Viper%208KHz/Viper8khz.png"
+  vid: "1532"
+  pid: "0091"
 
 - name: "Viper Mini"
   type: "mouse"
