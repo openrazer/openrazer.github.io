@@ -186,12 +186,6 @@
   type: "keyboard"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1777/500x500-blackwidowv3mini.png"
   vid: "1532"
-  pid: "0258"
-
-- name: "BlackWidow V3 Mini Hyperspeed"
-  type: "keyboard"
-  image_url: "https://assets.razerzone.com/eeimages/support/products/1777/500x500-blackwidowv3mini.png"
-  vid: "1532"
   pid: "0271"
 
 - name: "BlackWidow V3 Tenkeyless"
