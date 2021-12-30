@@ -467,11 +467,7 @@ layout: null
                     <p>Rebuild your NixOS configuration:</p>
                     <pre><code><span class="fa fa-dollar"></span> sudo nixos-rebuild switch</code></pre>
                     <h4>nix-shell</h4>
-                    <p>Following the example provided by python section of the nixpkgs <a
-                        href="https://nixos.org/nixpkgs/manual/#temporary-python-environment-with-nix-shell">documentation</a>,
-                      here is one way to launch a <code>nix-shell</code> with the dependencies for OpenRazer, using
-                      <code>python3.7</code>:</p>
-                    <pre><code><span class="fa fa-dollar"></span> nix-shell -p 'python37.withPackages(ps: with ps; [ openrazer ])' -p openrazer-daemon</code></pre>
+                    <pre><code><span class="fa fa-dollar"></span> nix-shell -p openrazer-daemon</code></pre>
                   </div>
                 </div>
               </div>
