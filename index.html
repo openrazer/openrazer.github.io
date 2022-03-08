@@ -126,7 +126,12 @@ layout: null
                     <div id="{{ device.name | replace:' ', '-' }}" class="col-md-3 col-sm-4 device-icon">
                         <img class="inner" loading="lazy" src="{{ device.image_url }}"/>
                         <h5>{{ device.name }}</h5>
-                        <h5><code>{{ device.vid }}:{{ device.pid }}</code></h5>
+                        <div>
+                            <code>{{ device.vid }}:{{ device.pid }}</code>
+                            {% for alias in device.alias_ids %}
+                            <br><code>{{ alias }}</code>
+                            {% endfor %}
+                        </div>
                     </div>
                 {% endfor %}
               </div>
@@ -145,7 +150,12 @@ layout: null
                     <div id="{{ device.name | replace:' ', '-' }}" class="col-md-3 col-sm-4 device-icon">
                         <img class="inner" loading="lazy" src="{{ device.image_url }}"/>
                         <h5>{{ device.name }}</h5>
-                        <h5><code>{{ device.vid }}:{{ device.pid }}</code></h5>
+                        <div>
+                            <code>{{ device.vid }}:{{ device.pid }}</code>
+                            {% for alias in device.alias_ids %}
+                            <br><code>{{ alias }}</code>
+                            {% endfor %}
+                        </div>
                     </div>
                 {% endfor %}
               </div>
@@ -164,7 +174,12 @@ layout: null
                     <div id="{{ device.name | replace:' ', '-' }}" class="col-md-3 col-sm-4 device-icon">
                         <img class="inner" loading="lazy" src="{{ device.image_url }}"/>
                         <h5>{{ device.name }}</h5>
-                        <h5><code>{{ device.vid }}:{{ device.pid }}</code></h5>
+                        <div>
+                            <code>{{ device.vid }}:{{ device.pid }}</code>
+                            {% for alias in device.alias_ids %}
+                            <br><code>{{ alias }}</code>
+                            {% endfor %}
+                        </div>
                     </div>
                 {% endfor %}
               </div>
@@ -184,7 +199,12 @@ layout: null
                     <div id="{{ device.name | replace:' ', '-' }}" class="col-md-3 col-sm-4 device-icon">
                         <img class="inner" loading="lazy" src="{{ device.image_url }}"/>
                         <h5>{{ device.name }}</h5>
-                        <h5><code>{{ device.vid }}:{{ device.pid }}</code></h5>
+                        <div>
+                            <code>{{ device.vid }}:{{ device.pid }}</code>
+                            {% for alias in device.alias_ids %}
+                            <br><code>{{ alias }}</code>
+                            {% endfor %}
+                        </div>
                     </div>
                 {% endfor %}
               </div>
@@ -204,7 +224,12 @@ layout: null
                     <div id="{{ device.name | replace:' ', '-' }}" class="col-md-3 col-sm-4 device-icon">
                         <img class="inner" loading="lazy" src="{{ device.image_url }}"/>
                         <h5>{{ device.name }}</h5>
-                        <h5><code>{{ device.vid }}:{{ device.pid }}</code></h5>
+                        <div>
+                            <code>{{ device.vid }}:{{ device.pid }}</code>
+                            {% for alias in device.alias_ids %}
+                            <br><code>{{ alias }}</code>
+                            {% endfor %}
+                        </div>
                     </div>
                 {% endfor %}
               </div>
@@ -223,7 +248,12 @@ layout: null
                     <div id="{{ device.name | replace:' ', '-' }}" class="col-md-3 col-sm-4 device-icon">
                         <img class="inner" loading="lazy" src="{{ device.image_url }}"/>
                         <h5>{{ device.name }}</h5>
-                        <h5><code>{{ device.vid }}:{{ device.pid }}</code></h5>
+                        <div>
+                            <code>{{ device.vid }}:{{ device.pid }}</code>
+                            {% for alias in device.alias_ids %}
+                            <br><code>{{ alias }}</code>
+                            {% endfor %}
+                        </div>
                     </div>
                 {% endfor %}
               </div>

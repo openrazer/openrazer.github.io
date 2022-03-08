@@ -193,7 +193,7 @@ body:before {
 }
 
 .device-icon {
-    height: 200px;
+    height: 220px;
     margin-bottom: 8px;
     border: 1px solid black;
 }
@@ -201,7 +201,7 @@ body:before {
 .device-icon .inner {
     height: 150px;
     max-width: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .device-icon h5 {

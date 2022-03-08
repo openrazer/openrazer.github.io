@@ -7,867 +7,1005 @@
   image_url: "https://assets.razerzone.com/eeimages/support/products/1277/1277_abyssus_2000.png"
   vid: "1532"
   pid: "0020"
+  alias_ids: []
 
 - name: "Abyssus 2000"
   type: "mouse"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1277/1277_abyssus_2000.png"
   vid: "1532"
   pid: "005E"
+  alias_ids: []
 
 - name: "Abyssus 2014"
   type: "mouse"
   image_url: "https://assets.razerzone.com/eeimages/support/products/274/abyssus2014_500x500.png"
   vid: "1532"
   pid: "0042"
+  alias_ids: []
 
 - name: "Abyssus Elite (D.Va Edition)"
   type: "mouse"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1288/d.va_abyssus_elite.png"
   vid: "1532"
   pid: "006A"
+  alias_ids: []
 
 - name: "Abyssus Essential"
   type: "mouse"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1290/1290_abyssusessential.png"
   vid: "1532"
   pid: "006B"
+  alias_ids: []
 
 - name: "Abyssus V2"
   type: "mouse"
   image_url: "https://assets.razerzone.com/eeimages/support/products/721/721_abyssusv2.png"
   vid: "1532"
   pid: "005B"
+  alias_ids: []
 
 - name: "Anansi"
   type: "keyboard"
   image_url: "https://assets.razerzone.com/eeimages/support/products/54/54_anansi.png"
   vid: "1532"
   pid: "010F"
+  alias_ids: []
 
-- name: "Atheris (Receiver)"
+- name: "Atheris"
   type: "mouse"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1234/1234_atheris.png"
   vid: "1532"
   pid: "0062"
+  alias_ids: []
 
 - name: "Base Station Chroma"
   type: "accessory"
   image_url: "https://rzrwarranty.s3.amazonaws.com/145dcc47f9f9d33b0bd07b066364704160f45e87b756d690b203decec7d1e87c.png"
   vid: "1532"
   pid: "0F08"
+  alias_ids: []
 
 - name: "Base Station V2 Chroma"
   type: "accessory"
   image_url: "https://dl.razerzone.com/src/3897-1-EN-v2.png"
   vid: "1532"
   pid: "0F20"
+  alias_ids: []
 
 - name: "Basilisk"
   type: "mouse"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1241/1241_basilisk.png"
   vid: "1532"
   pid: "0064"
+  alias_ids: []
 
 - name: "Basilisk Essential"
   type: "mouse"
   image_url: "https://hybrismediaprod.blob.core.windows.net/sys-master-phoenix-images-container/h19/h61/9080617500702/Basilisk-Essential-500x500.png"
   vid: "1532"
   pid: "0065"
+  alias_ids: []
 
-- name: "Basilisk Ultimate (Receiver)"
+- name: "Basilisk Ultimate"
   type: "mouse"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1590/1590_basilisk_ultimate.png"
   vid: "1532"
   pid: "0088"
+  alias_ids: ["1532:0086"]
 
 - name: "Basilisk V2"
   type: "mouse"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1617/1617_basilisk-v2.png"
   vid: "1532"
   pid: "0085"
+  alias_ids: []
 
 - name: "Basilisk X HyperSpeed"
   type: "mouse"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1589/1589_basilisk_x__hyperspeed.png"
   vid: "1532"
   pid: "0083"
+  alias_ids: []
 
 - name: "BlackWidow 2019"
   type: "keyboard"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1501/1501-blackwidow2019.png"
   vid: "1532"
   pid: "0241"
+  alias_ids: []
 
 - name: "BlackWidow Chroma"
   type: "keyboard"
   image_url: "https://assets.razerzone.com/eeimages/support/products/279/279_blackwidow_chroma.png"
   vid: "1532"
   pid: "0203"
+  alias_ids: []
 
 - name: "BlackWidow Chroma (Overwatch)"
   type: "keyboard"
   image_url: "https://assets.razerzone.com/eeimages/products/23326/overwatch-razer-gallery-5.png"
   vid: "1532"
   pid: "0211"
+  alias_ids: []
 
 - name: "BlackWidow Chroma Tournament Edition"
   type: "keyboard"
   image_url: "https://assets.razerzone.com/eeimages/support/products/571/571_blackwidow_tournament_edition_chroma.png"
   vid: "1532"
   pid: "0209"
+  alias_ids: []
 
 - name: "BlackWidow Chroma V2"
   type: "keyboard"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1179/1179_blackwidow_chroma_v2_alt.png"
   vid: "1532"
   pid: "0221"
+  alias_ids: []
 
 - name: "BlackWidow Elite"
   type: "keyboard"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1398/1398_blackwidowelite.png"
   vid: "1532"
   pid: "0228"
+  alias_ids: []
 
 - name: "BlackWidow Essential"
   type: "keyboard"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1501/1501-blackwidow2019.png"
   vid: "1532"
   pid: "0237"
+  alias_ids: []
 
 - name: "BlackWidow Lite"
   type: "keyboard"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1456/1456_blackwidowlite_-_2.png"
   vid: "1532"
   pid: "0235"
+  alias_ids: []
 
 - name: "BlackWidow Stealth"
   type: "keyboard"
   image_url: "https://assets.razerzone.com/eeimages/products/17559/razer-blackwidow-gallery-01.png"
   vid: "1532"
   pid: "011B"
+  alias_ids: []
 
 - name: "BlackWidow Stealth Edition"
   type: "keyboard"
   image_url: "https://assets.razerzone.com/eeimages/products/17559/razer-blackwidow-gallery-01.png"
   vid: "1532"
   pid: "010E"
+  alias_ids: []
 
 - name: "BlackWidow Tournament Edition 2014"
   type: "keyboard"
   image_url: "https://assets.razerzone.com/eeimages/products/17564/razer-blackwidow-te-stealth-hero-01.png"
   vid: "1532"
   pid: "011C"
+  alias_ids: []
 
 - name: "BlackWidow Ultimate 2012"
   type: "keyboard"
   image_url: "https://assets.razerzone.com/eeimages/support/products/563/563_blackwidow_ultimate_classic.png"
   vid: "1532"
   pid: "010D"
+  alias_ids: []
 
 - name: "BlackWidow Ultimate 2013"
   type: "keyboard"
   image_url: "https://assets.razerzone.com/eeimages/support/products/245/438_blackwidow_ultimate_2014.png"
   vid: "1532"
   pid: "011A"
+  alias_ids: []
 
 - name: "BlackWidow Ultimate 2016"
   type: "keyboard"
   image_url: "https://assets.razerzone.com/eeimages/support/products/616/616_blackwidow_ultimate_2016.png"
   vid: "1532"
   pid: "0214"
+  alias_ids: []
 
 - name: "BlackWidow V3"
   type: "keyboard"
   image_url: "https://dl.razerzone.com/src/3827-1-EN-v1.png"
   vid: "1532"
   pid: "024E"
+  alias_ids: []
 
 - name: "BlackWidow V3 Mini Hyperspeed"
   type: "keyboard"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1777/500x500-blackwidowv3mini.png"
   vid: "1532"
-  pid: "0271"
+  pid: "0258"
+  alias_ids: ["1532:0271"]
 
 - name: "BlackWidow V3 Tenkeyless"
   type: "keyboard"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1709/1709-blackwidow-v3-tkl.png"
   vid: "1532"
   pid: "0A24"
+  alias_ids: []
 
 - name: "BlackWidow X Chroma"
   type: "keyboard"
   image_url: "https://assets.razerzone.com/eeimages/support/products/716/716_blackwidow_x_chroma.png"
   vid: "1532"
   pid: "0216"
+  alias_ids: []
 
 - name: "BlackWidow X Chroma Tournament Edition"
   type: "keyboard"
   image_url: "https://assets.razerzone.com/eeimages/support/products/717/717_blackwidow_x_tournament_edition_chroma.png"
   vid: "1532"
   pid: "021A"
+  alias_ids: []
 
 - name: "BlackWidow X Ultimate"
   type: "keyboard"
   image_url: "https://assets.razerzone.com/eeimages/support/products/718/718_blackwidow_x_ultimate.png"
   vid: "1532"
   pid: "0217"
+  alias_ids: []
 
 - name: "Blade (Late 2016)"
   type: "keyboard"
   image_url: "https://assets.razerzone.com/eeimages/support/products/736/736_blade_pro_2016.png"
   vid: "1532"
   pid: "0224"
+  alias_ids: []
 
 - name: "Blade 14 (2021)"
   type: "keyboard"
   image_url: "https://assets2.razerzone.com/images/og-image/razer-blade-14-og-image-1200x630.jpg"
   vid: "1532"
   pid: "0270"
+  alias_ids: []
 
 - name: "Blade 15 (2018)"
   type: "keyboard"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1418/1418_blade_2018__base.png"
   vid: "1532"
   pid: "0233"
+  alias_ids: []
 
 - name: "Blade 15 (2018) Base Model"
   type: "keyboard"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1418/1418_blade_2018__base.png"
   vid: "1532"
   pid: "023B"
+  alias_ids: []
 
 - name: "Blade 15 (2018) Mercury"
   type: "keyboard"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1552/1552-blade-stealth-mercury-white.png"
   vid: "1532"
   pid: "0240"
+  alias_ids: []
 
 - name: "Blade 15 (2019) Advanced"
   type: "keyboard"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1482/blade15.png"
   vid: "1532"
   pid: "023A"
+  alias_ids: []
 
 - name: "Blade 15 (2019) Base Model"
   type: "keyboard"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1518/1518_blade15_mid2019-base.png"
   vid: "1532"
   pid: "0246"
+  alias_ids: []
 
 - name: "Blade 15 (Mid 2019) Mercury White"
   type: "keyboard"
   image_url: "https://assets2.razerzone.com/images/blade-15/shop/blade15-mercury-1.jpg"
   vid: "1532"
   pid: "0245"
+  alias_ids: []
 
 - name: "Blade 15 Advanced (2020)"
   type: "keyboard"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1651/razer-blade-15-advanced-2020.png"
   vid: "1532"
   pid: "0253"
+  alias_ids: []
 
 - name: "Blade 15 Advanced (Early 2021)"
   type: "keyboard"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1761/blade-15-advanced-2021-rz09-0367x.png"
   vid: "1532"
   pid: "026D"
+  alias_ids: []
 
 - name: "Blade 15 Advanced (Mid 2021)"
   type: "keyboard"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1778/1778-razerblade15advanced2021rz09-0409x-2.png"
   vid: "1532"
   pid: "0276"
+  alias_ids: []
 
 - name: "Blade 15 Base (Early 2020)"
   type: "keyboard"
   image_url: "https://assets2.razerzone.com/images/blade-15/blade-15-base-model-spec-image-v2.png"
   vid: "1532"
   pid: "0255"
+  alias_ids: []
 
 - name: "Blade 15 Base (Early 2021)"
   type: "keyboard"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1756/blade-15-base-2021-rz09-0369x.png"
   vid: "1532"
   pid: "026F"
+  alias_ids: []
 
 - name: "Blade 15 Studio Edition (2019)"
   type: "keyboard"
   image_url: "https://assets2.razerzone.com/images/blade-15/shop/studio-ch41-1.jpg"
   vid: "1532"
   pid: "024D"
+  alias_ids: []
 
 - name: "Blade 17 Pro (Mid 2021)"
   type: "keyboard"
   image_url: "https://dl.razerzone.com/src/5524/5524-1-en-v2.png"
   vid: "1532"
   pid: "0279"
+  alias_ids: []
 
 - name: "Blade Pro (2017)"
   type: "keyboard"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1200/1200_blade_pro_2017.png"
   vid: "1532"
   pid: "0225"
+  alias_ids: []
 
 - name: "Blade Pro (2019)"
   type: "keyboard"
   image_url: "https://assets2.razerzone.com/images/razer-blade-pro-17/razer-blade-pro-17-2019-OGimage-1200x630.jpg"
   vid: "1532"
   pid: "0234"
+  alias_ids: []
 
 - name: "Blade Pro (Early 2020)"
   type: "keyboard"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1654/blade-pro-17-2020-2.png"
   vid: "1532"
   pid: "0256"
+  alias_ids: []
 
 - name: "Blade Pro (Late 2016)"
   type: "keyboard"
   image_url: "https://assets.razerzone.com/eeimages/support/products/736/736_blade_pro_2016.png"
   vid: "1532"
   pid: "0210"
+  alias_ids: []
 
 - name: "Blade Pro (Late 2019)"
   type: "keyboard"
   image_url: "https://assets2.razerzone.com/images/razer-blade-pro-17/razer-blade-pro-17-2019-OGimage-1200x630.jpg"
   vid: "1532"
   pid: "024C"
+  alias_ids: []
 
 - name: "Blade Pro FullHD (2017)"
   type: "keyboard"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1200/1200_blade_pro_2017.png"
   vid: "1532"
   pid: "022F"
+  alias_ids: []
 
 - name: "Blade Stealth"
   type: "keyboard"
   image_url: "https://assets.razerzone.com/eeimages/support/products/667/667_blade_stealth_2016_6500u.png"
   vid: "1532"
   pid: "0205"
+  alias_ids: []
 
 - name: "Blade Stealth (2019)"
   type: "keyboard"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1475/1475_bladestealth13(2019).png"
   vid: "1532"
   pid: "0239"
+  alias_ids: []
 
 - name: "Blade Stealth (Early 2020)"
   type: "keyboard"
   image_url: "https://assets2.razerzone.com/images/blade-stealth-13/shop/sl25p-fhd-4.jpg"
   vid: "1532"
   pid: "0252"
+  alias_ids: []
 
 - name: "Blade Stealth (Late 2016)"
   type: "keyboard"
   image_url: "https://assets.razerzone.com/eeimages/support/products/667/667_blade_stealth_2016_6500u.png"
   vid: "1532"
   pid: "0220"
+  alias_ids: []
 
 - name: "Blade Stealth (Late 2017)"
   type: "keyboard"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1213/1213_blade_stealth_2017_7500u.png"
   vid: "1532"
   pid: "0232"
+  alias_ids: []
 
 - name: "Blade Stealth (Late 2019)"
   type: "keyboard"
   image_url: "https://assets2.razerzone.com/images/blade-stealth-13/shop/stealth-l2p-1.jpg"
   vid: "1532"
   pid: "024A"
+  alias_ids: []
 
 - name: "Blade Stealth (Late 2020)"
   type: "keyboard"
   image_url: "https://assets2.razerzone.com/images/blade-stealth-13/shop/sl25p-fhd-4.jpg"
   vid: "1532"
   pid: "0259"
+  alias_ids: []
 
 - name: "Blade Stealth (Mid 2017)"
   type: "keyboard"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1213/1213_blade_stealth_2017_7500u.png"
   vid: "1532"
   pid: "022D"
+  alias_ids: []
 
 - name: "Blade Stealth (QHD)"
   type: "keyboard"
   image_url: "https://assets.razerzone.com/eeimages/support/products/736/736_blade_pro_2016.png"
   vid: "1532"
   pid: "020F"
+  alias_ids: []
 
 - name: "Book 13 (2020)"
   type: "keyboard"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1743/razerbook132020.png"
   vid: "1532"
   pid: "026A"
+  alias_ids: []
 
 - name: "Charging Pad Chroma"
   type: "accessory"
   image_url: "https://dl.razerzone.com/Images/ChargingPadChroma/CPC-ProductImage.png"
   vid: "1532"
   pid: "0F26"
+  alias_ids: []
 
 - name: "Chroma HDK"
   type: "accessory"
   image_url: "https://assets2.razerzone.com/images/chromahdk2017/788b689d471fedbc0c5a175592316657-gallery-08.jpg"
   vid: "1532"
   pid: "0F09"
+  alias_ids: []
 
 - name: "Chroma Mug Holder"
   type: "accessory"
   image_url: "https://assets2.razerzone.com/images/mug-holder/e64e507b73e61c44789d996065fd9645-1500x1000mug_01.jpg"
   vid: "1532"
   pid: "0F07"
+  alias_ids: []
 
 - name: "Core"
   type: "core"
   image_url: "https://assets.razerzone.com/eeimages/support/products/684/684_razer_core.png"
   vid: "1532"
   pid: "0215"
+  alias_ids: []
 
 - name: "Cynosa Chroma"
   type: "keyboard"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1256/1256_cynosa_chroma.png"
   vid: "1532"
   pid: "022A"
+  alias_ids: []
 
 - name: "Cynosa Chroma Pro"
   type: "keyboard"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1257/1257_cynosa_chroma_pro_alt.png"
   vid: "1532"
   pid: "022C"
+  alias_ids: []
 
 - name: "Cynosa Lite"
   type: "keyboard"
   image_url: "https://assets2.razerzone.com/images/og-image/cynosa-lite-OGimage.jpg"
   vid: "1532"
   pid: "023F"
+  alias_ids: []
 
 - name: "Cynosa V2"
   type: "keyboard"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1694/1694-2.png"
   vid: "1532"
   pid: "025E"
+  alias_ids: []
 
 - name: "DeathAdder 1800"
   type: "mouse"
   image_url: "https://rzrwarranty.s3.amazonaws.com/a7daf40ad78c9584a693e310effa956019cdcd081391f93f71a7cd36d3dc577e.png"
   vid: "1532"
   pid: "0038"
+  alias_ids: []
 
 - name: "DeathAdder 2000"
   type: "mouse"
   image_url: "http://cn.razerzone.com/assets/product/gallery/deathadder-2000-gallery-1.png"
   vid: "1532"
   pid: "004F"
+  alias_ids: []
 
 - name: "DeathAdder 2013"
   type: "mouse"
   image_url: "https://assets.razerzone.com/eeimages/support/products/561/561_deathadder_classic.png"
   vid: "1532"
   pid: "0037"
+  alias_ids: []
 
 - name: "DeathAdder 3.5G"
   type: "mouse"
   image_url: "https://assets2.razerzone.com/images/da10m/carousel/razer-death-adder-gallery-04.png"
   vid: "1532"
   pid: "0016"
+  alias_ids: []
 
 - name: "DeathAdder 3500"
   type: "mouse"
   image_url: "https://assets.razerzone.com/eeimages/support/products/561/561_deathadder_classic.png"
   vid: "1532"
   pid: "0054"
+  alias_ids: []
 
 - name: "DeathAdder Chroma"
   type: "mouse"
   image_url: "https://assets.razerzone.com/eeimages/support/products/278/278_deathadder_chroma.png"
   vid: "1532"
   pid: "0043"
+  alias_ids: []
 
 - name: "DeathAdder Elite"
   type: "mouse"
   image_url: "https://assets.razerzone.com/eeimages/support/products/724/724_deathadderelite_500x500.png"
   vid: "1532"
   pid: "005C"
+  alias_ids: []
 
 - name: "DeathAdder Essential"
   type: "mouse"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1385/1385_deathadderessential.png"
   vid: "1532"
   pid: "006E"
+  alias_ids: []
 
 - name: "DeathAdder Essential (2021)"
   type: "mouse"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1385/1385_deathadderessential.png"
   vid: "1532"
   pid: "0098"
+  alias_ids: []
 
 - name: "DeathAdder Essential (White Edition)"
   type: "mouse"
   image_url: "https://assets2.razerzone.com/images/da10m/carousel/razer-death-adder-gallery-25.png"
   vid: "1532"
   pid: "0071"
+  alias_ids: []
 
 - name: "DeathAdder V2"
   type: "mouse"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1612/1612_razerdeathadderv2.png"
   vid: "1532"
   pid: "0084"
+  alias_ids: []
 
 - name: "DeathAdder V2 Mini"
   type: "mouse"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1692/deathadder-v2-mini.png"
   vid: "1532"
   pid: "008C"
+  alias_ids: []
 
 - name: "DeathAdder V2 Pro"
   type: "mouse"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1714/comp_1_00000.png"
   vid: "1532"
-  pid: "007D"
+  pid: "007C"
+  alias_ids: ["1532:007D"]
 
 - name: "DeathStalker Chroma"
   type: "keyboard"
   image_url: "https://assets.razerzone.com/eeimages/support/products/665/665_deathstalker_chroma.png"
   vid: "1532"
   pid: "0204"
+  alias_ids: []
 
 - name: "Deathstalker Expert"
   type: "keyboard"
   image_url: "https://assets.razerzone.com/eeimages/support/products/49/49_razer_deathstalker.png"
   vid: "1532"
   pid: "0202"
+  alias_ids: []
 
 - name: "Diamondback Chroma"
   type: "mouse"
   image_url: "https://assets.razerzone.com/eeimages/support/products/613/613_diamondback.png"
   vid: "1532"
   pid: "004C"
+  alias_ids: []
 
 - name: "Firefly"
   type: "mousemat"
   image_url: "https://assets.razerzone.com/eeimages/support/products/594/594_firefly_500x500.png"
   vid: "1532"
   pid: "0C00"
+  alias_ids: []
 
 - name: "Firefly Hyperflux"
   type: "mousemat"
   image_url: "https://assets.razerzone.com/eeimages/support/products/594/594_firefly_500x500.png"
   vid: "1532"
   pid: "0068"
+  alias_ids: []
 
 - name: "Firefly V2"
   type: "mousemat"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1594/1594_firefly_v2.png"
   vid: "1532"
   pid: "0C04"
+  alias_ids: []
 
 - name: "Goliathus"
   type: "mousemat"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1394/1394_goliathus_chroma.png"
   vid: "1532"
   pid: "0C01"
+  alias_ids: []
 
 - name: "Goliathus Extended"
   type: "mousemat"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1395/1395_goliathusextended.png"
   vid: "1532"
   pid: "0C02"
+  alias_ids: []
 
 - name: "Huntsman"
   type: "keyboard"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1360/1360_huntsman-3.png"
   vid: "1532"
   pid: "0227"
+  alias_ids: []
 
 - name: "Huntsman Elite"
   type: "keyboard"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1361/1361_huntsman_elite.png"
   vid: "1532"
   pid: "0226"
+  alias_ids: []
 
 - name: "Huntsman Mini"
   type: "keyboard"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1689/1689-huntsmanmini.png"
   vid: "1532"
   pid: "0257"
+  alias_ids: []
 
 - name: "Huntsman Tournament Edition"
   type: "keyboard"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1537/1537_huntsman_te.png"
   vid: "1532"
   pid: "0243"
+  alias_ids: []
 
 - name: "Huntsman V2 Analog"
   type: "keyboard"
   image_url: "https://dl.razerzone.com/src/4023-1-EN-v1.png"
   vid: "1532"
   pid: "0266"
+  alias_ids: []
 
 - name: "Imperator 2012"
   type: "mouse"
   image_url: "https://assets.razerzone.com/eeimages/support/products/215/215_imperator.png"
   vid: "1532"
   pid: "002F"
+  alias_ids: []
 
 - name: "Kraken 7.1"
   type: "headset"
   image_url: "https://assets.razerzone.com/eeimages/support/products/229/229_kraken_71.png"
   vid: "1532"
   pid: "0501"
-
-- name: "Kraken 7.1"
-  type: "headset"
-  image_url: "https://assets.razerzone.com/eeimages/support/products/229/229_kraken_71.png"
-  vid: "1532"
-  pid: "0506"
+  alias_ids: ["1532:0506"]
 
 - name: "Kraken 7.1 Chroma"
   type: "headset"
   image_url: "https://assets.razerzone.com/eeimages/support/products/280/280_kraken_71_chroma.png"
   vid: "1532"
   pid: "0504"
+  alias_ids: []
 
 - name: "Kraken 7.1 V2"
   type: "headset"
   image_url: "https://assets.razerzone.com/eeimages/support/products/729/729_kraken_71_v2.png"
   vid: "1532"
   pid: "0510"
+  alias_ids: []
 
 - name: "Kraken Kitty Edition"
   type: "headset"
   image_url: "https://assets2.razerzone.com/images/pnx.assets/1c503aa176bc82d999299aba0d6c7d2c/kraken-kitty-quartz.png"
   vid: "1532"
   pid: "0F19"
+  alias_ids: []
 
 - name: "Kraken Ultimate"
   type: "headset"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1603/rzr_kraken_ultimate_render01_2019_resized.png"
   vid: "1532"
   pid: "0527"
+  alias_ids: []
 
 - name: "Lancehead"
   type: "mouse"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1205/1205_lancehead.png"
   vid: "1532"
-  pid: "005A"
+  pid: "0059"
+  alias_ids: ["1532:005A"]
 
 - name: "Lancehead Tournament Edition"
   type: "mouse"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1203/1206_lanceheadte.png"
   vid: "1532"
   pid: "0060"
+  alias_ids: []
 
-- name: "Lancehead Wireless (Receiver)"
+- name: "Lancehead Wireless"
   type: "mouse"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1205/1205_lancehead.png"
   vid: "1532"
   pid: "006F"
+  alias_ids: ["1532:0070"]
 
 - name: "Mamba"
   type: "mouse"
   image_url: "https://assets.razerzone.com/eeimages/support/products/609/609_mamba_500x500.png"
   vid: "1532"
-  pid: "0045"
+  pid: "0044"
+  alias_ids: ["1532:0045"]
 
 - name: "Mamba 2012"
   type: "mouse"
   image_url: "https://assets.razerzone.com/eeimages/support/products/192/192_mamba_2012.png"
   vid: "1532"
-  pid: "0025"
+  pid: "0024"
+  alias_ids: ["1532:0025"]
 
 - name: "Mamba Elite"
   type: "mouse"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1390/1390_mamba_elite.png"
   vid: "1532"
   pid: "006C"
+  alias_ids: []
 
 - name: "Mamba Tournament Edition"
   type: "mouse"
   image_url: "https://assets.razerzone.com/eeimages/support/products/606/606_mambate_500x500.png"
   vid: "1532"
   pid: "0046"
+  alias_ids: []
 
-- name: "Mamba Wireless (Receiver)"
+- name: "Mamba Wireless"
   type: "mouse"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1404/1404_mamba_wireless.png"
   vid: "1532"
   pid: "0072"
+  alias_ids: ["1532:0073"]
 
 - name: "Mouse Bungee V3 Chroma"
   type: "accessory"
   image_url: "https://assets2.razerzone.com/images/pnx.assets/03970e1bd220f3d2985c5e0060fb3bbf/razer-mouse-bungee-v3-chroma.png"
   vid: "1532"
   pid: "0F1D"
+  alias_ids: []
 
 - name: "Mouse Dock"
   type: "accessory"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1711/1711_-_mouse_dock_chroma.png"
   vid: "1532"
   pid: "007E"
+  alias_ids: []
 
 - name: "Naga 2012"
   type: "mouse"
   image_url: "https://assets.razerzone.com/eeimages/products/39/razer-naga-gallery-4.png"
   vid: "1532"
   pid: "002E"
+  alias_ids: []
 
 - name: "Naga 2014"
   type: "mouse"
   image_url: "https://assets.razerzone.com/eeimages/support/products/227/227_razer_naga_2014.png"
   vid: "1532"
   pid: "0040"
+  alias_ids: []
 
 - name: "Naga Chroma"
   type: "mouse"
   image_url: "https://assets.razerzone.com/eeimages/support/products/636/636_naga_chroma.png"
   vid: "1532"
   pid: "0053"
+  alias_ids: []
 
 - name: "Naga Hex"
   type: "mouse"
   image_url: "https://assets.razerzone.com/eeimages/support/products/23/23_naga_hex.png"
   vid: "1532"
   pid: "0041"
+  alias_ids: []
 
 - name: "Naga Hex (Red)"
   type: "mouse"
   image_url: "https://assets.razerzone.com/eeimages/products/12/razer-naga-hex-gallery-12.png"
   vid: "1532"
   pid: "0036"
+  alias_ids: []
 
 - name: "Naga Hex V2"
   type: "mouse"
   image_url: "https://assets.razerzone.com/eeimages/support/products/715/715_nagahexv2_500x500.png"
   vid: "1532"
   pid: "0050"
+  alias_ids: []
 
 - name: "Naga Left-Handed Edition 2020"
   type: "mouse"
   image_url: "https://rzrwarranty.s3.amazonaws.com/cee694cd7526df413008167b7566af310985321b20c57f3dc42e5cbd773f2417.png"
   vid: "1532"
   pid: "008D"
+  alias_ids: []
 
 - name: "Naga Trinity"
   type: "mouse"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1251/1251_razer_naga_trinity.png"
   vid: "1532"
   pid: "0067"
+  alias_ids: []
 
 - name: "Nommo Chroma"
   type: "accessory"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1275/1275_nommo_chroma.png"
   vid: "1532"
   pid: "0517"
+  alias_ids: []
 
 - name: "Nommo Pro"
   type: "accessory"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1419/1419_nommo_pro.png"
   vid: "1532"
   pid: "0518"
+  alias_ids: []
 
 - name: "Nostromo"
   type: "keypad"
   image_url: "https://assets.razerzone.com/eeimages/support/products/564/564_tartarus_classic.png"
   vid: "1532"
   pid: "0111"
+  alias_ids: []
 
 - name: "Orbweaver"
   type: "keypad"
   image_url: "https://assets.razerzone.com/eeimages/support/products/56/56_orbweaver.png"
   vid: "1532"
   pid: "0113"
+  alias_ids: []
 
 - name: "Orbweaver Chroma"
   type: "keypad"
   image_url: "https://assets.razerzone.com/eeimages/support/products/607/607_orbweaver_chroma.png"
   vid: "1532"
   pid: "0207"
+  alias_ids: []
 
 - name: "Ornata"
   type: "keyboard"
   image_url: "https://assets.razerzone.com/eeimages/support/products/726/726_ornata.png"
   vid: "1532"
   pid: "021F"
+  alias_ids: []
 
 - name: "Ornata Chroma"
   type: "keyboard"
   image_url: "https://assets.razerzone.com/eeimages/support/products/727/727_ornata_chroma.png"
   vid: "1532"
   pid: "021E"
+  alias_ids: []
 
 - name: "Ornata V2"
   type: "keyboard"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1672/ornata-v2.png"
   vid: "1532"
   pid: "025D"
+  alias_ids: []
 
 - name: "Orochi 2011"
   type: "mouse"
   image_url: "https://assets.razerzone.com/eeimages/support/products/612/612_orochi_2015.png"
   vid: "1532"
   pid: "0013"
+  alias_ids: []
 
 - name: "Orochi 2013"
   type: "mouse"
   image_url: "https://assets.razerzone.com/eeimages/support/products/612/612_orochi_2015.png"
   vid: "1532"
   pid: "0039"
+  alias_ids: []
 
 - name: "Ouroboros"
   type: "mouse"
   image_url: "https://assets.razerzone.com/eeimages/support/products/26/26_ouroboros.png"
   vid: "1532"
   pid: "0032"
+  alias_ids: []
 
 - name: "Taipan"
   type: "mouse"
   image_url: "https://assets.razerzone.com/eeimages/support/products/19/19_taipan.png"
   vid: "1532"
   pid: "0034"
+  alias_ids: []
 
 - name: "Tartarus"
   type: "keypad"
   image_url: "https://assets.razerzone.com/eeimages/support/products/228/228_tartarus.png"
   vid: "1532"
   pid: "0201"
+  alias_ids: []
 
 - name: "Tartarus Chroma"
   type: "keypad"
   image_url: "https://assets.razerzone.com/eeimages/support/products/598/598_tartarus_chroma.png"
   vid: "1532"
   pid: "0208"
+  alias_ids: []
 
 - name: "Tartarus V2"
   type: "keypad"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1255/1255_tartarus_v2.png"
   vid: "1532"
   pid: "022B"
+  alias_ids: []
 
 - name: "Thunderbolt 4 Dock Chroma"
   type: "accessory"
   image_url: "https://dl.razerzone.com/src/4030-1-EN-v1.png"
   vid: "1532"
   pid: "0F21"
+  alias_ids: []
 
 - name: "Viper"
   type: "mouse"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1539/1539_viper.png"
   vid: "1532"
   pid: "0078"
+  alias_ids: []
 
 - name: "Viper 8KHz"
   type: "mouse"
   image_url: "https://dl.razerzone.com/Images/Viper%208KHz/Viper8khz.png"
   vid: "1532"
   pid: "0091"
+  alias_ids: []
 
 - name: "Viper Mini"
   type: "mouse"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1634/vipermini.png"
   vid: "1532"
   pid: "008A"
+  alias_ids: []
 
 - name: "Viper Ultimate"
   type: "mouse"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1577/ee_photo.png"
   vid: "1532"
-  pid: "007B"
+  pid: "007A"
+  alias_ids: ["1532:007B"]

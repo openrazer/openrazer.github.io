@@ -8,7 +8,8 @@ layout: null
       "type": "{{ device.type }}",
       "image_url": "{{ device.image_url }}",
       "vid": "{{ device.vid }}",
-      "pid": "{{ device.pid }}"
+      "pid": "{{ device.pid }}",
+      "alias_ids": [{% for alias in device.alias_ids %}"{{ alias }}"{% if forloop.last == false %},{% endif %}{% endfor %}]
     }{% if forloop.last == false %},{% endif %}
   {% endfor %}
 ]

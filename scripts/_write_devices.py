@@ -16,32 +16,41 @@ parsed_devices = []
 print("\nNow updating devices.yml...\n")
 
 for device in devices:
-    print("Found: " + device.name)
-
     device_name = device.name.replace("Razer", "").strip()
     device_type = device.type
-    lsusb = str(hex(device._vid))[-4:] + ":" + str(hex(device._pid))[-4:]
-    lsusb = lsusb.replace("x", "0").upper()
+    vid = str(hex(device._vid))[-4:].replace("x", "0").upper()
+    pid = str(hex(device._pid))[-4:].replace("x", "0").upper()
 
-    # Prevent duplicates (wired/wireless sets) although PID is technically different
-    if device_name.find("Wired") != -1:
+    # Merge duplicates (wired/wireless/receiver)
+    for suffix in ["(Wired)", "(Wireless)", "(Receiver)"]:
+        if device_name.find(suffix) != -1:
+            device_name = device_name.replace(suffix, "").strip()
+
+    duplicate = False
+    for _device in parsed_devices:
+        if _device["name"] == device_name:
+            _device["alias_ids"].append(f'"{vid}:{pid}"')
+            duplicate = True
+
+    if duplicate:
+        print("Merging: " + device.name)
         continue
-    elif device_name.find("Wireless") != -1:
-        device_name = device_name.replace("(Wireless)", "").strip()
 
-    # Get and validate URLs
+    # Validate image URLs
     device_img_url = device.device_image
 
     if not device_img_url:
         print("Missing image URL: " + device_name)
         device_img_url = "img/placeholder.png"
 
+    print("Adding: " + device.name)
     parsed_devices.append({
         "name": device_name,
         "type": device_type,
         "image_url": device_img_url,
-        "vid": lsusb.split(":")[0],
-        "pid": lsusb.split(":")[1]
+        "vid": vid,
+        "pid": pid,
+        "alias_ids": [],
     })
 
 # Replace sections
@@ -53,4 +62,5 @@ with open("../_data/devices.yml", "w") as f:
         f.write('\n  image_url: "{0}"'.format(device["image_url"]))
         f.write('\n  vid: "{0}"'.format(device["vid"]))
         f.write('\n  pid: "{0}"'.format(device["pid"]))
+        f.write('\n  alias_ids: [{0}]'.format(", ".join(device["alias_ids"])))
         f.write('\n')
