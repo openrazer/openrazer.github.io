@@ -100,6 +100,13 @@
   pid: "0085"
   alias_ids: []
 
+- name: "Basilisk V3"
+  type: "mouse"
+  image_url: "https://assets2.razerzone.com/pages/basilisk-v3-4D578898E8144Le8da21dde32b7a9f5f/basilisk.png"
+  vid: "1532"
+  pid: "0099"
+  alias_ids: []
+
 - name: "Basilisk X HyperSpeed"
   type: "mouse"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1589/1589_basilisk_x__hyperspeed.png"
@@ -219,6 +226,13 @@
   pid: "0258"
   alias_ids: ["1532:0271"]
 
+- name: "BlackWidow V3 Pro"
+  type: "keyboard"
+  image_url: "https://dl.razerzone.com/src/3809-1-EN-v1.png"
+  vid: "1532"
+  pid: "025A"
+  alias_ids: []
+
 - name: "BlackWidow V3 Tenkeyless"
   type: "keyboard"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1709/1709-blackwidow-v3-tkl.png"
@@ -317,6 +331,13 @@
   pid: "026D"
   alias_ids: []
 
+- name: "Blade 15 Advanced (Early 2022)"
+  type: "keyboard"
+  image_url: "https://assets2.razerzone.com/images/pnx.assets/a1ee4c5a780a401444be898fe93ade69/thumbnail-blade15-new-model.png"
+  vid: "1532"
+  pid: "028A"
+  alias_ids: []
+
 - name: "Blade 15 Advanced (Mid 2021)"
   type: "keyboard"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1778/1778-razerblade15advanced2021rz09-0409x-2.png"
@@ -343,6 +364,13 @@
   image_url: "https://assets2.razerzone.com/images/blade-15/shop/studio-ch41-1.jpg"
   vid: "1532"
   pid: "024D"
+  alias_ids: []
+
+- name: "Blade 17 (2022)"
+  type: "keyboard"
+  image_url: "https://dl.razerzone.com/src/5896/5896-1-en-v2.png"
+  vid: "1532"
+  pid: "028B"
   alias_ids: []
 
 - name: "Blade 17 Pro (Mid 2021)"
@@ -688,11 +716,25 @@
   pid: "0257"
   alias_ids: []
 
+- name: "Huntsman Mini (JP)"
+  type: "keyboard"
+  image_url: "https://rzrwarranty.s3.amazonaws.com/4403e5e6b96d59dc95a278e257688e64a68f7b24945617653d68e3273877c01e.png"
+  vid: "1532"
+  pid: "0269"
+  alias_ids: []
+
 - name: "Huntsman Tournament Edition"
   type: "keyboard"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1537/1537_huntsman_te.png"
   vid: "1532"
   pid: "0243"
+  alias_ids: []
+
+- name: "Huntsman V2"
+  type: "keyboard"
+  image_url: "https://dl.razerzone.com/src/5642/5642-1-en-v1.png"
+  vid: "1532"
+  pid: "026C"
   alias_ids: []
 
 - name: "Huntsman V2 Analog"
@@ -835,6 +877,20 @@
   pid: "0053"
   alias_ids: []
 
+- name: "Naga Epic Chroma"
+  type: "mouse"
+  image_url: "https://assets.razerzone.com/eeimages/products/20776/rzrnagaepicchroma_04.png"
+  vid: "1532"
+  pid: "003E"
+  alias_ids: []
+
+- name: "Naga Epic Chroma Dock"
+  type: "mouse"
+  image_url: "https://assets.razerzone.com/eeimages/products/20776/rzrnagaepicchroma_04.png"
+  vid: "1532"
+  pid: "003F"
+  alias_ids: []
+
 - name: "Naga Hex"
   type: "mouse"
   image_url: "https://assets.razerzone.com/eeimages/support/products/23/23_naga_hex.png"
@@ -862,6 +918,13 @@
   vid: "1532"
   pid: "008D"
   alias_ids: []
+
+- name: "Naga Pro"
+  type: "mouse"
+  image_url: "https://hybrismediaprod.blob.core.windows.net/sys-master-phoenix-images-container/hfd/ha6/9080569528350/razer-naga-pro-500x500.png"
+  vid: "1532"
+  pid: "008F"
+  alias_ids: ["1532:0090"]
 
 - name: "Naga Trinity"
   type: "mouse"
@@ -926,6 +989,13 @@
   pid: "025D"
   alias_ids: []
 
+- name: "Orochi"
+  type: "mouse"
+  image_url: "https://assets.razerzone.com/eeimages/support/products/612/612_orochi_2015.png"
+  vid: "1532"
+  pid: "0048"
+  alias_ids: []
+
 - name: "Orochi 2011"
   type: "mouse"
   image_url: "https://assets.razerzone.com/eeimages/support/products/612/612_orochi_2015.png"
@@ -940,11 +1010,39 @@
   pid: "0039"
   alias_ids: []
 
+- name: "Orochi V2 (Bluetooth)"
+  type: "mouse"
+  image_url: "https://dl.razerzone.com/src/OrochiV2-1-en-v1.png"
+  vid: "1532"
+  pid: "0095"
+  alias_ids: []
+
+- name: "Orochi V2"
+  type: "mouse"
+  image_url: "https://dl.razerzone.com/src/OrochiV2-1-en-v1.png"
+  vid: "1532"
+  pid: "0094"
+  alias_ids: []
+
 - name: "Ouroboros"
   type: "mouse"
   image_url: "https://assets.razerzone.com/eeimages/support/products/26/26_ouroboros.png"
   vid: "1532"
   pid: "0032"
+  alias_ids: []
+
+- name: "Pro Click"
+  type: "mouse"
+  image_url: "https://dl.razerzone.com/src/3802-0-en-v1.png"
+  vid: "1532"
+  pid: "0077"
+  alias_ids: ["1532:0080"]
+
+- name: "Raptor 27"
+  type: "accessory"
+  image_url: "https://hybrismediaprod.blob.core.windows.net/sys-master-phoenix-images-container/ha0/h53/9081460162590/raptor-27-gallery-1.jpg"
+  vid: "1532"
+  pid: "0F12"
   alias_ids: []
 
 - name: "Taipan"
