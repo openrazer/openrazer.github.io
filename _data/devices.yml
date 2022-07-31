@@ -576,6 +576,13 @@
   pid: "0016"
   alias_ids: []
 
+- name: "DeathAdder 3.5G Black"
+  type: "mouse"
+  image_url: "https://assets.razerzone.com/eeimages/products/33/razer-deathadder-be-gallery-3.png"
+  vid: "1532"
+  pid: "0029"
+  alias_ids: []
+
 - name: "DeathAdder 3500"
   type: "mouse"
   image_url: "https://assets.razerzone.com/eeimages/support/products/561/561_deathadder_classic.png"
@@ -638,6 +645,13 @@
   vid: "1532"
   pid: "007C"
   alias_ids: ["1532:007D"]
+
+- name: "DeathAdder V2 X HyperSpeed"
+  type: "mouse"
+  image_url: "https://hybrismediaprod.blob.core.windows.net/sys-master-phoenix-images-container/he8/h51/9250345058334/deathadder-v2-x-hyperspeed-500x500.png"
+  vid: "1532"
+  pid: "009C"
+  alias_ids: []
 
 - name: "DeathStalker Chroma"
   type: "keyboard"
@@ -721,6 +735,13 @@
   image_url: "https://rzrwarranty.s3.amazonaws.com/4403e5e6b96d59dc95a278e257688e64a68f7b24945617653d68e3273877c01e.png"
   vid: "1532"
   pid: "0269"
+  alias_ids: []
+
+- name: "Huntsman Mini Analog"
+  type: "keyboard"
+  image_url: "https://assets.razerzone.com/eeimages/support/products/1689/1689-huntsmanmini.png"
+  vid: "1532"
+  pid: "0282"
   alias_ids: []
 
 - name: "Huntsman Tournament Edition"
@@ -1107,3 +1128,10 @@
   vid: "1532"
   pid: "007A"
   alias_ids: ["1532:007B"]
+
+- name: "Viper V2 Pro"
+  type: "mouse"
+  image_url: "https://dl.razerzone.com/src/6048-1-en-v10.png"
+  vid: "1532"
+  pid: "00A5"
+  alias_ids: ["1532:00A6"]
