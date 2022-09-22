@@ -154,7 +154,7 @@ body:before {
 }
 
 /****************************
- * Features Grid
+ * Features/App Grid
 *****************************/
 .features-grid {
     display: flex;
@@ -173,6 +173,15 @@ body:before {
     margin-top: 16px;
 }
 
+.feature img {
+    max-width: 64px;
+    margin: auto;
+}
+
+.feature .gray {
+    margin: 0;
+}
+
 .features-grid p {
     margin-bottom: 10px;
 }
@@ -185,6 +194,27 @@ body:before {
     .feature {
         flex: 50%;
     }
+}
+
+/* When used to display apps */
+.features-grid.apps .fa {
+    height: 64px;
+}
+
+.features-grid.apps .feature {
+    padding: 0;
+    margin: 4px 16px;
+    flex: 20%;
+}
+
+.features-grid.apps .feature a:hover h4,
+.features-grid.apps .feature a:focus h4 {
+    color: green;
+}
+
+.features-grid.apps .feature a:hover img,
+.features-grid.apps .feature a:focus img {
+    opacity: 0.75;
 }
 
 /****************************
@@ -414,17 +444,4 @@ footer p u {
 .panel-title a:hover img,
 .panel-title a:focus img {
     filter: grayscale(0) brightness(0.5);
-}
-
-/****************************
- * Apps bullet list
-*****************************/
-.apps {
-    left: 18px;
-    position: relative;
-}
-
-.apps > li > a > img {
-    width: 24px;
-    height: 24px;
 }
