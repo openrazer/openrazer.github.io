@@ -79,6 +79,7 @@ hr {
 
 #header h2 {
     margin: 1em 3.25em;
+    text-shadow: 0px 0px 5px black;
 }
 
 body:before {
@@ -87,11 +88,19 @@ body:before {
     left: 0;
     right: 0;
     top: 0;
-    height: 143px;
+    height: 120px;
+    animation: rgb 2s linear infinite;
     background-image: url('../img/header.jpg');
     background-size: cover;
-    mask-image: -webkit-gradient(linear, left 80%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
-    -webkit-mask-image: -webkit-gradient(linear, left 80%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+}
+
+@keyframes rgb {
+    0% {
+        filter: hue-rotate(359deg);
+    }
+    100% {
+        filter: hue-rotate(0deg);
+    }
 }
 
 #logo {
@@ -119,13 +128,13 @@ body:before {
     position: absolute;
     top: 123px;
     left: 0;
-    border-bottom: 1px solid #646464;
-    height: 56px;
+    border-bottom: 1px solid #323232;
+    min-height: 56px;
 }
 
 #nav-menu {
     width: 100%;
-    background-color: rgba(0,0,0,0.9);
+    background: #000;
     color: lime;
     padding: 8px;
     z-index: 10;
@@ -137,6 +146,12 @@ body:before {
     float: left;
     font-size: 20px;
     margin: 0;
+}
+
+@media (max-width: 660px) {
+    #mini-logo-text {
+        display: none !important;
+    }
 }
 
 /****************************
@@ -314,38 +329,33 @@ footer p u {
 /****************************
  * Custom Buttons Override
 *****************************/
-.nav-pills {
+.nav {
     float: right;
 }
 
-.nav-pills > li > a, .btn {
+.nav > li > a, .btn {
     padding: 8px;
-    background-color: #000;
     color: white;
-    border: 1px solid #404040;
 }
 
-.nav-pills > li > a:hover,
-.nav-tabs > li > a:focus, .btn:hover,
-.btn:focus,
+.nav > li > a:hover,
 .nav > li > a:focus,
 .nav > li > a:hover {
-    background-color: #006400;
+    background: linear-gradient(#007300, #006400);
     color: white;
     text-decoration: none;
 }
 
-.nav-pills > li > a:active, .btn:active {
-    background-color: #00FF00;
-    color: black;
+.nav > li > a:active {
+    background: linear-gradient(#006400, #007300);
+    color: white;
 }
 
-.nav-pills > li.active > a,
-.nav-pills > li.active > a:focus,
-.nav-pills > li.active > a:hover {
-    background-color: #00A900;
+.nav > li.active > a,
+.nav > li.active > a:focus,
+.nav > li.active > a:hover {
+    background-color: green;
     color: white;
-    border: 1px solid #404040;
 }
 
 
