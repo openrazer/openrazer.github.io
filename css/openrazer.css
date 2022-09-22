@@ -1,7 +1,5 @@
 /*
- * Designed by @lah7 for the OpenRazer project.
- *
- * Copyright (C) 2016-2020 Luke Horwell (lah7)
+ * Copyright (C) 2016-2020, 2022 Luke Horwell (lah7)
  * Licensed under CC BY-SA 4.0
  */
 
@@ -55,6 +53,11 @@ hr {
 
 .gray {
     color: #808080;
+    margin: 10px 0;
+}
+
+.gray + .gray {
+    margin-top: -8px;
 }
 
 /****************************
@@ -82,6 +85,7 @@ body:before {
     height: 143px;
     background-image: url('../img/header.jpg');
     background-size: cover;
+    mask-image: -webkit-gradient(linear, left 80%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
     -webkit-mask-image: -webkit-gradient(linear, left 80%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
 }
 
@@ -134,53 +138,44 @@ body:before {
  * Sections of the Page Background
 *****************************/
 .section {
-    padding: 16px;
     background-color: black;
+    box-shadow: 0px 0px 10px black;
+    padding: 16px;
 }
 
 .section-gap {
-    height: 32px;
     background-color: #181818;
+    padding-top: 60px;
 }
 
 /****************************
  * Features Grid
 *****************************/
-#features {
-    margin-top: 32px;
-    margin-bottom: 16px;
-}
-
 .features-grid {
+    display: flex;
     margin-top: 32px;
 }
 
 .feature {
-    height: 110px;
-    margin-bottom: 40px;
-    vertical-align: middle;
-}
-
-.features-icon span {
-    width: 100px;
-    float: left;
-    padding: 10px;
-    margin-top: 8px;
-    margin-right: 8px;
-    margin-bottom: 32px;
-}
-
-.features-icon img {
-    float: left;
-    width: 100px;
-    height: 100px;
-    padding: 10px;
-    margin-right: 8px;
-    margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 4px 24px;
+    flex: 1;
 }
 
 .features-grid p {
     margin-bottom: 10px;
+}
+
+@media (max-width: 540px) {
+    .features-grid {
+        flex-wrap: wrap;
+    }
+
+    .feature {
+        flex: 50%;
+    }
 }
 
 /****************************
@@ -194,8 +189,8 @@ body:before {
 
 .device-icon {
     height: 220px;
-    margin-bottom: 8px;
     border: 1px solid black;
+    overflow: visible;
 }
 
 .device-icon .inner {
@@ -225,32 +220,45 @@ body:before {
  * Footer
 *****************************/
 footer {
-    padding: 8px;
+    display: flex;
+    margin: 60px -15px 15px;
+    padding-top: 16px;
     color: #7F7F7F;
     font-size: 12px;
     overflow-y: auto;
 }
 
-footer .left {
-    float: left;
+.social-links {
+    margin-left: auto;
 }
 
-footer .right {
-    float: right;
-}
-
-footer .social img {
+.social-links img {
     width: 32px;
     height: 32px;
 }
 
-footer .social:hover,
-footer .social:focus {
+.social:hover,
+.social:focus {
     filter: brightness(0.5);
 }
 
-footer .social + .social {
+.social + .social {
     margin-left: 0.5em;
+}
+
+@media (max-width: 768px) {
+    footer {
+        flex-wrap: wrap;
+    }
+
+    .footer-text,
+    .social-links {
+        flex: 100%;
+    }
+
+    .social-links {
+        margin: 16px 0;
+    }
 }
 
 /****************************
@@ -341,12 +349,30 @@ footer .social + .social {
 
 
 /****************************
- * Misc.
+ * Project Links
 *****************************/
 .project-links {
+    padding: 4px 0;
     text-align: center;
 }
 
+.project-links a {
+    display: block;
+}
+
+.project-links span {
+    margin-bottom: 4px;
+}
+
+@media (max-width: 768px) {
+    .project-links a {
+        margin-bottom: 32px;
+    }
+}
+
+/****************************
+ * Misc.
+*****************************/
 .danger > h5 {
     padding-top: 8px;
     padding-bottom: 8px;
