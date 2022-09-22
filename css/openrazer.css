@@ -8,7 +8,8 @@
 *****************************/
 @import url('https://fonts.googleapis.com/css?family=Play');
 body {
-    font-family: 'Play', sans-serif;
+    font-family: 'Play', 'Ubuntu', 'DejaVu Sans', 'Open Sans', sans-serif;
+    font-size: 15px;
     color: #00FF00;
     position: relative;
     height: 100%;
@@ -22,6 +23,10 @@ h1, h2, h3, h4, h5 {
 
 h3 {
     margin: 10px 0 15px;
+}
+
+h5 {
+    font-size: 15px;
 }
 
 p {
@@ -164,6 +169,10 @@ body:before {
     flex: 1;
 }
 
+.feature h4 {
+    margin-top: 16px;
+}
+
 .features-grid p {
     margin-bottom: 10px;
 }
@@ -185,6 +194,10 @@ body:before {
     width: 100%;
     text-align: center;
     vertical-align: middle;
+}
+
+.device-name {
+    font-size: 14px;
 }
 
 .device-icon {
@@ -224,8 +237,15 @@ footer {
     margin: 60px -15px 15px;
     padding-top: 16px;
     color: #7F7F7F;
-    font-size: 12px;
     overflow-y: auto;
+}
+
+footer p {
+    color: gray;
+}
+
+footer p u {
+    color: lightgray;
 }
 
 .social-links {
@@ -358,10 +378,12 @@ footer {
 
 .project-links a {
     display: block;
+    max-width: 150px;
+    margin: auto;
 }
 
 .project-links span {
-    margin-bottom: 4px;
+    margin-bottom: 8px;
 }
 
 @media (max-width: 768px) {

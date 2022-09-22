@@ -135,7 +135,7 @@ layout: null
 
                             <div id="{{ device.name | replace:' ', '-' }}" class="col-md-3 col-sm-4 col-xs-6 device-icon">
                                 <img class="inner" loading="lazy" src="{{ device.image_url }}"/>
-                                <h5>{{ device.name }}</h5>
+                                <h5 class="device-name">{{ device.name }}</h5>
                                 <div>
                                     <code>{{ device.vid }}:{{ device.pid }}</code>
                                     {% for alias in device.alias_ids %}
@@ -159,7 +159,7 @@ layout: null
 
                             <div id="{{ device.name | replace:' ', '-' }}" class="col-md-3 col-sm-4 col-xs-6 device-icon">
                                 <img class="inner" loading="lazy" src="{{ device.image_url }}"/>
-                                <h5>{{ device.name }}</h5>
+                                <h5 class="device-name">{{ device.name }}</h5>
                                 <div>
                                     <code>{{ device.vid }}:{{ device.pid }}</code>
                                     {% for alias in device.alias_ids %}
@@ -183,7 +183,7 @@ layout: null
 
                             <div id="{{ device.name | replace:' ', '-' }}" class="col-md-3 col-sm-4 col-xs-6 device-icon">
                                 <img class="inner" loading="lazy" src="{{ device.image_url }}"/>
-                                <h5>{{ device.name }}</h5>
+                                <h5 class="device-name">{{ device.name }}</h5>
                                 <div>
                                     <code>{{ device.vid }}:{{ device.pid }}</code>
                                     {% for alias in device.alias_ids %}
@@ -208,7 +208,7 @@ layout: null
 
                             <div id="{{ device.name | replace:' ', '-' }}" class="col-md-3 col-sm-4 col-xs-6 device-icon">
                                 <img class="inner" loading="lazy" src="{{ device.image_url }}"/>
-                                <h5>{{ device.name }}</h5>
+                                <h5 class="device-name">{{ device.name }}</h5>
                                 <div>
                                     <code>{{ device.vid }}:{{ device.pid }}</code>
                                     {% for alias in device.alias_ids %}
@@ -233,7 +233,7 @@ layout: null
 
                             <div id="{{ device.name | replace:' ', '-' }}" class="col-md-3 col-sm-4 col-xs-6 device-icon">
                                 <img class="inner" loading="lazy" src="{{ device.image_url }}"/>
-                                <h5>{{ device.name }}</h5>
+                                <h5 class="device-name">{{ device.name }}</h5>
                                 <div>
                                     <code>{{ device.vid }}:{{ device.pid }}</code>
                                     {% for alias in device.alias_ids %}
@@ -258,7 +258,7 @@ layout: null
 
                             <div id="{{ device.name | replace:' ', '-' }}" class="col-md-3 col-sm-4 col-xs-6 device-icon">
                                 <img class="inner" loading="lazy" src="{{ device.image_url }}"/>
-                                <h5>{{ device.name }}</h5>
+                                <h5 class="device-name">{{ device.name }}</h5>
                                 <div>
                                     <code>{{ device.vid }}:{{ device.pid }}</code>
                                     {% for alias in device.alias_ids %}
@@ -271,6 +271,7 @@ layout: null
                     </div>
                     <br>
                     <h4>Device not listed?</h4>
+                    <br>
                     <div class="project-links row">
                         <div class="col-sm-3 col-xs-6 col-sm-offset-1">
                             <a href="https://github.com/openrazer/openrazer/compare/stable...master"><span class="fa fa-3x fa-tasks"></span><br> Check unreleased changes</a>
@@ -643,7 +644,7 @@ layout: null
                 <div class="footer-text">
                     <p>
                         This project is licensed under the <a href="https://github.com/openrazer/openrazer/blob/master/LICENSES/GPL-2.0-or-later.txt">GPLv2</a>.
-                        It is <strong><u>not affiliated</u></strong> with <a href="https://www.razerzone.com/">Razer Inc</a>.
+                        It is <u>not affiliated</u> with <a href="https://www.razerzone.com/">Razer Inc</a>.
                     </p>
                     <p>
                         Brought to you by <a href="https://github.com/terrycain">terrycain</a>,
