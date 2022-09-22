@@ -125,9 +125,8 @@ body:before {
 
 #nav-menu {
     width: 100%;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0,0,0,0.9);
     color: lime;
-    vertical-align: middle;
     padding: 8px;
     z-index: 10;
 }
@@ -137,6 +136,7 @@ body:before {
     text-align: left;
     float: left;
     font-size: 20px;
+    margin: 0;
 }
 
 /****************************
