@@ -373,6 +373,13 @@
   pid: "028B"
   alias_ids: []
 
+- name: "Blade 17 Pro (Early 2021)"
+  type: "keyboard"
+  image_url: "https://dl.razerzone.com/src/4025-16-EN-v1.png"
+  vid: "1532"
+  pid: "026E"
+  alias_ids: []
+
 - name: "Blade 17 Pro (Mid 2021)"
   type: "keyboard"
   image_url: "https://dl.razerzone.com/src/5524/5524-1-en-v2.png"
@@ -497,6 +504,13 @@
   image_url: "https://dl.razerzone.com/Images/ChargingPadChroma/CPC-ProductImage.png"
   vid: "1532"
   pid: "0F26"
+  alias_ids: []
+
+- name: "Chroma Addressable RGB Controller"
+  type: "accessory"
+  image_url: "https://dl.razerzone.com/src/3903-1-EN-v1.png"
+  vid: "1532"
+  pid: "0F1F"
   alias_ids: []
 
 - name: "Chroma HDK"
@@ -653,11 +667,25 @@
   pid: "009C"
   alias_ids: []
 
+- name: "DeathAdder V3 Pro"
+  type: "mouse"
+  image_url: "https://dl.razerzone.com/src/6130/6130-1-en-v2.png"
+  vid: "1532"
+  pid: "00B6"
+  alias_ids: ["1532:00B7"]
+
 - name: "DeathStalker Chroma"
   type: "keyboard"
   image_url: "https://assets.razerzone.com/eeimages/support/products/665/665_deathstalker_chroma.png"
   vid: "1532"
   pid: "0204"
+  alias_ids: []
+
+- name: "DeathStalker V2"
+  type: "keyboard"
+  image_url: "https://dl.razerzone.com/src/6118/6118-1-en-v1.png"
+  vid: "1532"
+  pid: "0295"
   alias_ids: []
 
 - name: "Deathstalker Expert"
@@ -763,6 +791,13 @@
   image_url: "https://dl.razerzone.com/src/4023-1-EN-v1.png"
   vid: "1532"
   pid: "0266"
+  alias_ids: []
+
+- name: "Huntsman V2 Tenkeyless"
+  type: "keyboard"
+  image_url: "https://dl.razerzone.com/src/5638/5638-1-en-v1.png"
+  vid: "1532"
+  pid: "026B"
   alias_ids: []
 
 - name: "Imperator 2012"
@@ -952,6 +987,13 @@
   image_url: "https://assets.razerzone.com/eeimages/support/products/1251/1251_razer_naga_trinity.png"
   vid: "1532"
   pid: "0067"
+  alias_ids: []
+
+- name: "Naga X"
+  type: "mouse"
+  image_url: "https://dl.razerzone.com/src/3993-1-EN-V2.png"
+  vid: "1532"
+  pid: "0096"
   alias_ids: []
 
 - name: "Nommo Chroma"
