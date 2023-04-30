@@ -107,6 +107,13 @@
   pid: "0099"
   alias_ids: []
 
+- name: "Basilisk V3 Pro"
+  type: "mouse"
+  image_url: "https://dl.razerzone.com/src2/6220/6220-4-en-v1.png"
+  vid: "1532"
+  pid: "00AA"
+  alias_ids: ["1532:00AB"]
+
 - name: "Basilisk X HyperSpeed"
   type: "mouse"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1589/1589_basilisk_x__hyperspeed.png"
@@ -275,6 +282,13 @@
   pid: "0270"
   alias_ids: []
 
+- name: "Blade 14 (2022)"
+  type: "keyboard"
+  image_url: "https://dl.razerzone.com/src/5896/5896-1-en-v2.png"
+  vid: "1532"
+  pid: "028C"
+  alias_ids: []
+
 - name: "Blade 15 (2018)"
   type: "keyboard"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1418/1418_blade_2018__base.png"
@@ -343,6 +357,13 @@
   image_url: "https://assets.razerzone.com/eeimages/support/products/1778/1778-razerblade15advanced2021rz09-0409x-2.png"
   vid: "1532"
   pid: "0276"
+  alias_ids: []
+
+- name: "Blade 15 Base (2022)"
+  type: "keyboard"
+  image_url: "https://assets.razerzone.com/eeimages/support/products/1756/blade-15-base-2021-rz09-0369x.png"
+  vid: "1532"
+  pid: "027A"
   alias_ids: []
 
 - name: "Blade 15 Base (Early 2020)"
@@ -534,6 +555,13 @@
   pid: "0215"
   alias_ids: []
 
+- name: "Core X Chroma"
+  type: "core"
+  image_url: "https://hybrismediaprod.blob.core.windows.net/sys-master-phoenix-images-container/h44/h3d/9084457943070/core-x-chroma-gallery1.jpg"
+  vid: "1532"
+  pid: "0F1A"
+  alias_ids: []
+
 - name: "Cynosa Chroma"
   type: "keyboard"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1256/1256_cynosa_chroma.png"
@@ -646,6 +674,13 @@
   pid: "0084"
   alias_ids: []
 
+- name: "DeathAdder V2 Lite"
+  type: "mouse"
+  image_url: "https://assets.razerzone.com/eeimages/support/products/1692/deathadder-v2-mini.png"
+  vid: "1532"
+  pid: "00A1"
+  alias_ids: []
+
 - name: "DeathAdder V2 Mini"
   type: "mouse"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1692/deathadder-v2-mini.png"
@@ -687,6 +722,20 @@
   vid: "1532"
   pid: "0295"
   alias_ids: []
+
+- name: "DeathStalker V2 Pro"
+  type: "keyboard"
+  image_url: "https://dl.razerzone.com/src/6118/6118-1-en-v1.png"
+  vid: "1532"
+  pid: "0292"
+  alias_ids: ["1532:0290"]
+
+- name: "DeathStalker V2 Pro TKL"
+  type: "keyboard"
+  image_url: "https://dl.razerzone.com/src/6117/6117-1-en-v1.png"
+  vid: "1532"
+  pid: "0298"
+  alias_ids: ["1532:0296"]
 
 - name: "Deathstalker Expert"
   type: "keyboard"
@@ -800,6 +849,13 @@
   pid: "026B"
   alias_ids: []
 
+- name: "HyperPolling Wireless Dongle"
+  type: "mouse"
+  image_url: "https://dl.razerzone.com/src/6141/6141-1-en-v1.png"
+  vid: "1532"
+  pid: "00B3"
+  alias_ids: []
+
 - name: "Imperator 2012"
   type: "mouse"
   image_url: "https://assets.razerzone.com/eeimages/support/products/215/215_imperator.png"
@@ -862,6 +918,13 @@
   vid: "1532"
   pid: "006F"
   alias_ids: ["1532:0070"]
+
+- name: "Laptop Stand Chroma"
+  type: "accessory"
+  image_url: "https://hybrismediaprod.blob.core.windows.net/sys-master-phoenix-images-container/hfe/hbc/9081459376158/Razer-Laptop-Stand-Chroma-04.jpg"
+  vid: "1532"
+  pid: "0F0D"
+  alias_ids: []
 
 - name: "Mamba"
   type: "mouse"
@@ -1052,6 +1115,13 @@
   pid: "025D"
   alias_ids: []
 
+- name: "Ornata V3 X"
+  type: "keyboard"
+  image_url: "https://dl.razerzone.com/src/6071-1-en-v1.png"
+  vid: "1532"
+  pid: "0294"
+  alias_ids: []
+
 - name: "Orochi"
   type: "mouse"
   image_url: "https://assets.razerzone.com/eeimages/support/products/612/612_orochi_2015.png"
@@ -1100,6 +1170,13 @@
   vid: "1532"
   pid: "0077"
   alias_ids: ["1532:0080"]
+
+- name: "Pro Click Mini"
+  type: "mouse"
+  image_url: "https://dl.razerzone.com/src/5763/5763-1-en-v1.png"
+  vid: "1532"
+  pid: "009A"
+  alias_ids: []
 
 - name: "Raptor 27"
   type: "accessory"
