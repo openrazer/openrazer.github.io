@@ -501,11 +501,11 @@ layout: null
                         <div class="danger">
                             <h5>
                             <span class="fa fa-warning"></span>
-                            In order to run the openrazer-daemon service, your user needs to be part of the <code>plugdev</code>
+                            In order to run the openrazer-daemon service, your user needs to be part of the <code>openrazer</code>
                             group.
                             </h5>
                         </div>
-                        <pre><code>users.users.&lt;name&quest;&gt;.extraGroups = [ &quot;plugdev&quot; ];</code></pre>
+                        <pre><code>hardware.openrazer.users = [&quot;&lt;name&quest;&gt;&quot;]&semi;</code></pre>
                         <p>Rebuild your NixOS configuration:</p>
                         <pre><code><span class="fa fa-dollar"></span> sudo nixos-rebuild switch</code></pre>
                         <h4>nix-shell</h4>
