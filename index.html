@@ -312,28 +312,6 @@ layout: null
             <h4>Officially Supported</h4>
             <p class="gray">Packaged and supported by us!</p>
             <div class="panel-group" id="distros">
-                <div class="panel panel-default"> <!-- Arch -->
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#distros" href="#arch">
-                            <img class="distro-logo" src="img/distros/arch.png" alt="Arch Logo"/>
-                            &nbsp; Arch Linux / Manjaro
-                        </a>
-                        </h4>
-                    </div>
-                    <div id="arch" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            <h4><span class="fa fa-cube"></span>&nbsp;From AUR</h4>
-                            <p>
-                                Install <a href="https://aur.archlinux.org/packages/openrazer-meta/" target="_blank" rel="noopener">openrazer-meta</a> from the AUR
-                                using an <a href="https://wiki.archlinux.org/title/AUR_helpers#Pacman_wrappers">AUR helper</a> or by building the
-                                <a href="https://aur.archlinux.org/cgit/aur.git/plain/PKGBUILD?h=openrazer">PKGBUILD</a> directly.
-                            </p>
-                            <p>After the drivers are installed, please restart the computer.</p>
-                        </div>
-                    </div>
-                </div>
-
                 <div class="panel panel-default"> <!-- Debian -->
                     <div class="panel-heading">
                         <h4 class="panel-title">
@@ -466,6 +444,31 @@ layout: null
                 <h4>Community Supported</h4>
                 <p class="gray">Packaged and supported by the wider community.</p>
 
+                <div class="panel panel-default"> <!-- Arch -->
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#distros" href="#arch">
+                            <img class="distro-logo" src="img/distros/arch.png" alt="Arch Logo"/>
+                            &nbsp; Arch Linux / Manjaro
+                        </a>
+                        </h4>
+                    </div>
+                    <div id="arch" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <h4><span class="fa fa-cube"></span>&nbsp;Using pacman</h4>
+                            <p>
+                                Packages are available in the official repos:
+                                <ul>
+                                    <li><a href="https://archlinux.org/packages/?q=openrazer">https://archlinux.org/packages/?q=openrazer</a></li>
+                                </ul>
+                            </p>
+                            <p>To install:</p>
+                            <pre><code><span class="fa fa-dollar"></span> sudo pacman -S openrazer-daemon</code></pre>
+                            <p>After the drivers are installed, please restart the computer.</p>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="panel panel-default"> <!-- Gentoo -->
                     <div class="panel-heading">
                         <h4 class="panel-title">
@@ -476,10 +479,10 @@ layout: null
                     </div>
                     <div id="gentoo" class="panel-collapse collapse">
                         <div class="panel-body">
-                        <h4><span class="fa fa-cube"></span> Gentoo ebuild</h4>
-                        <p>To install:</p>
-                        <pre><code><span class="fa fa-dollar"></span> emerge -av --autounmask sys-apps/openrazer</code></pre>
-                        <p>After the drivers are installed, please restart the computer.</p>
+                            <h4><span class="fa fa-cube"></span> Gentoo ebuild</h4>
+                            <p>To install:</p>
+                            <pre><code><span class="fa fa-dollar"></span> emerge -av --autounmask sys-apps/openrazer</code></pre>
+                            <p>After the drivers are installed, please restart the computer.</p>
                         </div>
                     </div>
                 </div>
