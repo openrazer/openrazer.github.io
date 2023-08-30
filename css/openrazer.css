@@ -48,6 +48,7 @@ pre, code {
 
 pre {
     border: 1px solid #181818;
+    white-space: pre-line;
 }
 
 hr {
