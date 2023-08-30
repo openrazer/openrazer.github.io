@@ -1,7 +1,6 @@
 ---
 layout: null
 ---
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -29,10 +28,8 @@ layout: null
     <link rel="shortcut icon" href="img/favicon.ico">
 
     <title>OpenRazer | Open Source Drivers for GNU/Linux</title>
-
 </head>
 <body data-spy="scroll" data-target="#navbar" data-offset="50">
-
     <!-- Sticky Navigation Bar -->
     <div id="nav-menu" class="col-fluid nav-top">
         <div class="col-lg-2"></div>
@@ -40,11 +37,11 @@ layout: null
             <p hidden id="mini-logo-text"><img class="logo-mini" alt="OpenRazer Logo" src="img/logo.svg"/>OpenRazer</p>
             <nav id="navbar">
                 <ul class="nav nav-pills" role="tablist">
-                <li><a href="#features"><span class="fa fa-star"></span>&nbsp; Features</a></li>
-                <li><a href="#devices"><span class="fa fa-keyboard"></span>&nbsp; Devices</a></li>
-                <li><a href="#download"><span class="fa fa-download"></span>&nbsp; Download</a></li>
-                <li><a href="#apps"><span class="fa fa-puzzle-piece"></span>&nbsp; Apps</a></li>
-                <li><a href="#project"><span class="fa-brands fa-github"></span>&nbsp; Links</a></li>
+                    <li><a href="#features"><span class="fa fa-star"></span>&nbsp; Features</a></li>
+                    <li><a href="#devices"><span class="fa fa-keyboard"></span>&nbsp; Devices</a></li>
+                    <li><a href="#download"><span class="fa fa-download"></span>&nbsp; Download</a></li>
+                    <li><a href="#apps"><span class="fa fa-puzzle-piece"></span>&nbsp; Apps</a></li>
+                    <li><a href="#project"><span class="fa-brands fa-github"></span>&nbsp; Links</a></li>
                 </ul>
             </nav>
         </div>
@@ -56,7 +53,6 @@ layout: null
         <div class="col-lg-2"></div>
 
         <div class="col-lg-8">
-
             <!-- Header -->
             <div id="header">
                 <img id="logo" src="img/logo.svg" alt="OpenRazer Logo"/>
@@ -290,327 +286,341 @@ layout: null
 
             <div id="download" class="section-gap">
                 <div class="section">
-                <h3>Download</h3>
-                <p>
-                    Before installing the driver, you'll need to install a kernel headers package that matches your kernel version.
-                    This is because the driver is "out-of-tree" and needs to be compiled for the kernel (using DKMS).
-                </p>
-                <p>
-                    For example, Arch has <code>linux-headers</code> and <code>linux-lts-headers</code>.
-                    Other distros like Ubuntu/Debian may install them automatically, as the packaging system "recommends" the necessary package.
-                </p>
+                    <h3>Download</h3>
+                    <p>
+                        Before installing the driver, you'll need to install a kernel headers package that matches your kernel version.
+                        This is because the driver is "out-of-tree" and needs to be compiled for the kernel (using DKMS).
+                    </p>
+                    <p>
+                        For example, Arch has <code>linux-headers</code> and <code>linux-lts-headers</code>.
+                        Other distros like Ubuntu/Debian may install them automatically, as the packaging system "recommends" the necessary package.
+                    </p>
 
-                <p>Before using OpenRazer, you'll need to add your user to the <code>plugdev</code> group. In most distributions, this is:</p>
-                <pre>sudo gpasswd -a $USER plugdev</pre>
+                    <p>Before using OpenRazer, you'll need to add your user to the <code>plugdev</code> group. In most distributions, this is:</p>
+                    <pre>sudo gpasswd -a $USER plugdev</pre>
 
-                <p>After following the instructions for your distribution below, a system reboot is
-                recommended so the user group is applied, and to load the OpenRazer driver.</p>
+                    <p>After following the instructions for your distribution below, a system reboot is
+                    recommended so the user group is applied, and to load the OpenRazer driver.</p>
 
-                <p>After successful installation, <a href="#apps">pick an application</a> that makes use of the driver.</p>
+                    <p>After successful installation, <a href="#apps">pick an application</a> that makes use of the driver.</p>
 
-            <hr>
-            <h4>Officially Supported</h4>
-            <p class="gray">Packaged and supported by us!</p>
-            <div class="panel-group" id="distros">
-                <div class="panel panel-default"> <!-- Debian -->
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#distros" href="#debian">
-                            <img class="distro-logo" src="img/distros/debian.png" alt="Debian Logo"/>
-                            &nbsp; Debian</a>
-                        </h4>
-                    </div>
-                    <div id="debian" class="panel-collapse collapse">
-                        <div class="panel-body">
-                        <h4><span class="fa fa-cube"></span> openSUSE Build Service</h4>
-                        <p>Instructions and downloadable builds for Debian are <a href="https://software.opensuse.org/download.html?project=hardware%3Arazer&package=openrazer-meta" target="_blank" rel="noopener">available here.</a></p>
-                        <p>After the drivers are installed, please restart the computer.</p>
-                        </div>
-                    </div>
-                </div>
+                    <hr>
+                    <h4>Officially Supported</h4>
+                    <p class="gray">Packaged and supported by us!</p>
 
-                <div class="panel panel-default"> <!-- Fedora -->
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#distros" href="#fedora">
-                            <img class="distro-logo" src="img/distros/fedora.png" alt="Fedora Logo"/>&nbsp; Fedora
-                        </a>
-                        </h4>
-                    </div>
-                    <div id="fedora" class="panel-collapse collapse">
-                        <div class="panel-body">
-                        <h4><span class="fa fa-cube"></span> openSUSE Build Service</h4>
+                    <div class="panel-group" id="distros">
 
-                        <div class="danger">
-                            <h5><span class="fa fa-warning"></span>
-                            Due to a bug in Fedora, the wrong kernel headers (<code style="color:red">kernel-debug-devel</code>) may be installed and cause OpenRazer to fail installation.
-                            </h5>
+                        <!-- Debian -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#distros" href="#debian">
+                                        <img class="distro-logo" src="img/distros/debian.png" alt="Debian Logo"/>&nbsp; Debian
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="debian" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <h4><span class="fa fa-cube"></span> openSUSE Build Service</h4>
+                                    <p>Instructions and downloadable builds for Debian are <a href="https://software.opensuse.org/download.html?project=hardware%3Arazer&package=openrazer-meta" target="_blank" rel="noopener">available here.</a></p>
+                                    <p>After the drivers are installed, please restart the computer.</p>
+                                </div>
+                            </div>
                         </div>
 
-                        <p>To fix this, you must install <code>kernel-devel</code> explictly:</p>
-                        <pre><code><span class="fa fa-dollar"></span> sudo dnf install kernel-devel</code></pre>
+                        <!-- Fedora -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#distros" href="#fedora">
+                                        <img class="distro-logo" src="img/distros/fedora.png" alt="Fedora Logo"/>&nbsp; Fedora
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="fedora" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <h4><span class="fa fa-cube"></span> openSUSE Build Service</h4>
 
-                        <p>Then, proceed to follow the installation instructions for Fedora.</p>
+                                    <div class="danger">
+                                        <h5><span class="fa fa-warning"></span>
+                                        Due to a bug in Fedora, the wrong kernel headers (<code style="color:red">kernel-debug-devel</code>) may be installed and cause OpenRazer to fail installation.
+                                        </h5>
+                                    </div>
 
-                        <b>For Fedora run the following:</b>
-                        <pre><code><span class="fa fa-dollar"></span> sudo dnf config-manager --add-repo https://download.opensuse.org/repositories/hardware:/razer/Fedora_$(rpm -E %fedora)/hardware:razer.repo</code>
-<code><span class="fa fa-dollar"></span> sudo dnf install openrazer-meta</code></pre>
+                                    <p>To fix this, you must install <code>kernel-devel</code> explictly:</p>
+                                    <pre><code><span class="fa fa-dollar"></span> sudo dnf install kernel-devel</code></pre>
 
-                        <b>For Fedora Rawhide run the following:</b>
-                        <pre><code><span class="fa fa-dollar"></span> sudo dnf config-manager --add-repo https://download.opensuse.org/repositories/hardware:/razer/Fedora_Rawhide/hardware:razer.repo</code>
-<code><span class="fa fa-dollar"></span> sudo dnf install openrazer-meta</code></pre>
+                                    <p>Then, proceed to follow the installation instructions for Fedora.</p>
 
-                        <p>After the drivers are installed, please restart the computer.</p>
+                                    <b>For Fedora run the following:</b>
+                                    <pre><code><span class="fa fa-dollar"></span> sudo dnf config-manager --add-repo https://download.opensuse.org/repositories/hardware:/razer/Fedora_$(rpm -E %fedora)/hardware:razer.repo</code>
+            <code><span class="fa fa-dollar"></span> sudo dnf install openrazer-meta</code></pre>
 
+                                    <b>For Fedora Rawhide run the following:</b>
+                                    <pre><code><span class="fa fa-dollar"></span> sudo dnf config-manager --add-repo https://download.opensuse.org/repositories/hardware:/razer/Fedora_Rawhide/hardware:razer.repo</code>
+            <code><span class="fa fa-dollar"></span> sudo dnf install openrazer-meta</code></pre>
+
+                                    <p>After the drivers are installed, please restart the computer.</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
 
-                <div class="panel panel-default"> <!-- Mageia -->
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#distros" href="#mageia">
-                            <img class="distro-logo" src="img/distros/mageia.png" alt="Mageia Logo"/>&nbsp; Mageia
-                        </a>
-                        </h4>
-                    </div>
-                    <div id="mageia" class="panel-collapse collapse">
-                        <div class="panel-body">
-                        <h4><span class="fa fa-cube"></span> openSUSE Build Service</h4>
-                        <p>Instructions and downloadable builds for Mageia are <a href="https://software.opensuse.org/download.html?project=hardware%3Arazer&package=openrazer-meta" target="_blank" rel="noopener">available here.</a></p>
-                        <p>After the drivers are installed, please restart the computer.</p>
+                        <!-- Mageia -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#distros" href="#mageia">
+                                        <img class="distro-logo" src="img/distros/mageia.png" alt="Mageia Logo"/>&nbsp; Mageia
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="mageia" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <h4><span class="fa fa-cube"></span> openSUSE Build Service</h4>
+                                    <p>Instructions and downloadable builds for Mageia are <a href="https://software.opensuse.org/download.html?project=hardware%3Arazer&package=openrazer-meta" target="_blank" rel="noopener">available here.</a></p>
+                                    <p>After the drivers are installed, please restart the computer.</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
 
-                <div class="panel panel-default"> <!-- openSUSE -->
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#distros" href="#opensuse">
-                            <img class="distro-logo" src="img/distros/opensuse.png" alt="OpenSuse Logo"/>&nbsp; openSUSE
-                        </a>
-                        </h4>
-                    </div>
-                    <div id="opensuse" class="panel-collapse collapse">
-                        <div class="panel-body">
-                        <h4><span class="fa fa-cube"></span> openSUSE Build Service</h4>
-                        <p>Instructions and downloadable builds for openSUSE are <a href="https://software.opensuse.org/download.html?project=hardware%3Arazer&package=openrazer-meta" target="_blank" rel="noopener">available here.</a></p>
-                        <p>After the drivers are installed, please restart the computer.</p>
+                        <!-- openSUSE -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#distros" href="#opensuse">
+                                        <img class="distro-logo" src="img/distros/opensuse.png" alt="OpenSUSE Logo"/>&nbsp; openSUSE
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="opensuse" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <h4><span class="fa fa-cube"></span> openSUSE Build Service</h4>
+                                    <p>Instructions and downloadable builds for openSUSE are <a href="https://software.opensuse.org/download.html?project=hardware%3Arazer&package=openrazer-meta" target="_blank" rel="noopener">available here.</a></p>
+                                    <p>After the drivers are installed, please restart the computer.</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
 
-                <div class="panel panel-default"> <!-- Ubuntu -->
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#distros" href="#ubuntu">
-                            <img class="distro-logo" src="img/distros/ubuntu.png" alt="Ubuntu Logo"/>
-                            &nbsp; Ubuntu / Linux Mint / elementaryOS / Pop!_OS / Zorin OS
-                        </a>
-                        </h4>
-                    </div>
-                    <div id="ubuntu" class="panel-collapse collapse">
-                        <div class="panel-body">
-                        <h4><span class="fa fa-cube"></span>&nbsp; From the PPA via the Terminal</h4>
-                        <p>This will keep the drivers up-to-date when new versions are released.</p>
+                        <!-- Ubuntu -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#distros" href="#ubuntu">
+                                        <img class="distro-logo" src="img/distros/ubuntu.png" alt="Ubuntu Logo"/>
+                                        &nbsp; Ubuntu / Linux Mint / elementaryOS / Pop!_OS / Zorin OS
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="ubuntu" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <h4><span class="fa fa-cube"></span>&nbsp; From the PPA via the Terminal</h4>
+                                    <p>This will keep the drivers up-to-date when new versions are released.</p>
 
-                        <p>If you're using elementaryOS, you'll need to install a prerequisite first:</p>
-                        <pre><code><span class="fa fa-dollar"></span> sudo apt install software-properties-gtk</code></pre>
+                                    <p>If you're using elementaryOS, you'll need to install a prerequisite first:</p>
+                                    <pre><code><span class="fa fa-dollar"></span> sudo apt install software-properties-gtk</code></pre>
 
-                        <p>To install the recommended stable builds:</p>
-                        <pre><code><span class="fa fa-dollar"></span> sudo add-apt-repository ppa:openrazer/stable</code></pre>
+                                    <p>To install the recommended stable builds:</p>
+                                    <pre><code><span class="fa fa-dollar"></span> sudo add-apt-repository ppa:openrazer/stable</code></pre>
 
-                        <p>Alternately, if you wish to use the latest development builds, use <code>daily</code> instead -- <strong>use at your own risk!</strong></p>
-                        <pre><code><span class="fa fa-dollar"></span> sudo add-apt-repository ppa:openrazer/daily</code></pre>
+                                    <p>Alternately, if you wish to use the latest development builds, use <code>daily</code> instead -- <strong>use at your own risk!</strong></p>
+                                    <pre><code><span class="fa fa-dollar"></span> sudo add-apt-repository ppa:openrazer/daily</code></pre>
 
-                        <p>After adding the PPA, install the packages:</p>
-                        <pre><code><span class="fa fa-dollar"></span> sudo apt update</code>
-<code><span class="fa fa-dollar"></span> sudo apt install openrazer-meta</code></pre>
-            <p><strong>NOTE:</strong> If you get dependency errors when trying to install the driver packages please make sure that you have enabled the "universe" repository in <strong>Software & Updates</strong></p>
+                                    <p>After adding the PPA, install the packages:</p>
+                                    <pre><code><span class="fa fa-dollar"></span> sudo apt update</code>
+            <code><span class="fa fa-dollar"></span> sudo apt install openrazer-meta</code></pre>
+                        <p><strong>NOTE:</strong> If you get dependency errors when trying to install the driver packages please make sure that you have enabled the "universe" repository in <strong>Software & Updates</strong></p>
 
-                        <p>After the drivers are installed, please restart the computer.</p>
+                                    <p>After the drivers are installed, please restart the computer.</p>
 
-                        <p>This PPA supports these versions:</p>
-                        <ul>
-                            <li>Ubuntu 16.04 "Xenial" and newer</li>
-                            <li>Linux Mint 18 "Sarah" and newer</li>
-                            <li>elementaryOS 0.4 "Loki" and newer</li>
-                        </ul>
+                                    <p>This PPA supports these versions:</p>
+                                    <ul>
+                                        <li>Ubuntu 16.04 "Xenial" and newer</li>
+                                        <li>Linux Mint 18 "Sarah" and newer</li>
+                                        <li>elementaryOS 0.4 "Loki" and newer</li>
+                                    </ul>
+                                    <hr>
+                                </div>
+                            </div>
+                        </div>
+
                         <hr>
-                        </div>
-                    </div>
-                </div>
+                        <h4>Community Supported</h4>
+                        <p class="gray">Packaged and supported by the wider community.</p>
 
-                <h4>Community Supported</h4>
-                <p class="gray">Packaged and supported by the wider community.</p>
-
-                <div class="panel panel-default"> <!-- Arch -->
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#distros" href="#arch">
-                            <img class="distro-logo" src="img/distros/arch.png" alt="Arch Logo"/>
-                            &nbsp; Arch Linux / Manjaro
-                        </a>
-                        </h4>
-                    </div>
-                    <div id="arch" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            <h4><span class="fa fa-cube"></span>&nbsp;Using pacman</h4>
-                            <p>
-                                Packages are available in the official repos:
-                                <ul>
-                                    <li><a href="https://archlinux.org/packages/?q=openrazer">https://archlinux.org/packages/?q=openrazer</a></li>
-                                </ul>
-                            </p>
-                            <p>To install:</p>
-                            <pre><code><span class="fa fa-dollar"></span> sudo pacman -S openrazer-daemon</code></pre>
-                            <p>After the drivers are installed, please restart the computer.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="panel panel-default"> <!-- Gentoo -->
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#distros" href="#gentoo">
-                            <img class="distro-logo" src="img/distros/gentoo.png" alt="Gentoo Logo"/>&nbsp; Gentoo
-                        </a>
-                        </h4>
-                    </div>
-                    <div id="gentoo" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            <h4><span class="fa fa-cube"></span> Gentoo ebuild</h4>
-                            <p>To install:</p>
-                            <pre><code><span class="fa fa-dollar"></span> emerge -av --autounmask sys-apps/openrazer</code></pre>
-                            <p>After the drivers are installed, please restart the computer.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="panel panel-default"> <!-- NixOS -->
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#distros" href="#nixos">
-                            <img class="distro-logo" src="img/distros/nixos.png" alt="NixOS Logo"/>&nbsp; NixOS
-                        </a>
-                        </h4>
-                    </div>
-                    <div id="nixos" class="panel-collapse collapse">
-                        <div class="panel-body">
-                        <h4><span class="fa fa-cube"></span> NixOS Module</h4>
-                        <p>To enable the OpenRazer module in NixOS, add this snippet to your <code>configuration.nix</code>:
-                        </p>
-                        <pre><code>hardware.openrazer.enable &equals; true&semi;</code></pre>
-                        <div class="danger">
-                            <h5>
-                            <span class="fa fa-warning"></span>
-                            In order to run the openrazer-daemon service, your user needs to be part of the <code>openrazer</code>
-                            group.
-                            </h5>
-                        </div>
-                        <pre><code>hardware.openrazer.users = [&quot;&lt;name&quest;&gt;&quot;]&semi;</code></pre>
-                        <p>Rebuild your NixOS configuration:</p>
-                        <pre><code><span class="fa fa-dollar"></span> sudo nixos-rebuild switch</code></pre>
-                        <h4>nix-shell</h4>
-                        <pre><code><span class="fa fa-dollar"></span> nix-shell -p openrazer-daemon</code></pre>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="panel panel-default"> <!-- Red Hat / CentOS -->
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#distros" href="#redhat">
-                            <img class="distro-logo" src="img/distros/redhat.png" alt="Red Hat Logo"/>&nbsp; Red Hat / CentOS
-                        </a>
-                        </h4>
-                    </div>
-                    <div id="redhat" class="panel-collapse collapse">
-                        <div class="panel-body">
-                        <h4><span class="fa fa-cube"></span> Repository provided by <a href="https://github.com/moozhub">moozhub</a></h4>
-                        <p>
-                            Please follow the instructions from this repository:
-                            <ul>
-                                <li><a href="https://github.com/moozhub/yum-repo-mooz">https://github.com/moozhub/yum-repo-mooz</a></li>
-                            </ul>
-                        </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="panel panel-default"> <!-- Solus -->
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#distros" href="#solus">
-                            <img class="distro-logo" src="img/distros/solus.png" alt="Solus Logo"/>&nbsp; Solus
-                        </a>
-                        </h4>
-                    </div>
-                    <div id="solus" class="panel-collapse collapse">
-                        <div class="panel-body">
-                        <h4><span class="fa fa-cube"></span> Using eopkg</h4>
-                        <p>To install:</p>
-                        <pre><code><span class="fa fa-dollar"></span> sudo eopkg install openrazer</code></pre>
-                        <p>After the drivers are installed, please restart the computer.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="panel panel-default"> <!-- Slackware -->
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#distros" href="#slackware">
-                            <img class="distro-logo" src="img/distros/slackware.png" alt="Slackware Logo"/>&nbsp; Slackware
-                        </a>
-                        </h4>
-                    </div>
-                    <div id="slackware" class="panel-collapse collapse">
-                        <div class="panel-body">
-                        <h4><span class="fa fa-cube"></span> SlackBuilds.org</h4>
-                        <p>Packages are available at the following URLs:</p>
-                        <p>
-                            <ul>
-                                <li>
-                                    <a href="https://www.slackbuilds.org/repository/15.0/system/openrazer-kernel/">
-                                        https://www.slackbuilds.org/repository/15.0/system/openrazer-kernel/
+                        <!-- Arch -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#distros" href="#arch">
+                                        <img class="distro-logo" src="img/distros/arch.png" alt="Arch Logo"/>
+                                        &nbsp; Arch Linux / Manjaro
                                     </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.slackbuilds.org/repository/15.0/system/openrazer-daemon/">
-                                        https://www.slackbuilds.org/repository/15.0/system/openrazer-daemon/
-                                    </a>
-                                </li>
-                            </ul>
-                        </p>
-                        <p>For details on how to install, see the <a href="https://www.slackbuilds.org/howto/">SlackBuilds.org FAQ</a>.</p>
-                        <p>After the drivers are installed, please restart the computer.</p>
+                                </h4>
+                            </div>
+                            <div id="arch" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <h4><span class="fa fa-cube"></span>&nbsp;Using pacman</h4>
+                                    <p>
+                                        Packages are available in the official repos:
+                                        <ul>
+                                            <li><a href="https://archlinux.org/packages/?q=openrazer">https://archlinux.org/packages/?q=openrazer</a></li>
+                                        </ul>
+                                    </p>
+                                    <p>To install:</p>
+                                    <pre><code><span class="fa fa-dollar"></span> sudo pacman -S openrazer-daemon</code></pre>
+                                    <p>After the drivers are installed, please restart the computer.</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
 
-                <div class="panel panel-default"> <!-- Void Linux -->
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#distros" href="#voidlinux">
-                            <img class="distro-logo" src="img/distros/voidlinux.png" alt="Void Linux Logo"/>&nbsp; Void Linux
-                        </a>
-                        </h4>
-                    </div>
-                    <div id="voidlinux" class="panel-collapse collapse">
-                        <div class="panel-body">
-                        <h4><span class="fa fa-cube"></span> Void Linux</h4>
-                        <p>
-                            We have packages for Void Linux:
-                            <a href="https://github.com/void-linux/void-packages/blob/master/srcpkgs/openrazer-meta/template"><code>openrazer-meta</code></a>,
-                            <a href="https://github.com/void-linux/void-packages/blob/master/srcpkgs/openrazer-daemon"><code>openrazer-daemon</code></a>,
-                            <a href="https://github.com/void-linux/void-packages/blob/master/srcpkgs/openrazer-driver-dkms"><code>openrazer-driver-dkms</code></a>, and
-                            <a href="https://github.com/void-linux/void-packages/blob/master/srcpkgs/python3-openrazer"><code>python3-openrazer</code></a>
-                        </p>
-                        <p>To install:</p>
-                        <pre><code><span class="fa fa-dollar"></span> xbps-install -S openrazer-meta</code></pre>
-                        <p>After the drivers are installed, please restart the computer.</p>
+                        <!-- Gentoo -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#distros" href="#gentoo">
+                                        <img class="distro-logo" src="img/distros/gentoo.png" alt="Gentoo Logo"/>&nbsp; Gentoo
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="gentoo" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <h4><span class="fa fa-cube"></span> Gentoo ebuild</h4>
+                                    <p>To install:</p>
+                                    <pre><code><span class="fa fa-dollar"></span> emerge -av --autounmask sys-apps/openrazer</code></pre>
+                                    <p>After the drivers are installed, please restart the computer.</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+
+                        <!-- NixOS -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#distros" href="#nixos">
+                                        <img class="distro-logo" src="img/distros/nixos.png" alt="NixOS Logo"/>&nbsp; NixOS
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="nixos" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <h4><span class="fa fa-cube"></span> NixOS Module</h4>
+                                    <p>To enable the OpenRazer module in NixOS, add this snippet to your <code>configuration.nix</code>:</p>
+                                    <pre><code>hardware.openrazer.enable &equals; true&semi;</code></pre>
+                                    <div class="danger">
+                                        <h5>
+                                        <span class="fa fa-warning"></span>
+                                        In order to run the openrazer-daemon service, your user needs to be part of the <code>openrazer</code>
+                                        group.
+                                        </h5>
+                                    </div>
+                                    <pre><code>hardware.openrazer.users = [&quot;&lt;name&quest;&gt;&quot;]&semi;</code></pre>
+                                    <p>Rebuild your NixOS configuration:</p>
+                                    <pre><code><span class="fa fa-dollar"></span> sudo nixos-rebuild switch</code></pre>
+                                    <h4>nix-shell</h4>
+                                    <pre><code><span class="fa fa-dollar"></span> nix-shell -p openrazer-daemon</code></pre>
+                                    </div>
+                                </div>
+                        </div>
+
+                        <!-- Red Hat / CentOS -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#distros" href="#redhat">
+                                        <img class="distro-logo" src="img/distros/redhat.png" alt="Red Hat Logo"/>&nbsp; Red Hat / CentOS
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="redhat" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <h4><span class="fa fa-cube"></span> Repository provided by <a href="https://github.com/moozhub">moozhub</a></h4>
+                                    <p>
+                                        Please follow the instructions from this repository:
+                                        <ul>
+                                            <li><a href="https://github.com/moozhub/yum-repo-mooz">https://github.com/moozhub/yum-repo-mooz</a></li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Solus -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#distros" href="#solus">
+                                        <img class="distro-logo" src="img/distros/solus.png" alt="Solus Logo"/>&nbsp; Solus
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="solus" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <h4><span class="fa fa-cube"></span> Using eopkg</h4>
+                                    <p>To install:</p>
+                                    <pre><code><span class="fa fa-dollar"></span> sudo eopkg install openrazer</code></pre>
+                                    <p>After the drivers are installed, please restart the computer.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slackware -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#distros" href="#slackware">
+                                        <img class="distro-logo" src="img/distros/slackware.png" alt="Slackware Logo"/>&nbsp; Slackware
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="slackware" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <h4><span class="fa fa-cube"></span> SlackBuilds.org</h4>
+                                    <p>Packages are available at the following URLs:</p>
+                                    <p>
+                                        <ul>
+                                            <li>
+                                                <a href="https://www.slackbuilds.org/repository/15.0/system/openrazer-kernel/">
+                                                    https://www.slackbuilds.org/repository/15.0/system/openrazer-kernel/
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.slackbuilds.org/repository/15.0/system/openrazer-daemon/">
+                                                    https://www.slackbuilds.org/repository/15.0/system/openrazer-daemon/
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </p>
+                                    <p>For details on how to install, see the <a href="https://www.slackbuilds.org/howto/">SlackBuilds.org FAQ</a>.</p>
+                                    <p>After the drivers are installed, please restart the computer.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Void Linux -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#distros" href="#voidlinux">
+                                        <img class="distro-logo" src="img/distros/voidlinux.png" alt="Void Linux Logo"/>&nbsp; Void Linux
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="voidlinux" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <h4><span class="fa fa-cube"></span> Void Linux</h4>
+                                    <p>
+                                        We have packages for Void Linux:
+                                        <a href="https://github.com/void-linux/void-packages/blob/master/srcpkgs/openrazer-meta/template"><code>openrazer-meta</code></a>,
+                                        <a href="https://github.com/void-linux/void-packages/blob/master/srcpkgs/openrazer-daemon"><code>openrazer-daemon</code></a>,
+                                        <a href="https://github.com/void-linux/void-packages/blob/master/srcpkgs/openrazer-driver-dkms"><code>openrazer-driver-dkms</code></a>, and
+                                        <a href="https://github.com/void-linux/void-packages/blob/master/srcpkgs/python3-openrazer"><code>python3-openrazer</code></a>
+                                    </p>
+                                    <p>To install:</p>
+                                    <pre><code><span class="fa fa-dollar"></span> xbps-install -S openrazer-meta</code></pre>
+                                    <p>After the drivers are installed, please restart the computer.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -688,14 +698,13 @@ layout: null
                     </div>
                 </div>
             </div>
-
         </div>
 
         <!-- Right whitespace -->
         <div class="col-lg-2"></div>
 
         <!-- Footer -->
-        <div class="col-lg-12">
+        <div class="col-lg-8 col-lg-offset-2">
             <footer>
                 <div class="footer-text">
                     <p>
