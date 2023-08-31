@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="{{ site.description }}">
+    <meta name="author" content="{{ site.title }} Team">
+
+    <meta property="og:site_name" content="{{ site.title }}">
+    <meta property="og:title" content="{{ site.title }}">
+    <meta property="og:url" content="{{ site.url }}">
+    <meta property="og:description" content="{{ site.description }}">
+    <meta property="og:image" content="{{ site.url }}/img/header.jpg">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="{{ site.twitter }}">
+    <meta name="twitter:creator" content="{{ site.twitter }}">
+    <meta name="twitter:image" content="{{ site.url }}/img/header.jpg">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/openrazer.css">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>OpenRazer | Open Source Drivers for GNU/Linux</title>
+</head>
+<body data-spy="scroll" data-target="#navbar" data-offset="50">
+    <!-- Sticky Navigation Bar -->
+    <div id="nav-menu" class="col-fluid nav-top">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
+            <p hidden id="mini-logo-text">
+                <img class="logo-mini" alt="OpenRazer Logo" src="/img/logo.svg"/> OpenRazer
+            </p>
+            <nav id="navbar">
+                <ul class="nav nav-pills" role="tablist">
+                    {% for item in page.navigation %}
+                        <li>
+                            <a href="{{ item.href }}">
+                                <span class="{{ item.icon }}"></span>&nbsp; {{ item.label }}
+                            </a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </nav>
+        </div>
+        <div class="col-lg-2"></div>
+    </div>
+
+    <div class="col-fluid">
+        <!-- Left whitespace -->
+        <div class="col-lg-2"></div>
+
+        <!-- Header -->
+        <div class="col-lg-8">
+            <div id="header">
+                <img id="logo" src="img/logo.svg" alt="OpenRazer Logo"/>
+                <h2>OpenRazer</h2>
+            </div>
+
+            <!-- About Project -->
+            {% for section in page.about %}
+                <div class="section-gap" {% if forloop.first == true %}id="features"{% endif %}>
+                    <div class="section">
+                        <h3>{{ section.title }}</h3>
+                        <p>{{ section.description }}</p>
+                        <div class="row-fluid">
+                            <div class="row features-grid">
+                                {% for feature in section.items %}
+                                    <div class="feature">
+                                        <div class="features-icon"><span class="{{ feature.icon }} fa-5x"></span></div>
+                                        <h4>{{ feature.title }}</h4>
+                                        <p>{{ feature.description | markdownify }}</p>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        {% if section.footnotes %}
+                            {% for footnote in section.footnotes %}
+                                <p class="gray">{{ footnote }}</p>
+                            {% endfor %}
+                        {% endif %}
+                    </div>
+                </div>
+
+            {% endfor %}
+
+            <div id="devices" class="section-gap">
+                <div class="section">
+                    <h3>Devices</h3>
+                    {% capture total_devices %}<strong>{{ site.data.devices | size }}</strong>{% endcapture %}
+                    <p>{{ page.devices.intro | replace: "123", total_devices }}</p>
+
+                    {% include device-category.html
+                        title="Supported Keyboards"
+                        intro=page.devices.keyboards
+                        device_type="keyboard"
+                    %}
+
+                    {% include device-category.html
+                        title="Supported Mice"
+                        intro=page.devices.mouse
+                        device_type="mouse"
+                    %}
+
+                    {% include device-category.html
+                        title="Supported Mousemats"
+                        intro=page.devices.mousemat
+                        device_type="mousemat"
+                    %}
+
+                    {% include device-category.html
+                        title="Supported Keypads"
+                        intro=page.devices.keypads
+                        device_type="keypad"
+                    %}
+
+                    {% include device-category.html
+                        title="Supported Headphones"
+                        intro=page.devices.headset
+                        device_type="headset"
+                    %}
+
+                    {% include device-category.html
+                        title="Other devices that work"
+                        intro=page.devices.other
+                        device_type="other"
+                    %}
+
+                    <hr>
+                    <h4><span class="fa fa-xmark"></span>&nbsp; Device not listed?</h4>
+                    <br>
+                    <div class="project-links row">
+                        <div class="col-sm-3 col-xs-6 col-sm-offset-1">
+                            <a href="https://github.com/openrazer/openrazer/compare/stable...master"><span class="fa fa-3x fa-tasks"></span><br> Check unreleased changes</a>
+                        </div>
+                        <div class="col-sm-4 col-xs-6">
+                            <a href="https://github.com/openrazer/openrazer/issues?q=label%3A%22Device+Support%22"><span class="fa fa-3x fa-search"></span><br> Search existing issues and pull requests</a>
+                        </div>
+                        <div class="col-sm-3 col-xs-6">
+                            <a href="https://github.com/openrazer/openrazer/wiki/Request-support-for-new-device"><span class="fa fa-3x fa-plus"></span><br> Request device support</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="download" class="section-gap">
+                <div class="section">
+                    <h3>Download</h3>
+                    {{ page.download | markdownify }}
+                    <hr>
+
+                    <div class="panel-group" id="distros">
+                        {% for section in page.instructions %}
+                            <h4>{{ section.title }}</h4>
+                            <p class="gray">{{ section.summary }}</p>
+
+                            {% for distro in section.distros %}
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#distros" href="#{{ distro.id }}">
+                                                <img class="distro-logo" src="{{ distro.logo }}" alt=""/>&nbsp; {{ distro.name }}
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="{{ distro.id }}" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            {{ distro.instructions | markdownify }}
+                                        </div>
+                                    </div>
+                                </div>
+
+                            {% endfor %}
+
+                            {% if forloop.last == false %}
+                                <hr>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+
+            <!-- Applications -->
+            <div id="apps" class="section-gap">
+                <div class="section">
+                    <h3>Applications</h3>
+                    <p>{{ page.apps.intro }}</p>
+                    <div class="row-fluid">
+                        <div class="row features-grid apps">
+                            {% for app in page.apps.featured %}
+                                <div class="feature">
+                                    <a href="{{ app.url }}">
+                                        {% if app.logo contains "fa " %}
+                                            <span class="{{ app.logo }} fa-3x"></span>
+                                        {% else %}
+                                            <img src="{{ app.logo }}"/>
+                                        {% endif %}
+                                        <h4>{{ app.name }}</h4>
+                                    </a>
+                                    <p class="gray">
+                                        {% for name in app.technologies %}
+                                            {{ name }}{% if forloop.last == false %}<br>{% endif %}
+                                        {% endfor %}
+                                    </p>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Links -->
+            <div id="project" class="section-gap">
+                <div class="section">
+                    <div class="project-links row">
+                        {% for link in page.links %}
+                            <div class="col-sm-2 col-xs-6 {% if forloop.first == true %}col-sm-offset-1{% endif %}">
+                                <a href="{{ link.url }}"><span class="{{ link.icon }} fa-3x"></span><br> {{ link.label }}</a>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right whitespace -->
+        <div class="col-lg-2"></div>
+
+        <!-- Footer -->
+        <div class="col-lg-8 col-lg-offset-2">
+            <footer>
+                <div class="footer-text">
+                    {{ page.footer.legal | markdownify }}
+                    {{ page.footer.credits | markdownify }}
+                </div>
+                <div class="social-links">
+                    {% for social in page.footer.social %}
+                        <a class="social" href="{{ social.url }}" title="{{ social.tooltip }}" rel="me">
+                            <img src="{{ social.icon }}" alt="{{ social.tooltip }}"/>
+                        </a>
+                    {% endfor %}
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/jquery-2.2.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/openrazer.js"></script>
+
+</body>
+</html>

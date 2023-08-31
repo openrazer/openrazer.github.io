@@ -18,6 +18,7 @@ $(document).ready(function() {
         $('#mini-logo-text').fadeOut();
     }
   });
+  $(document).scroll();
 
   // Add an 'active' class when download panels are opened.
   $('.panel-collapse').on('show.bs.collapse', function() {
@@ -29,31 +30,10 @@ $(document).ready(function() {
   });
 });
 
-// Add smooth scrolling to all links inside a navbar
-$("#navbar a").on('click', function(event){
-
-  // Prevent default anchor click behavior
-  event.preventDefault();
-
-  // Store hash (#)
-  var hash = this.hash;
-
-  // Using jQuery's animate() method to add smooth page scroll
-  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area (the speed of the animation)
-  $('html, body').animate({
-    scrollTop: $(hash).offset().top
-  }, 800, function(){
-    // Add hash (#) to URL when done scrolling (default click behavior)
-    window.location.hash = hash;
-  });
-});
-
 // Auto-open OS installation instructions if specified with hash.
 if (window.location.hash) {
     var hash = window.location.hash.substring(1);
     $('#' + hash).collapse('show');
     $('#' + hash).parent().addClass("active");
-    $('html, body').animate({
-        scrollTop: $('#'+hash).position().top - 200
-    }, 500);
+    $('#' + hash).focus();
 }

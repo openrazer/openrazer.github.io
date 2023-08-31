@@ -1,0 +1,33 @@
+
+<hr>
+<h4><span class="fa fa-check"></span>&nbsp; {{ include.title }}</h4>
+{% if include.intro %}
+    {{ include.intro | markdownify }}
+{% endif %}
+<br>
+<div class="row-fluid">
+    <div class="row devices">
+    {% for device in site.data.devices %}
+        {% if device.type != include.device_type and include.device_type != "other" %}
+            {% continue %}
+        {% endif %}
+
+        {% if include.device_type == "other" %}
+            {% if device.type == "keyboard" or device.type == "mouse" or device.type == "mousemat" or device.type == "keypad" or device.type == "headset" %}
+                {% continue %}
+            {% endif %}
+        {% endif %}
+
+        <div id="{{ device.name | replace:' ', '-' }}" class="col-md-3 col-sm-4 col-xs-6 device-icon">
+            <img class="inner" loading="lazy" src="{{ device.image_url }}"/>
+            <h5 class="device-name">{{ device.name }}</h5>
+            <div>
+                <code>{{ device.vid }}:{{ device.pid }}</code>
+                {% for alias in device.alias_ids %}
+                <br><code>{{ alias }}</code>
+                {% endfor %}
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+</div>
