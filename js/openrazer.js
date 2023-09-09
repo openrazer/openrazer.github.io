@@ -32,8 +32,9 @@ $(document).ready(function() {
 
 // Auto-open OS installation instructions if specified with hash.
 if (window.location.hash) {
-    var hash = window.location.hash.substring(1);
+    const hash = window.location.hash.substring(1);
     $('#' + hash).collapse('show');
     $('#' + hash).parent().addClass("active");
     $('#' + hash).focus();
+    $(window).scrollTop($("#" + hash).offset().top - 128);
 }
