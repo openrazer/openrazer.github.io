@@ -178,6 +178,17 @@ instructions:
     - title: Community Supported
       summary: Packaged and supported by the wider community.
       distros:
+        - name: Alpine Linux
+          id: alpine
+          instructions: >-
+            Packages are available from the [community respositories](https://pkgs.alpinelinux.org/packages?name=openrazer).
+
+
+                doas apk add openrazer openrazer-src
+
+
+            The kernel modules are built via [akms](https://github.com/jirutka/akms).
+
         - name: Arch Linux / Manjaro
           id: arch
           logo: /img/distros/arch.png
