@@ -180,6 +180,7 @@ instructions:
       distros:
         - name: Alpine Linux
           id: alpine
+          logo: /img/distros/alpine.svg
           instructions: >-
             Packages are available from the [community respositories](https://pkgs.alpinelinux.org/packages?name=openrazer).
 
