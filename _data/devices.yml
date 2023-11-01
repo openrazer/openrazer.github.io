@@ -247,6 +247,13 @@
   pid: "0A24"
   alias_ids: []
 
+- name: "BlackWidow V4 Pro"
+  type: "keyboard"
+  image_url: "https://dl.razerzone.com/src2/9703/9703-1-en-v1.png"
+  vid: "1532"
+  pid: "028D"
+  alias_ids: []
+
 - name: "BlackWidow X Chroma"
   type: "keyboard"
   image_url: "https://assets.razerzone.com/eeimages/support/products/716/716_blackwidow_x_chroma.png"
@@ -324,6 +331,13 @@
   pid: "0246"
   alias_ids: []
 
+- name: "Blade 15 (2023)"
+  type: "keyboard"
+  image_url: "https://dl.razerzone.com/src2/9696/9696-1-en-v2.png"
+  vid: "1532"
+  pid: "029E"
+  alias_ids: []
+
 - name: "Blade 15 (Mid 2019) Mercury White"
   type: "keyboard"
   image_url: "https://assets2.razerzone.com/images/blade-15/shop/blade15-mercury-1.jpg"
@@ -387,6 +401,13 @@
   pid: "024D"
   alias_ids: []
 
+- name: "Blade 16 (2023)"
+  type: "keyboard"
+  image_url: "https://dl.razerzone.com/src/9668/9668-1-en-v2.png"
+  vid: "1532"
+  pid: "029F"
+  alias_ids: []
+
 - name: "Blade 17 (2022)"
   type: "keyboard"
   image_url: "https://dl.razerzone.com/src/5896/5896-1-en-v2.png"
@@ -406,6 +427,13 @@
   image_url: "https://dl.razerzone.com/src/5524/5524-1-en-v2.png"
   vid: "1532"
   pid: "0279"
+  alias_ids: []
+
+- name: "Blade 18 (2023)"
+  type: "keyboard"
+  image_url: "https://dl.razerzone.com/src2/9676/9676-1-en-v1.png"
+  vid: "1532"
+  pid: "02A0"
   alias_ids: []
 
 - name: "Blade Pro (2017)"
@@ -546,6 +574,13 @@
   image_url: "https://assets2.razerzone.com/images/mug-holder/e64e507b73e61c44789d996065fd9645-1500x1000mug_01.jpg"
   vid: "1532"
   pid: "0F07"
+  alias_ids: []
+
+- name: "Cobra Pro"
+  type: "mouse"
+  image_url: "https://dl.razerzone.com/src2/13182/13182-1-en-v2.png"
+  vid: "1532"
+  pid: "00B0"
   alias_ids: []
 
 - name: "Core"
@@ -702,6 +737,13 @@
   pid: "009C"
   alias_ids: []
 
+- name: "DeathAdder V3"
+  type: "mouse"
+  image_url: "https://dl.razerzone.com/src/6124/6124-1-en-v2.png"
+  vid: "1532"
+  pid: "00B2"
+  alias_ids: []
+
 - name: "DeathAdder V3 Pro"
   type: "mouse"
   image_url: "https://dl.razerzone.com/src/6130/6130-1-en-v2.png"
@@ -736,6 +778,13 @@
   vid: "1532"
   pid: "0298"
   alias_ids: ["1532:0296"]
+
+- name: "Deathstalker (Essential)"
+  type: "keyboard"
+  image_url: "https://assets.razerzone.com/eeimages/support/products/49/49_razer_deathstalker.png"
+  vid: "1532"
+  pid: "0118"
+  alias_ids: []
 
 - name: "Deathstalker Expert"
   type: "keyboard"
@@ -867,8 +916,8 @@
   type: "headset"
   image_url: "https://assets.razerzone.com/eeimages/support/products/229/229_kraken_71.png"
   vid: "1532"
-  pid: "0501"
-  alias_ids: ["1532:0506"]
+  pid: "0506"
+  alias_ids: ["1532:0501"]
 
 - name: "Kraken 7.1 Chroma"
   type: "headset"
@@ -924,6 +973,13 @@
   image_url: "https://hybrismediaprod.blob.core.windows.net/sys-master-phoenix-images-container/hfe/hbc/9081459376158/Razer-Laptop-Stand-Chroma-04.jpg"
   vid: "1532"
   pid: "0F0D"
+  alias_ids: []
+
+- name: "Laptop Stand Chroma V2"
+  type: "accessory"
+  image_url: "https://assets2.razerzone.com/images/pnx.assets/272c328913c00c6f584fe3dead2ca2a6/razer-laptop-stand-chroma-v2-hero-mobile-v2.jpg"
+  vid: "1532"
+  pid: "0F2B"
   alias_ids: []
 
 - name: "Mamba"
@@ -1052,6 +1108,13 @@
   pid: "0067"
   alias_ids: []
 
+- name: "Naga V2 HyperSpeed"
+  type: "mouse"
+  image_url: "https://hybrismediaprod.blob.core.windows.net/sys-master-phoenix-images-container%2Fh4c%2Fh44%2F9451887460382%2Fnaga-v2-hyperspeed-500x500.png"
+  vid: "1532"
+  pid: "00B4"
+  alias_ids: []
+
 - name: "Naga X"
   type: "mouse"
   image_url: "https://dl.razerzone.com/src/3993-1-EN-V2.png"
@@ -1119,8 +1182,8 @@
   type: "keyboard"
   image_url: "https://dl.razerzone.com/src/6071-1-en-v1.png"
   vid: "1532"
-  pid: "0294"
-  alias_ids: []
+  pid: "02A2"
+  alias_ids: ["1532:0294"]
 
 - name: "Orochi"
   type: "mouse"
@@ -1241,6 +1304,13 @@
   pid: "008A"
   alias_ids: []
 
+- name: "Viper Mini Signature Edition"
+  type: "mouse"
+  image_url: "https://dl.razerzone.com/src2/9682/9682-1-en-v1.png"
+  vid: "1532"
+  pid: "009E"
+  alias_ids: ["1532:009F"]
+
 - name: "Viper Ultimate"
   type: "mouse"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1577/ee_photo.png"
@@ -1254,3 +1324,10 @@
   vid: "1532"
   pid: "00A5"
   alias_ids: ["1532:00A6"]
+
+- name: "Viper V3 HyperSpeed"
+  type: "mouse"
+  image_url: "https://dl.razerzone.com/src2/13432/13432-1-en-v3.png"
+  vid: "1532"
+  pid: "00B8"
+  alias_ids: []
