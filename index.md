@@ -230,16 +230,6 @@ instructions:
 
                 nix-shell -p openrazer-daemon
 
-        - name: Red Hat / CentOS
-          id: redhat
-          logo: /img/distros/redhat.png
-          instructions: >-
-            [moozhub](https://github.com/moozhub) provides a repository packaging OpenRazer.
-
-            Please follow these instructions:
-
-            * <https://github.com/moozhub/yum-repo-mooz>
-
         - name: Solus
           id: solus
           logo: /img/distros/solus.png
