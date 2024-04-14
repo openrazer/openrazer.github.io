@@ -114,6 +114,13 @@
   pid: "00AA"
   alias_ids: ["1532:00AB"]
 
+- name: "Basilisk V3 X HyperSpeed"
+  type: "mouse"
+  image_url: "https://dl.razerzone.com/src2/9766/9766-1-en-v1.png"
+  vid: "1532"
+  pid: "00B9"
+  alias_ids: []
+
 - name: "Basilisk X HyperSpeed"
   type: "mouse"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1589/1589_basilisk_x__hyperspeed.png"
@@ -245,6 +252,13 @@
   image_url: "https://assets.razerzone.com/eeimages/support/products/1709/1709-blackwidow-v3-tkl.png"
   vid: "1532"
   pid: "0A24"
+  alias_ids: []
+
+- name: "BlackWidow V4"
+  type: "keyboard"
+  image_url: "https://dl.razerzone.com/src2/13219/13219-1-en-v1.png"
+  vid: "1532"
+  pid: "0287"
   alias_ids: []
 
 - name: "BlackWidow V4 Pro"
@@ -436,6 +450,13 @@
   pid: "02A0"
   alias_ids: []
 
+- name: "Blade Advanced (Late 2019)"
+  type: "keyboard"
+  image_url: "https://assets2.razerzone.com/images/razer-blade-pro-17/razer-blade-pro-17-2019-OGimage-1200x630.jpg"
+  vid: "1532"
+  pid: "024B"
+  alias_ids: []
+
 - name: "Blade Pro (2017)"
   type: "keyboard"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1200/1200_blade_pro_2017.png"
@@ -576,12 +597,19 @@
   pid: "0F07"
   alias_ids: []
 
+- name: "Cobra"
+  type: "mouse"
+  image_url: "https://hybrismediaprod.blob.core.windows.net/sys-master-phoenix-images-container/h54/h60/9591466950686/cobra-500x500.png"
+  vid: "1532"
+  pid: "00A3"
+  alias_ids: []
+
 - name: "Cobra Pro"
   type: "mouse"
   image_url: "https://dl.razerzone.com/src2/13182/13182-1-en-v2.png"
   vid: "1532"
-  pid: "00B0"
-  alias_ids: []
+  pid: "00AF"
+  alias_ids: ["1532:00B0"]
 
 - name: "Core"
   type: "core"
@@ -1178,12 +1206,19 @@
   pid: "025D"
   alias_ids: []
 
+- name: "Ornata V3"
+  type: "keyboard"
+  image_url: "https://dl.razerzone.com/src/6075-1-en-v1.png"
+  vid: "1532"
+  pid: "02A1"
+  alias_ids: []
+
 - name: "Ornata V3 X"
   type: "keyboard"
   image_url: "https://dl.razerzone.com/src/6071-1-en-v1.png"
   vid: "1532"
-  pid: "02A2"
-  alias_ids: ["1532:0294"]
+  pid: "0294"
+  alias_ids: ["1532:02A2"]
 
 - name: "Orochi"
   type: "mouse"
