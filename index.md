@@ -336,6 +336,9 @@ footer:
         the help of many [contributors](https://github.com/openrazer/openrazer/graphs/contributors) and testers.
 
     social:
+        - tooltip: '@OpenRazer on GitHub'
+          icon: github
+          url: https://github.com/openrazer/openrazer
 
         - tooltip: OpenRazer Telegram Group
           icon: telegram
