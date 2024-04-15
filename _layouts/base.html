@@ -237,7 +237,11 @@
                 <div class="social-links">
                     {% for social in page.footer.social %}
                         <a class="social" href="{{ social.url }}" title="{{ social.tooltip }}" rel="me">
-                            <img src="{{ social.icon }}" alt="{{ social.tooltip }}"/>
+                            {% if social.icon contains '.svg' %}
+                                <img src="{{ social.icon }}" alt="{{ social.tooltip }}"/>
+                            {% else %}
+                                <span class="fa-brands fa-2x fa-{{ social.icon }}"></span>
+                            {% endif %}
                         </a>
                     {% endfor %}
                 </div>

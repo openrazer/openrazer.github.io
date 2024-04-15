@@ -297,6 +297,11 @@ footer p u {
     margin-left: auto;
 }
 
+.social-links a {
+    display: inline-block;
+    vertical-align: middle;
+}
+
 .social-links img {
     width: 32px;
     height: 32px;
@@ -304,7 +309,12 @@ footer p u {
 
 .social:hover,
 .social:focus {
-    filter: brightness(0.5);
+    color: #00cb00;
+}
+
+.social:hover img,
+.social:focus img {
+    filter: brightness(0.85);
 }
 
 .social + .social {

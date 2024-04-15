@@ -336,15 +336,16 @@ footer:
         the help of many [contributors](https://github.com/openrazer/openrazer/graphs/contributors) and testers.
 
     social:
-        - tooltip: OpenRazer on Mastodon
-          icon: /img/social/mastodon.svg
-          url: https://fosstodon.org/@openrazer
 
-        - tooltip: Join OpenRazer Telegram Group
-          icon: /img/social/telegram.svg
+        - tooltip: OpenRazer Telegram Group
+          icon: telegram
           url: https://t.me/joinchat/AMhHjj9Txhkhn8JM5_LeMg
 
-        - tooltip: Join us on Matrix
+        - tooltip: '@OpenRazer on Mastodon'
+          icon: mastodon
+          url: https://fosstodon.org/@openrazer
+
+        - tooltip: '#openrazer:matrix.org'
           icon: /img/social/matrix.svg
           url: https://matrix.to/#/#openrazer:matrix.org
 ---
