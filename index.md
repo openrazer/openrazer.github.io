@@ -340,10 +340,6 @@ footer:
           icon: /img/social/mastodon.svg
           url: https://fosstodon.org/@openrazer
 
-        - tooltip: OpenRazer on Twitter
-          icon: /img/social/twitter.svg
-          url: https://twitter.com/openrazer
-
         - tooltip: Join OpenRazer Telegram Group
           icon: /img/social/telegram.svg
           url: https://t.me/joinchat/AMhHjj9Txhkhn8JM5_LeMg

@@ -15,7 +15,6 @@
 # in the templates via {{ site.myvariable }}.
 title: OpenRazer
 description: Open source driver and user-space daemon to control Razer peripherals on GNU/Linux
-twitter: '@OpenRazer'
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://openrazer.github.io" # the base hostname & protocol for your site, e.g. http://example.com
