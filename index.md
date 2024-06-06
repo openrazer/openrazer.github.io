@@ -277,7 +277,7 @@ apps:
           url: https://polychromatic.app/
           logo: /img/apps/polychromatic.svg
           technologies:
-            - GUI (PyQt5)
+            - GUI (PyQt6)
             - Tray Applet
             - CLI
 
