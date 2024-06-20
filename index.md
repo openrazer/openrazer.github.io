@@ -332,8 +332,8 @@ footer:
         It is <u>not affiliated</u> with [Razer Inc](https://www.razerzone.com/).
 
     credits:
-        Brought to you by [terrycain](https://github.com/terrycain), [z3ntu](https://github.com/z3ntu), plus
-        the help of many [contributors](https://github.com/openrazer/openrazer/graphs/contributors) and testers.
+        Brought to you by [Luca Weiss](https://github.com/z3ntu), plus the help of many
+        [contributors](https://github.com/openrazer/openrazer/graphs/contributors) and testers.
 
     social:
         - tooltip: '@OpenRazer on GitHub'
