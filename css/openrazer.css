@@ -465,5 +465,5 @@ footer p u {
 
 .panel-title a:hover img,
 .panel-title a:focus img {
-    filter: grayscale(0) brightness(0.5);
+    filter: grayscale(0);
 }

@@ -101,7 +101,7 @@ instructions:
       distros:
         - name: Debian
           id: debian
-          logo: /img/distros/debian.png
+          logo: /img/distros/debian.svg
           instructions: >-
             Starting with Debian 10, OpenRazer is available from the [official repositories](https://packages.debian.org/search?keywords=openrazer).
             However, you may need to install our package if your device was added in a newer version.
@@ -112,7 +112,7 @@ instructions:
 
         - name: Fedora
           id: fedora
-          logo: /img/distros/fedora.png
+          logo: /img/distros/fedora.svg
           instructions: >-
 
             Due to a bug in Fedora, the wrong kernel headers (`kernel-debug-devel`) may be installed and cause OpenRazer to fail installation.
@@ -136,21 +136,21 @@ instructions:
 
         - name: Mageia
           id: mageia
-          logo: /img/distros/mageia.png
+          logo: /img/distros/mageia.svg
           instructions: >-
             Instructions and downloadable builds for Mageia are
             [available on openSUSE Build Service.](https://software.opensuse.org/download.html?project=hardware%3Arazer&package=openrazer-meta)
 
         - name: openSUSE
           id: opensuse
-          logo: /img/distros/opensuse.png
+          logo: /img/distros/opensuse.svg
           instructions: >-
             Instructions and downloadable builds for openSUSE are
             [available on openSUSE Build Service.](https://software.opensuse.org/download.html?project=hardware%3Arazer&package=openrazer-meta)
 
         - name: Ubuntu / Linux Mint / elementaryOS / Pop!_OS / Zorin OS
           id: ubuntu
-          logo: /img/distros/ubuntu.png
+          logo: /img/distros/ubuntu.svg
           instructions: >-
             Starting with 20.04, OpenRazer is available from the [official repositories](https://packages.ubuntu.com/search?keywords=openrazer).
             However, you may need to install our package if your device was added in a newer version.
@@ -192,7 +192,7 @@ instructions:
 
         - name: Arch Linux / Manjaro
           id: arch
-          logo: /img/distros/arch.png
+          logo: /img/distros/arch.svg
           instructions: >-
             Packages are available from the [official repos](https://archlinux.org/packages/?q=openrazer).
 
@@ -204,7 +204,7 @@ instructions:
 
         - name: Gentoo
           id: gentoo
-          logo: /img/distros/gentoo.png
+          logo: /img/distros/gentoo.svg
           instructions: >-
             An ebuild is available, to install:
 
@@ -212,7 +212,7 @@ instructions:
 
         - name: NixOS
           id: nixos
-          logo: /img/distros/nixos.png
+          logo: /img/distros/nixos.svg
           instructions: >-
             To enable the OpenRazer module in NixOS, add this snippet to your `configuration.nix`:
 
@@ -232,7 +232,7 @@ instructions:
 
         - name: Solus
           id: solus
-          logo: /img/distros/solus.png
+          logo: /img/distros/solus.svg
           instructions: >-
             An eopkg is available, to install:
 
@@ -240,7 +240,7 @@ instructions:
 
         - name: Slackware
           id: slackware
-          logo: /img/distros/slackware.png
+          logo: /img/distros/slackware.svg
           instructions: >-
             Packages are available at the following URLs:
 
@@ -253,7 +253,7 @@ instructions:
 
         - name: Void Linux
           id: voidlinux
-          logo: /img/distros/voidlinux.png
+          logo: /img/distros/voidlinux.svg
           instructions: >-
             Void Linux provides these packages:
 
