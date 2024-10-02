@@ -467,3 +467,10 @@ footer p u {
 .panel-title a:focus img {
     filter: grayscale(0) brightness(0.5);
 }
+
+.legal {
+    color: gray;
+    font-size: 0.8em;
+    font-style: italic;
+    margin-top: 2em;
+}

@@ -230,6 +230,20 @@ instructions:
 
                 nix-shell -p openrazer-daemon
 
+        - name: SteamOS
+          id: steamos
+          logo: /img/distros/steamos.svg
+          instructions: >-
+            While SteamOS is based on Arch Linux, SteamOS is built differently and is more involved. Due to the immutable filesystem, you may need to reinstall OpenRazer after a system update.
+
+
+            We can't help you with any issues, but a member of the community aims to keep these instructions up-to-date:
+
+
+            <a href="https://daniele.tech/2022/12/how-to-get-openrazer-working-easily-on-steam-deck/" rel="external nofollow">https://daniele.tech/2022/12/how-to-get-openrazer-working-easily-on-steam-deck/</a>
+
+            <p class="legal">Steam and the Steam logo are trademarks and/or registered trademarks of Valve Corporation in the U.S. and/or other countries.</p>
+
         - name: Solus
           id: solus
           logo: /img/distros/solus.png
