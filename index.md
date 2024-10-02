@@ -277,33 +277,32 @@ apps:
           url: https://polychromatic.app/
           logo: /img/apps/polychromatic.svg
           technologies:
-            - GUI (PyQt6)
+            - Python, Qt 6
             - Tray Applet
-            - CLI
 
         - name: RazerGenie
           url: https://github.com/z3ntu/RazerGenie
           logo: /img/logo.svg
           technologies:
-            - GUI (Qt5)
+            - Qt 5
 
         - name: Snake
           url: http://bithatch.co.uk/snake.html
           logo: /img/apps/snake.png
           technologies:
-            - GUI (Java)
+            - Java
 
         - name: razerCommander
           url: https://gitlab.com/gabmus/razerCommander
           logo: /img/apps/razerCommander.png
           technologies:
-            - GUI (GTK)
+            - GTK
 
         - name: razer-cli
           url: https://github.com/lolei/razer-cli
           logo: fa fa-terminal
           technologies:
-            - CLI (Python)
+            - Python
 
 links:
     - label: View Source
