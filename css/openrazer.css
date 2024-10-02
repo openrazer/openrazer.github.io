@@ -289,8 +289,9 @@ footer p {
     color: gray;
 }
 
-footer p u {
+footer p em {
     color: lightgray;
+    font-style: normal;
 }
 
 .social-links {

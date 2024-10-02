@@ -329,7 +329,7 @@ links:
 footer:
     legal:
         This project is licensed under the [GPLv2](https://github.com/openrazer/openrazer/blob/master/LICENSES/GPL-2.0-or-later.txt).
-        It is <u>not affiliated</u> with [Razer Inc](https://www.razerzone.com/).
+        It is <em>not affiliated</em> with [Razer Inc](https://www.razerzone.com/).
 
     credits:
         Brought to you by [Luca Weiss](https://github.com/z3ntu), plus the help of many
