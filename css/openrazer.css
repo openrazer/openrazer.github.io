@@ -468,3 +468,10 @@ footer p em {
 .panel-title a:focus img {
     filter: grayscale(0);
 }
+
+.legal {
+    color: gray;
+    font-size: 0.8em;
+    font-style: italic;
+    margin-top: 2em;
+}
