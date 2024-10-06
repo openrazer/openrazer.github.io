@@ -245,7 +245,7 @@
   image_url: "https://dl.razerzone.com/src/3809-1-EN-v1.png"
   vid: "1532"
   pid: "025A"
-  alias_ids: []
+  alias_ids: ["1532:025C"]
 
 - name: "BlackWidow V3 Tenkeyless"
   type: "keyboard"
@@ -266,6 +266,13 @@
   image_url: "https://dl.razerzone.com/src2/9703/9703-1-en-v1.png"
   vid: "1532"
   pid: "028D"
+  alias_ids: []
+
+- name: "BlackWidow V4 X"
+  type: "keyboard"
+  image_url: "https://dl.razerzone.com/src2/13223/13223-1-en-v1.png"
+  vid: "1532"
+  pid: "0293"
   alias_ids: []
 
 - name: "BlackWidow X Chroma"
@@ -308,6 +315,20 @@
   image_url: "https://dl.razerzone.com/src/5896/5896-1-en-v2.png"
   vid: "1532"
   pid: "028C"
+  alias_ids: []
+
+- name: "Blade 14 (2023)"
+  type: "keyboard"
+  image_url: "https://dl.razerzone.com/src2/13031/13031-1-en-v2.png"
+  vid: "1532"
+  pid: "029D"
+  alias_ids: []
+
+- name: "Blade 14 (2024)"
+  type: "keyboard"
+  image_url: "https://dl.razerzone.com/src2/13031/13031-1-en-v2.png"
+  vid: "1532"
+  pid: "02B6"
   alias_ids: []
 
 - name: "Blade 15 (2018)"
@@ -777,7 +798,7 @@
   image_url: "https://dl.razerzone.com/src/6130/6130-1-en-v2.png"
   vid: "1532"
   pid: "00B6"
-  alias_ids: ["1532:00B7"]
+  alias_ids: ["1532:00C2", "1532:00B7", "1532:00C3"]
 
 - name: "DeathStalker Chroma"
   type: "keyboard"
@@ -1080,6 +1101,13 @@
   pid: "0053"
   alias_ids: []
 
+- name: "Naga Epic"
+  type: "mouse"
+  image_url: "https://hwimg.nl/Razer_naga-epic.png"
+  vid: "1532"
+  pid: "001F"
+  alias_ids: []
+
 - name: "Naga Epic Chroma"
   type: "mouse"
   image_url: "https://assets.razerzone.com/eeimages/products/20776/rzrnagaepicchroma_04.png"
@@ -1211,6 +1239,13 @@
   image_url: "https://dl.razerzone.com/src/6075-1-en-v1.png"
   vid: "1532"
   pid: "02A1"
+  alias_ids: []
+
+- name: "Ornata V3 Tenkeyless"
+  type: "keyboard"
+  image_url: "https://dl.razerzone.com/src2/13038/13038-1-en-v1.png"
+  vid: "1532"
+  pid: "02A3"
   alias_ids: []
 
 - name: "Ornata V3 X"
@@ -1366,3 +1401,10 @@
   vid: "1532"
   pid: "00B8"
   alias_ids: []
+
+- name: "Viper V3 Pro"
+  type: "mouse"
+  image_url: "https://dl.razerzone.com/src2/14044/14044-1-en-v1.png"
+  vid: "1532"
+  pid: "00C0"
+  alias_ids: ["1532:00C1"]
