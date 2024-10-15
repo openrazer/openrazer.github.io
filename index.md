@@ -120,17 +120,21 @@ instructions:
 
                 sudo dnf install kernel-devel
 
+            For Fedora 41 (and later), run the following:
 
-            For Fedora run the following:
-
-                sudo dnf config-manager --add-repo https://download.opensuse.org/repositories/hardware:/razer/Fedora_$(rpm -E %fedora)/hardware:razer.repo
+                sudo dnf config-manager addrepo --from-repofile=https://download.opensuse.org/repositories/hardware:/razer/Fedora_$(rpm -E %fedora)/hardware:razer.repo
 
                 sudo dnf install openrazer-meta
 
-
-            For Fedora Rawhide run the following:
+            For Fedora Rawhide, run the following:
 
                 sudo dnf config-manager addrepo --from-repofile=https://download.opensuse.org/repositories/hardware:/razer/Fedora_Rawhide/hardware:razer.repo
+
+                sudo dnf install openrazer-meta
+
+            For Fedora 40 (and earlier), run the following:
+
+                sudo dnf config-manager --add-repo https://download.opensuse.org/repositories/hardware:/razer/Fedora_$(rpm -E %fedora)/hardware:razer.repo
 
                 sudo dnf install openrazer-meta
 
