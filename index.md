@@ -130,7 +130,7 @@ instructions:
 
             For Fedora Rawhide run the following:
 
-                sudo dnf config-manager --add-repo https://download.opensuse.org/repositories/hardware:/razer/Fedora_Rawhide/hardware:razer.repo
+                sudo dnf config-manager addrepo --from-repofile=https://download.opensuse.org/repositories/hardware:/razer/Fedora_Rawhide/hardware:razer.repo
 
                 sudo dnf install openrazer-meta
 
