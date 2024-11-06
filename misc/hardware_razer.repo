@@ -1,0 +1,10 @@
+---
+permalink: /hardware:razer.repo
+---
+[hardware_razer]
+name=Fedora $releasever - hardware:razer
+type=rpm-md
+baseurl=https://download.opensuse.org/repositories/hardware:/razer/Fedora_$releasever/
+gpgcheck=1
+gpgkey=https://download.opensuse.org/repositories/hardware:/razer/Fedora_$releasever/repodata/repomd.xml.key
+enabled=1
