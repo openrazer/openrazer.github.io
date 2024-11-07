@@ -122,7 +122,7 @@ instructions:
 
             For Fedora 41 (and later), run the following:
 
-                sudo dnf config-manager addrepo --from-repofile=https://download.opensuse.org/repositories/hardware:/razer/Fedora_$(rpm -E %fedora)/hardware:razer.repo
+                sudo dnf config-manager addrepo --from-repofile=https://openrazer.github.io/hardware:razer.repo
 
                 sudo dnf install openrazer-meta
 
@@ -134,7 +134,7 @@ instructions:
 
             For Fedora 40 (and earlier), run the following:
 
-                sudo dnf config-manager --add-repo https://download.opensuse.org/repositories/hardware:/razer/Fedora_$(rpm -E %fedora)/hardware:razer.repo
+                sudo dnf config-manager --add-repo https://openrazer.github.io/hardware:razer.repo
 
                 sudo dnf install openrazer-meta
 
