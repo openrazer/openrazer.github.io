@@ -110,7 +110,7 @@ instructions:
             Instructions and downloadable builds for Debian are
             [available from the openSUSE Build Service.](https://software.opensuse.org/download.html?project=hardware%3Arazer&package=openrazer-meta)
 
-        - name: Fedora
+        - name: Fedora / Nobara
           id: fedora
           logo: /img/distros/fedora.svg
           instructions: >-
@@ -120,7 +120,7 @@ instructions:
 
                 sudo dnf install kernel-devel
 
-            For Fedora 41 (and later), run the following:
+            For Fedora / Nobara 41 (and later), run the following:
 
                 sudo dnf config-manager addrepo --from-repofile=https://openrazer.github.io/hardware:razer.repo
 
@@ -132,7 +132,7 @@ instructions:
 
                 sudo dnf install openrazer-meta
 
-            For Fedora 40 (and earlier), run the following:
+            For Fedora / Nobara 40 (and earlier), run the following:
 
                 sudo dnf config-manager --add-repo https://openrazer.github.io/hardware:razer.repo
 
