@@ -107,12 +107,26 @@
   pid: "0099"
   alias_ids: []
 
+- name: "Basilisk V3 35K"
+  type: "mouse"
+  image_url: "https://hybrismediaprod.blob.core.windows.net/sys-master-phoenix-images-container/he4/h63/9822107926558/basilisk-v3-35k-2-500x500.png"
+  vid: "1532"
+  pid: "00CB"
+  alias_ids: []
+
 - name: "Basilisk V3 Pro"
   type: "mouse"
   image_url: "https://dl.razerzone.com/src2/6220/6220-4-en-v1.png"
   vid: "1532"
   pid: "00AA"
   alias_ids: ["1532:00AB"]
+
+- name: "Basilisk V3 Pro 35K"
+  type: "mouse"
+  image_url: "https://dl.razerzone.com/src2/14676/14676-1-en-v1.png"
+  vid: "1532"
+  pid: "00CC"
+  alias_ids: ["1532:00CD"]
 
 - name: "Basilisk V3 X HyperSpeed"
   type: "mouse"
@@ -259,6 +273,13 @@
   image_url: "https://dl.razerzone.com/src2/13219/13219-1-en-v1.png"
   vid: "1532"
   pid: "0287"
+  alias_ids: []
+
+- name: "BlackWidow V4 75%"
+  type: "keyboard"
+  image_url: "https://dl.razerzone.com/src2/13256/13256-1-en-v2.png"
+  vid: "1532"
+  pid: "02A5"
   alias_ids: []
 
 - name: "BlackWidow V4 Pro"
@@ -469,6 +490,13 @@
   image_url: "https://dl.razerzone.com/src2/9676/9676-1-en-v1.png"
   vid: "1532"
   pid: "02A0"
+  alias_ids: []
+
+- name: "Blade 18 (2024)"
+  type: "keyboard"
+  image_url: "https://dl.razerzone.com/src2/9676/9676-1-en-v1.png"
+  vid: "1532"
+  pid: "02B8"
   alias_ids: []
 
 - name: "Blade Advanced (Late 2019)"
@@ -793,12 +821,19 @@
   pid: "00B2"
   alias_ids: []
 
+- name: "DeathAdder V3 HyperSpeed"
+  type: "mouse"
+  image_url: "https://dl.razerzone.com/src/6124/6124-1-en-v2.png"
+  vid: "1532"
+  pid: "00C4"
+  alias_ids: ["1532:00C5"]
+
 - name: "DeathAdder V3 Pro"
   type: "mouse"
   image_url: "https://dl.razerzone.com/src/6130/6130-1-en-v2.png"
   vid: "1532"
-  pid: "00B6"
-  alias_ids: ["1532:00C2", "1532:00B7", "1532:00C3"]
+  pid: "00C2"
+  alias_ids: ["1532:00B6", "1532:00B7", "1532:00C3"]
 
 - name: "DeathStalker Chroma"
   type: "keyboard"
@@ -875,6 +910,13 @@
   image_url: "https://assets.razerzone.com/eeimages/support/products/1394/1394_goliathus_chroma.png"
   vid: "1532"
   pid: "0C01"
+  alias_ids: []
+
+- name: "Goliathus Chroma 3XL"
+  type: "mousemat"
+  image_url: "https://assets.razerzone.com/eeimages/support/products/1395/1395_goliathusextended.png"
+  vid: "1532"
+  pid: "0C06"
   alias_ids: []
 
 - name: "Goliathus Extended"
@@ -965,8 +1007,8 @@
   type: "headset"
   image_url: "https://assets.razerzone.com/eeimages/support/products/229/229_kraken_71.png"
   vid: "1532"
-  pid: "0506"
-  alias_ids: ["1532:0501"]
+  pid: "0501"
+  alias_ids: ["1532:0506"]
 
 - name: "Kraken 7.1 Chroma"
   type: "headset"
@@ -1078,6 +1120,13 @@
   image_url: "https://assets.razerzone.com/eeimages/support/products/1711/1711_-_mouse_dock_chroma.png"
   vid: "1532"
   pid: "007E"
+  alias_ids: []
+
+- name: "Naga"
+  type: "mouse"
+  image_url: "https://assets.razerzone.com/eeimages/products/40/razer-naga-molten-gallery-4.png"
+  vid: "1532"
+  pid: "0015"
   alias_ids: []
 
 - name: "Naga 2012"
@@ -1238,8 +1287,8 @@
   type: "keyboard"
   image_url: "https://dl.razerzone.com/src/6075-1-en-v1.png"
   vid: "1532"
-  pid: "02A1"
-  alias_ids: []
+  pid: "028F"
+  alias_ids: ["1532:02A1"]
 
 - name: "Ornata V3 Tenkeyless"
   type: "keyboard"
@@ -1252,8 +1301,8 @@
   type: "keyboard"
   image_url: "https://dl.razerzone.com/src/6071-1-en-v1.png"
   vid: "1532"
-  pid: "0294"
-  alias_ids: ["1532:02A2"]
+  pid: "02A2"
+  alias_ids: ["1532:0294"]
 
 - name: "Orochi"
   type: "mouse"
