@@ -448,6 +448,10 @@ footer p em {
 /****************************
  * Misc.
 *****************************/
+.section .row-fluid + h3 {
+    margin-top: 32px;
+}
+
 .danger > h5 {
     padding-top: 8px;
     padding-bottom: 8px;

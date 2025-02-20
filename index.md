@@ -322,6 +322,12 @@ apps:
           technologies:
             - Python
 
+    complementary_intro: "These applications can further extend your device's functionality, but are not related to OpenRazer."
+    complementary:
+        - name: Input Remapper
+          url: https://github.com/sezanzeb/input-remapper
+          logo: /img/apps/input-remapper.svg
+
 links:
     - label: View Source
       icon: fa-brands fa-github
