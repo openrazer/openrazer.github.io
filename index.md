@@ -152,6 +152,10 @@ instructions:
             Instructions and downloadable builds for openSUSE are
             [available on openSUSE Build Service.](https://software.opensuse.org/download.html?project=hardware%3Arazer&package=openrazer-meta)
 
+            After installation, please enable `dkms.service` to ensure that the driver will also be built when installing kernel updates:
+
+                sudo systemctl enable --now dkms.service
+
         - name: Ubuntu / Linux Mint / elementaryOS / Pop!_OS / Zorin OS
           id: ubuntu
           logo: /img/distros/ubuntu.svg
