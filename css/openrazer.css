@@ -181,11 +181,14 @@ body:before {
     flex-direction: column;
     text-align: center;
     padding: 4px 24px;
-    flex: 1;
 }
 
 .feature h4 {
     margin-top: 16px;
+}
+
+.feature a {
+    margin: auto;
 }
 
 .feature img {
