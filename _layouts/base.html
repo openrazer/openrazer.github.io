@@ -211,6 +211,29 @@
                             </div>
                         </div>
                     </div>
+
+                    {% if page.apps.complementary %}
+                        <h3>Complementary</h3>
+                        <p>{{ page.apps.complementary_intro }}</p>
+                        <div class="row-fluid">
+                            <div class="row">
+                                <div class="features-grid apps">
+                                {% for app in page.apps.complementary %}
+                                    <div class="feature">
+                                        <a href="{{ app.url }}">
+                                            {% if app.logo contains "fa " %}
+                                                <span class="{{ app.logo }} fa-3x"></span>
+                                            {% else %}
+                                                <img src="{{ app.logo }}"/>
+                                            {% endif %}
+                                            <h4>{{ app.name }}</h4>
+                                        </a>
+                                    </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                    {% endif %}
                 </div>
             </div>
 
