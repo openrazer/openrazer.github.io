@@ -172,15 +172,16 @@ body:before {
  * Features/App Grid
 *****************************/
 .features-grid {
-    display: flex;
-    margin-top: 32px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 24px;
 }
 
 .feature {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 4px 24px;
+    padding: 24px;
 }
 
 .feature h4 {
@@ -204,25 +205,9 @@ body:before {
     margin-bottom: 10px;
 }
 
-@media (max-width: 540px) {
-    .features-grid {
-        flex-wrap: wrap;
-    }
-
-    .feature {
-        flex: 50%;
-    }
-}
-
 /* When used to display apps */
 .features-grid.apps .fa {
     height: 64px;
-}
-
-.features-grid.apps .feature {
-    padding: 0;
-    margin: 4px 16px;
-    flex: 20%;
 }
 
 .features-grid.apps .feature a:hover h4,

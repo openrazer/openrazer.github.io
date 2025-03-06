@@ -65,7 +65,8 @@
                         <h3>{{ section.title }}</h3>
                         <p>{{ section.description }}</p>
                         <div class="row-fluid">
-                            <div class="row features-grid">
+                            <div class="row">
+                                <div class="features-grid">
                                 {% for feature in section.items %}
                                     <div class="feature">
                                         <div class="features-icon"><span class="{{ feature.icon }} fa-5x"></span></div>
@@ -73,6 +74,7 @@
                                         <p>{{ feature.description | markdownify }}</p>
                                     </div>
                                 {% endfor %}
+                                </div>
                             </div>
                         </div>
                         {% if section.footnotes %}
@@ -187,7 +189,8 @@
                     <h3>Applications</h3>
                     <p>{{ page.apps.intro }}</p>
                     <div class="row-fluid">
-                        <div class="row features-grid apps">
+                        <div class="row">
+                            <div class="features-grid apps">
                             {% for app in page.apps.featured %}
                                 <div class="feature">
                                     <a href="{{ app.url }}">
@@ -205,6 +208,7 @@
                                     </p>
                                 </div>
                             {% endfor %}
+                            </div>
                         </div>
                     </div>
                 </div>
