@@ -104,7 +104,7 @@ instructions:
           logo: /img/distros/debian.svg
           instructions: >-
             Starting with Debian 10, OpenRazer is available from the [official repositories](https://packages.debian.org/search?keywords=openrazer).
-            However, you may need to install our package if your device was added in a newer version.
+            However, you may need to add our repository and upgrade if your device was added in a newer version.
 
 
             Instructions and downloadable builds for Debian are
@@ -161,7 +161,7 @@ instructions:
           logo: /img/distros/ubuntu.svg
           instructions: >-
             Starting with 20.04, OpenRazer is available from the [official repositories](https://packages.ubuntu.com/search?keywords=openrazer).
-            However, you may need to install our package if your device was added in a newer version.
+            However, you may need to add our repository and upgrade if your device was added in a newer version.
 
 
             elementaryOS users need to install a prerequisite first:
