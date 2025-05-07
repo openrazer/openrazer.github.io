@@ -1241,6 +1241,13 @@
   pid: "00B4"
   alias_ids: []
 
+- name: "Naga V2 Pro"
+  type: "mouse"
+  image_url: "https://dl.razerzone.com/src2/6292/6292-1-en-v1.png"
+  vid: "1532"
+  pid: "00A7"
+  alias_ids: ["1532:00A8"]
+
 - name: "Naga X"
   type: "mouse"
   image_url: "https://dl.razerzone.com/src/3993-1-EN-V2.png"
@@ -1386,6 +1393,13 @@
   image_url: "https://hybrismediaprod.blob.core.windows.net/sys-master-phoenix-images-container/ha0/h53/9081460162590/raptor-27-gallery-1.jpg"
   vid: "1532"
   pid: "0F12"
+  alias_ids: []
+
+- name: "Strider Chroma"
+  type: "mousemat"
+  image_url: "https://assets2.razerzone.com/images/pnx.assets/73158705dfbee8e688bab3c7ae99c6d3/razer-strider-chroma-extended-size-1920x700.webp"
+  vid: "1532"
+  pid: "0C05"
   alias_ids: []
 
 - name: "Taipan"
