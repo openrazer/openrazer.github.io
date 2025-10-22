@@ -173,15 +173,15 @@ body:before {
 *****************************/
 .features-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 24px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
+    justify-content: center;
 }
 
 .feature {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 24px;
+    padding: 24px 16px;
 }
 
 .feature h4 {
