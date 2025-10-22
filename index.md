@@ -332,6 +332,10 @@ apps:
           url: https://github.com/sezanzeb/input-remapper
           logo: /img/apps/input-remapper.svg
 
+        - name: Razer Nari Pairing
+          url: https://github.com/juanjodarko/razer-nari-pairing
+          logo: /img/apps/github.svg
+
 links:
     - label: View Source
       icon: fa-brands fa-github
