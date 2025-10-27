@@ -128,6 +128,13 @@
   pid: "00CC"
   alias_ids: ["1532:00CD"]
 
+- name: "Basilisk V3 Pro 35K Phantom Green Edition"
+  type: "mouse"
+  image_url: "https://medias-p1.phoenix.razer.com/sys-master-phoenix-images-container/haa/h04/9917236707358/250605-basilisk-v3-pro-35k-phantom-green-1500x1000-4.jpg"
+  vid: "1532"
+  pid: "00D6"
+  alias_ids: ["1532:00D7"]
+
 - name: "Basilisk V3 X HyperSpeed"
   type: "mouse"
   image_url: "https://dl.razerzone.com/src2/9766/9766-1-en-v1.png"
@@ -247,7 +254,7 @@
   pid: "024E"
   alias_ids: []
 
-- name: "BlackWidow V3 Mini Hyperspeed"
+- name: "BlackWidow V3 Mini HyperSpeed"
   type: "keyboard"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1777/500x500-blackwidowv3mini.png"
   vid: "1532"
@@ -281,6 +288,13 @@
   vid: "1532"
   pid: "02A5"
   alias_ids: []
+
+- name: "BlackWidow V4 Mini Hyperspeed"
+  type: "keyboard"
+  image_url: "https://assets2.razerzone.com/images/pnx.assets/d0ebf9b718890099da55f79fb6b4569f/razer-blackwidowv4-mini-hyperspeed-usp5.webp"
+  vid: "1532"
+  pid: "02B9"
+  alias_ids: ["1532:02BA"]
 
 - name: "BlackWidow V4 Pro"
   type: "keyboard"
@@ -350,6 +364,13 @@
   image_url: "https://dl.razerzone.com/src2/13031/13031-1-en-v2.png"
   vid: "1532"
   pid: "02B6"
+  alias_ids: []
+
+- name: "Blade 14 (2025)"
+  type: "keyboard"
+  image_url: "https://dl.razerzone.com/src2/15088/15088-1-en-v1.png"
+  vid: "1532"
+  pid: "02C5"
   alias_ids: []
 
 - name: "Blade 15 (2018)"
@@ -471,6 +492,13 @@
   pid: "029F"
   alias_ids: []
 
+- name: "Blade 16 (2025)"
+  type: "keyboard"
+  image_url: "https://dl.razerzone.com/src2/14806/14806-en-v1.png"
+  vid: "1532"
+  pid: "02C6"
+  alias_ids: []
+
 - name: "Blade 17 (2022)"
   type: "keyboard"
   image_url: "https://dl.razerzone.com/src/5896/5896-1-en-v2.png"
@@ -504,6 +532,13 @@
   image_url: "https://dl.razerzone.com/src2/9676/9676-1-en-v1.png"
   vid: "1532"
   pid: "02B8"
+  alias_ids: []
+
+- name: "Blade 18 (2025)"
+  type: "keyboard"
+  image_url: "https://dl.razerzone.com/src2/14968/14968-1-en-v1.png"
+  vid: "1532"
+  pid: "02C7"
   alias_ids: []
 
 - name: "Blade Advanced (Late 2019)"
@@ -842,6 +877,13 @@
   pid: "00C2"
   alias_ids: ["1532:00B6", "1532:00B7", "1532:00C3"]
 
+- name: "DeathAdder V4 Pro"
+  type: "mouse"
+  image_url: "https://medias-p1.phoenix.razer.com/sys-master-phoenix-images-container/h01/hf3/9926511951902/deathadder-v4-pro-black-500x500.png"
+  vid: "1532"
+  pid: "00BE"
+  alias_ids: ["1532:00BF"]
+
 - name: "DeathStalker Chroma"
   type: "keyboard"
   image_url: "https://assets.razerzone.com/eeimages/support/products/665/665_deathstalker_chroma.png"
@@ -910,6 +952,13 @@
   image_url: "https://assets.razerzone.com/eeimages/support/products/1594/1594_firefly_v2.png"
   vid: "1532"
   pid: "0C04"
+  alias_ids: []
+
+- name: "Firefly V2 Pro"
+  type: "mousemat"
+  image_url: "https://dl.razerzone.com/src2/14141/14141-1-en-v1.png"
+  vid: "1532"
+  pid: "0C08"
   alias_ids: []
 
 - name: "Goliathus"
@@ -1001,6 +1050,13 @@
   image_url: "https://dl.razerzone.com/src2/13671/13671-1-en-v2.png"
   vid: "1532"
   pid: "02A6"
+  alias_ids: []
+
+- name: "Huntsman V3 Pro TKL"
+  type: "keyboard"
+  image_url: "https://assets2.razerzone.com/images/pnx.assets/d01af9710e2077e2b88eb9dc6f68f62f/quick-actuation-adjustment-mode.webp"
+  vid: "1532"
+  pid: "02A7"
   alias_ids: []
 
 - name: "HyperPolling Wireless Dongle"
@@ -1388,6 +1444,20 @@
   pid: "009A"
   alias_ids: []
 
+- name: "Pro Click V2"
+  type: "mouse"
+  image_url: "https://medias-p1.phoenix.razer.com/sys-master-phoenix-images-container/ha3/h76/9899953717278/pro-click-v2-black-500x500.png"
+  vid: "1532"
+  pid: "00D0"
+  alias_ids: ["1532:00D1"]
+
+- name: "Pro Click V2 Vertical Edition"
+  type: "mouse"
+  image_url: "https://dl.razerzone.com/src2/15010/15010-1-en-v1.png"
+  vid: "1532"
+  pid: "00C7"
+  alias_ids: ["1532:00C8"]
+
 - name: "Raptor 27"
   type: "accessory"
   image_url: "https://hybrismediaprod.blob.core.windows.net/sys-master-phoenix-images-container/ha0/h53/9081460162590/raptor-27-gallery-1.jpg"
@@ -1435,6 +1505,13 @@
   image_url: "https://dl.razerzone.com/src/4030-1-EN-v1.png"
   vid: "1532"
   pid: "0F21"
+  alias_ids: []
+
+- name: "Tomahawk ATX"
+  type: "accessory"
+  image_url: "https://assets2.razerzone.com/images/pnx.assets/ed80ca04f3ff1b5d2c61655581776a6c/tomahawk-a1-m1-atx.png"
+  vid: "1532"
+  pid: "0F17"
   alias_ids: []
 
 - name: "Viper"
