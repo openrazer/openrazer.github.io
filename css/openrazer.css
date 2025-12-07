@@ -173,8 +173,29 @@ body:before {
 *****************************/
 .features-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
+    grid-template-columns: repeat(auto-fit, minmax(30%, 200px));
     justify-content: center;
+}
+
+.features-grid.apps {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
+}
+
+@media (max-width: 768px) {
+    .features-grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .feature {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    .features-grid.apps {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(48%, 100px));
+    }
 }
 
 .feature {
