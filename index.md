@@ -326,6 +326,12 @@ apps:
           technologies:
             - Python
 
+        - name: RazerBatteryTray
+          url: https://github.com/HoroTW/RazerBatteryTray
+          logo: /img/apps/RazerBatteryTray.png
+          technologies:
+            - Python
+
     complementary_intro: "These applications can further extend your device's functionality, but are not related to OpenRazer."
     complementary:
         - name: Input Remapper
