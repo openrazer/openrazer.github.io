@@ -303,6 +303,13 @@
   pid: "028D"
   alias_ids: []
 
+- name: "BlackWidow V4 Tenkeyless HyperSpeed"
+  type: "keyboard"
+  image_url: "https://dl.razerzone.com/src2/15142/15142-1-en-v1.png"
+  vid: "1532"
+  pid: "02D7"
+  alias_ids: ["1532:02D5"]
+
 - name: "BlackWidow V4 X"
   type: "keyboard"
   image_url: "https://dl.razerzone.com/src2/13223/13223-1-en-v1.png"
@@ -1052,6 +1059,20 @@
   pid: "02A6"
   alias_ids: []
 
+- name: "Huntsman V3 Pro 8KHz"
+  type: "keyboard"
+  image_url: "https://medias-p1.phoenix.razer.com/sys-master-phoenix-images-container/h62/h24/9980311044126/huntsman-v3-pro-8khz-b-500x500.png"
+  vid: "1532"
+  pid: "02CF"
+  alias_ids: []
+
+- name: "Huntsman V3 Pro Mini"
+  type: "keyboard"
+  image_url: "https://medias-p1.phoenix.razer.com/sys-master-phoenix-images-container/h8d/h31/9662065901598/230921-huntsman-v3-pro-mini-black-1500x1000-5.jpg"
+  vid: "1532"
+  pid: "02B0"
+  alias_ids: []
+
 - name: "Huntsman V3 Pro TKL"
   type: "keyboard"
   image_url: "https://assets2.razerzone.com/images/pnx.assets/d01af9710e2077e2b88eb9dc6f68f62f/quick-actuation-adjustment-mode.webp"
@@ -1106,6 +1127,13 @@
   image_url: "https://medias-p1.phoenix.razer.com/sys-master-phoenix-images-container/hcc/h6b/9631977570334/kraken-kitty-v2-quartz-500x500.png"
   vid: "1532"
   pid: "0560"
+  alias_ids: []
+
+- name: "Kraken Tournament Edition"
+  type: "headset"
+  image_url: "https://assets.razerzone.com/eeimages/support/products/1399/1399_razerkrakente.png"
+  vid: "1532"
+  pid: "0520"
   alias_ids: []
 
 - name: "Kraken Ultimate"
@@ -1197,6 +1225,13 @@
   image_url: "https://assets.razerzone.com/eeimages/support/products/1711/1711_-_mouse_dock_chroma.png"
   vid: "1532"
   pid: "007E"
+  alias_ids: []
+
+- name: "Mouse Dock Pro"
+  type: "accessory"
+  image_url: "https://dl.razerzone.com/src2/6229/6229-1-en-v2.png"
+  vid: "1532"
+  pid: "00A4"
   alias_ids: []
 
 - name: "Naga"
@@ -1491,6 +1526,13 @@
   image_url: "https://assets.razerzone.com/eeimages/support/products/598/598_tartarus_chroma.png"
   vid: "1532"
   pid: "0208"
+  alias_ids: []
+
+- name: "Tartarus Pro"
+  type: "keypad"
+  image_url: "https://assets.razerzone.com/eeimages/support/products/1591/1591_tartaruspro.png"
+  vid: "1532"
+  pid: "0244"
   alias_ids: []
 
 - name: "Tartarus V2"
