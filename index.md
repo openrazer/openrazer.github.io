@@ -306,7 +306,7 @@ apps:
           url: https://github.com/z3ntu/RazerGenie
           logo: /img/logo.svg
           technologies:
-            - Qt 5
+            - Qt 6
 
         - name: Snake
           url: http://bithatch.co.uk/snake.html
