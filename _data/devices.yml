@@ -2,6 +2,13 @@
 # This file was auto-generated using the update-device-listings.py in the root of this repository.
 #
 
+- name: "Lian Li O11 Dynamic -  Edition"
+  type: "accessory"
+  image_url: "https://assets2.razerzone.com/images/pnx.assets/6bd258f651d00e7ee1d7a5c4607917f3/lian-li-usp-desktop.jpg"
+  vid: "1532"
+  pid: "0F13"
+  alias_ids: []
+
 - name: "Abyssus 1800"
   type: "mouse"
   image_url: "https://assets.razerzone.com/eeimages/support/products/1277/1277_abyssus_2000.png"
@@ -85,6 +92,13 @@
   vid: "1532"
   pid: "0065"
   alias_ids: []
+
+- name: "Basilisk Mobile"
+  type: "mouse"
+  image_url: "https://dl.razerzone.com/src2/15485/15485-1-en-v2.png"
+  vid: "1532"
+  pid: "00D4"
+  alias_ids: ["1532:00D3"]
 
 - name: "Basilisk Ultimate"
   type: "mouse"
