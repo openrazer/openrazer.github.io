@@ -332,6 +332,12 @@ apps:
           technologies:
             - Python
 
+        - name: Keyglow
+          url: https://github.com/amansingh909/keyglow
+          logo: /img/apps/keyglow.svg
+          technologies:
+            - Rust, egui
+
     complementary_intro: "These applications can further extend your device's functionality, but are not related to OpenRazer."
     complementary:
         - name: Input Remapper

@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="tile" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1e1e26"/>
+      <stop offset="1" stop-color="#0a0a0d"/>
+    </linearGradient>
+    <linearGradient id="wave" x1="18" y1="0" x2="110" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#03fffa"/>
+      <stop offset="0.5" stop-color="#3d8bff"/>
+      <stop offset="1" stop-color="#a63dff"/>
+    </linearGradient>
+    <linearGradient id="press" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ff5a5a"/>
+      <stop offset="1" stop-color="#e00000"/>
+    </linearGradient>
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5"/>
+    </filter>
+    <clipPath id="edge">
+      <rect x="8" y="8" width="112" height="112" rx="26"/>
+    </clipPath>
+  </defs>
+  <rect x="8" y="8" width="112" height="112" rx="26" fill="url(#tile)"/>
+  <g clip-path="url(#edge)">
+    <g filter="url(#blur)" opacity="0.85">
+      <g fill="url(#wave)">
+        <rect x="18" y="30.125" width="19.25" height="19.25" rx="5"/>
+        <rect x="42.25" y="30.125" width="19.25" height="19.25" rx="5"/>
+        <rect x="66.5" y="30.125" width="19.25" height="19.25" rx="5"/>
+        <rect x="90.75" y="30.125" width="19.25" height="19.25" rx="5"/>
+        <rect x="18" y="54.375" width="19.25" height="19.25" rx="5"/>
+        <rect x="66.5" y="54.375" width="19.25" height="19.25" rx="5"/>
+        <rect x="90.75" y="54.375" width="19.25" height="19.25" rx="5"/>
+        <rect x="18" y="78.625" width="19.25" height="19.25" rx="5"/>
+        <rect x="42.25" y="78.625" width="43.5" height="19.25" rx="5"/>
+        <rect x="90.75" y="78.625" width="19.25" height="19.25" rx="5"/>
+      </g>
+      <rect x="42.25" y="54.375" width="19.25" height="19.25" rx="5" fill="url(#press)"/>
+    </g>
+  </g>
+  <g fill="url(#wave)">
+    <rect x="18" y="30.125" width="19.25" height="19.25" rx="5"/>
+    <rect x="42.25" y="30.125" width="19.25" height="19.25" rx="5"/>
+    <rect x="66.5" y="30.125" width="19.25" height="19.25" rx="5"/>
+    <rect x="90.75" y="30.125" width="19.25" height="19.25" rx="5"/>
+    <rect x="18" y="54.375" width="19.25" height="19.25" rx="5"/>
+    <rect x="66.5" y="54.375" width="19.25" height="19.25" rx="5"/>
+    <rect x="90.75" y="54.375" width="19.25" height="19.25" rx="5"/>
+    <rect x="18" y="78.625" width="19.25" height="19.25" rx="5"/>
+    <rect x="42.25" y="78.625" width="43.5" height="19.25" rx="5"/>
+    <rect x="90.75" y="78.625" width="19.25" height="19.25" rx="5"/>
+  </g>
+  <rect x="42.25" y="54.375" width="19.25" height="19.25" rx="5" fill="url(#press)"/>
+  <g fill="#fff" fill-opacity="0.18">
+    <rect x="20.7" y="32.425" width="13.85" height="9.95" rx="3.5"/>
+    <rect x="44.95" y="32.425" width="13.85" height="9.95" rx="3.5"/>
+    <rect x="69.2" y="32.425" width="13.85" height="9.95" rx="3.5"/>
+    <rect x="93.45" y="32.425" width="13.85" height="9.95" rx="3.5"/>
+    <rect x="20.7" y="56.675" width="13.85" height="9.95" rx="3.5"/>
+    <rect x="44.95" y="56.675" width="13.85" height="9.95" rx="3.5"/>
+    <rect x="69.2" y="56.675" width="13.85" height="9.95" rx="3.5"/>
+    <rect x="93.45" y="56.675" width="13.85" height="9.95" rx="3.5"/>
+    <rect x="20.7" y="80.925" width="13.85" height="9.95" rx="3.5"/>
+    <rect x="44.95" y="80.925" width="38.1" height="9.95" rx="3.5"/>
+    <rect x="93.45" y="80.925" width="13.85" height="9.95" rx="3.5"/>
+  </g>
+  <rect x="8.5" y="8.5" width="111" height="111" rx="25.5" fill="none" stroke="#fff" stroke-opacity="0.08"/>
+</svg>
