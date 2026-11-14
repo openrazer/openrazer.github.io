@@ -314,12 +314,6 @@ apps:
           technologies:
             - Java
 
-        - name: razerCommander
-          url: https://gitlab.com/gabmus/razerCommander
-          logo: /img/apps/razerCommander.png
-          technologies:
-            - GTK
-
         - name: razer-cli
           url: https://github.com/lolei/razer-cli
           logo: fa fa-terminal
